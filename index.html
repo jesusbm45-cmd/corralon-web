@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corralón Don Coco | Materiales de Construcción</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Pequeña animación para cuando se agrega un producto */
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .animate-pop { animation: pop 0.3s ease-in-out; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-amber-600 text-white text-xs py-2 px-4 flex justify-between items-center font-medium">
+    <div class="flex items-center space-x-4 container mx-auto">
+      <span>📍 Casa Central: B° 31 de Octubre | Sucursal: Av. Kennedy</span>
+      <span class="hidden md:inline">🚚 Envíos a obra en Salta y zonas aledañas</span>
+    </div>
+  </div>
+
+  <!-- HEADER Y NAVEGACIÓN -->
+  <header class="sticky top-0 z-40 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-2">
+        <span class="text-2xl font-black text-amber-600 tracking-wider">DON COCO</span>
+        <span class="text-xs bg-gray-800 text-white px-2 py-0.5 rounded font-bold uppercase">Corralón</span>
+      </a>
+
+      <button onclick="toggleCart()" class="relative bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg font-bold flex items-center space-x-2 transition shadow">
+        <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+        <span class="hidden sm:inline">Mi Cotización</span>
+        <span id="cart-count" class="bg-white text-amber-600 text-xs w-5 h-5 rounded-full flex items-center justify-center font-black">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gray-900 text-white py-12 px-4 text-center md:text-left">
+    <div class="container mx-auto">
+      <h1 class="text-3xl md:text-5xl font-black leading-tight">
+        Construí con <span class="text-amber-500">calidad y confianza</span>.
+      </h1>
+      <p class="text-gray-300 mt-2 text-lg">Armá tu lista de materiales y cotizala directo por WhatsApp con nuestros asesores.</p>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO Y FILTROS -->
+  <section id="catalogo" class="py-10 container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+      <h2 class="text-2xl font-black text-gray-800">Catálogo de Materiales</h2>
+      
+      <!-- Filtros de categorías -->
+      <div class="flex space-x-2 overflow-x-auto w-full md:w-auto pb-2" id="category-filters">
+        <button onclick="renderProducts('all')" class="px-4 py-1 rounded-full bg-amber-600 text-white font-bold text-sm whitespace-nowrap">Todos</button>
+        <button onclick="renderProducts('obra-gruesa')" class="px-4 py-1 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold text-sm whitespace-nowrap">Obra Gruesa</button>
+        <button onclick="renderProducts('seco')" class="px-4 py-1 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold text-sm whitespace-nowrap">Const. en Seco</button>
+        <button onclick="renderProducts('terminaciones')" class="px-4 py-1 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold text-sm whitespace-nowrap">Terminaciones</button>
+      </div>
+    </div>
+
+    <!-- Grilla de Productos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="products-grid">
+      <!-- Los productos se inyectan acá desde JS -->
+    </div>
+  </section>
+
+  <!-- PANEL LATERAL DEL COTIZADOR (CARRITO) -->
+  <div id="cart-drawer" class="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-4 bg-amber-600 text-white flex justify-between items-center">
+      <h3 class="text-xl font-bold flex items-center space-x-2">
+        <i data-lucide="clipboard-list"></i>
+        <span>Tu Lista</span>
+      </h3>
+      <button onclick="toggleCart()" class="text-white hover:text-gray-200 font-bold text-xl">✕</button>
+    </div>
+
+    <div id="cart-items" class="flex-1 overflow-y-auto p-4 space-y-4">
+      <!-- Los items del carrito se inyectan acá -->
+    </div>
+
+    <div class="p-4 border-t bg-gray-50 space-y-3">
+      <p class="text-xs text-gray-500 text-center">* Los precios y disponibilidad final serán confirmados por un vendedor.</p>
+      <button onclick="sendWhatsAppQuote()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg flex items-center justify-center space-x-2 transition shadow-lg">
+        <i data-lucide="message-circle"></i>
+        <span>Solicitar Cotización por WhatsApp</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- NOTIFICACIÓN FLOTANTE -->
+  <div id="toast" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none">
+    Producto agregado a la lista
+  </div>
+
+  <script>
+    // Inicializar íconos
+    lucide.createIcons();
+    // Función para abrir/cerrar carrito
+    function toggleCart() {
+      document.getElementById('cart-drawer').classList.toggle('translate-x-full');
+    }
+  </script>
+  
+  <!-- ARCHIVOS JAVASCRIPT LOCALES -->
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
