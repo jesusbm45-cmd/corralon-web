@@ -13,4 +13,10 @@ const products = [
   // TERMINACIONES Y PINTURAS
   { id: 8, name: "Pintura Látex Interior/Exterior 20L", category: "terminaciones", image: "https://placehold.co/400x300/e2e8f0/475569?text=Pintura", unit: "balde" },
   { id: 9, name: "Cerámico San Lorenzo 45x45", category: "terminaciones", image: "https://placehold.co/400x300/e2e8f0/475569?text=Ceramico", unit: "m2" }
-];
+];{ 
+    id: 10, 
+    name: "Puerta Placa Oblak Tekstura Cedro", 
+    category: "terminaciones", 
+    image: "https://www.oblak.com.ar/images/productos/1066/1666635817-Tekstura_Grafito_Innova.jpg", 
+    unit: "unidad" 
+  }
