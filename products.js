@@ -1,22 +1,57 @@
 const products = [
-  // OBRA GRUESA
-  { id: 1, name: "Cemento Loma Negra 50kg", category: "obra-gruesa", image: "https://placehold.co/400x300/e2e8f0/475569?text=Cemento", unit: "bolsa" },
-  { id: 2, name: "Vigueta Pretensada T-120 4.00m", category: "obra-gruesa", image: "https://placehold.co/400x300/e2e8f0/475569?text=Vigueta", unit: "unidad" },
-  { id: 3, name: "Hierro Aletado A420 8mm", category: "obra-gruesa", image: "https://placehold.co/400x300/e2e8f0/475569?text=Hierro", unit: "barra" },
-  { id: 4, name: "Ladrillón Cerámico 18x18x33", category: "obra-gruesa", image: "https://placehold.co/400x300/e2e8f0/475569?text=Ladrillon", unit: "unidad" },
-  
-  // CONSTRUCCIÓN EN SECO
-  { id: 5, name: "Placa Durlock Standard 12.5mm", category: "seco", image: "https://placehold.co/400x300/e2e8f0/475569?text=Placa+Durlock", unit: "placa" },
-  { id: 6, name: "Perfil Montante 34mm", category: "seco", image: "https://placehold.co/400x300/e2e8f0/475569?text=Montante", unit: "unidad" },
-  { id: 7, name: "Masilla Durlock Lista 32kg", category: "seco", image: "https://placehold.co/400x300/e2e8f0/475569?text=Masilla", unit: "balde" },
-
-  // TERMINACIONES Y PINTURAS
-  { id: 8, name: "Pintura Látex Interior/Exterior 20L", category: "terminaciones", image: "https://placehold.co/400x300/e2e8f0/475569?text=Pintura", unit: "balde" },
-  { id: 9, name: "Cerámico San Lorenzo 45x45", category: "terminaciones", image: "https://placehold.co/400x300/e2e8f0/475569?text=Ceramico", unit: "m2" }
-];{ 
-    id: 10, 
-    name: "Puerta Placa Oblak Tekstura Cedro", 
+  // === ABERTURAS Y TERMINACIONES (OBLAK) ===
+  { 
+    id: 1, 
+    name: "Puerta de Interior Oblak Tekstura Grafito", 
     category: "terminaciones", 
     image: "https://www.oblak.com.ar/images/productos/1066/1666635817-Tekstura_Grafito_Innova.jpg", 
     unit: "unidad" 
+  },
+  { 
+    id: 2, 
+    name: "Puerta de Interior Oblak Tekstura Cedro", 
+    category: "terminaciones", 
+    // Usamos una imagen vertical de prueba para mantener la simetría hasta que tengas las fotos reales
+    image: "https://placehold.co/400x800/27272a/ffff00?text=Oblak+Tekstura+Cedro", 
+    unit: "unidad" 
+  },
+  { 
+    id: 3, 
+    name: "Puerta de Interior Oblak Línea Práctica Blanca", 
+    category: "terminaciones", 
+    image: "https://placehold.co/400x800/f8fafc/000000?text=Oblak+Practica+Blanca", 
+    unit: "unidad" 
+  },
+  { 
+    id: 4, 
+    name: "Cerámico San Lorenzo 45x45", 
+    category: "terminaciones", 
+    image: "https://placehold.co/400x800/e2e8f0/475569?text=Ceramico+San+Lorenzo", 
+    unit: "m2" 
+  },
+
+  // === OBRA GRUESA ===
+  { 
+    id: 5, 
+    name: "Cemento Loma Negra 50kg", 
+    category: "obra-gruesa", 
+    image: "https://placehold.co/400x800/e2e8f0/475569?text=Cemento+Loma+Negra", 
+    unit: "bolsa" 
+  },
+  { 
+    id: 6, 
+    name: "Hierro Aletado A420 8mm", 
+    category: "obra-gruesa", 
+    image: "https://placehold.co/400x800/e2e8f0/475569?text=Hierro+8mm", 
+    unit: "barra" 
+  },
+
+  // === CONSTRUCCIÓN EN SECO ===
+  { 
+    id: 7, 
+    name: "Placa Durlock Standard 12.5mm", 
+    category: "seco", 
+    image: "https://placehold.co/400x800/e2e8f0/475569?text=Placa+Durlock", 
+    unit: "placa" 
   }
+  ];
