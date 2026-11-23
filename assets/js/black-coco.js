@@ -3,7 +3,8 @@
    Dos modos, según <body data-bc-modo>:
    - "black" (black-coco.html): precio Black Coco (23% OFF en Jadever, Lusqtoff y Mozart). Vale hasta el 28/11.
    - "contado" (precios.html): precio de contado o transferencia de siempre (campo contado_normal). Desde el 29/11.
-   Cada página manda a la otra fuera de sus fechas; con ?previa en la dirección se puede ver igual.
+   black-coco.html manda a precios.html desde el 29/11. Hasta el 28/11, precios.html muestra solo los rubros nuevos
+   (Polacrin, Talento, Megaflex, Tinacos, Peirano, Roca y Oblak); desde el 29/11, todas las marcas. ?previa muestra todo.
    Va después de vigencia.js y ANTES de v3.js (que reparte los pedidos de WhatsApp entre Luisa y Dante). */
 (function () {
   'use strict';
@@ -19,9 +20,11 @@
   if (!soloMarca && !/[?&]previa/.test(location.search)) {
     var enBlack = vigente(null, '2026-11-28');
     if (modo === 'black' && !enBlack) { location.replace('precios.html' + location.hash); return; }
-    if (modo === 'contado' && enBlack) { location.replace('black-coco.html' + location.hash); return; }
   }
-  // Rubros nuevos (tipo "contado": Polacrin, Talento, Megaflex, Tinacos, Peirano y Roca): solo en precios.html, desde el 29/11
+  // Hasta el 28/11, precios.html muestra solo los rubros nuevos (tipo "contado"); las 5 marcas del evento están en black-coco.html
+  if (!soloMarca && modo === 'contado' && vigente(null, '2026-11-28') && !/[?&]previa/.test(location.search))
+    datos.marcas = datos.marcas.filter(function (m) { return m.tipo === 'contado'; });
+  // Rubros nuevos (tipo "contado": Polacrin, Talento, Megaflex, Tinacos, Peirano, Roca y Oblak): solo en precios.html
   if (modo === 'black') datos.marcas = datos.marcas.filter(function (m) { return m.tipo !== 'contado'; });
   // Todas las marcas que se pueden mostrar hoy: de acá salen los «Va bien con» (también en la página de una sola marca)
   var todas = datos.marcas.slice();

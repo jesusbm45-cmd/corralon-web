@@ -152,13 +152,13 @@ body[data-bc-modo="contado"] .marca__nombre{font-size:clamp(30px,2.6vw,40px)}
   .bc-indice a{border:2px solid var(--negro);padding:8px 10px;gap:8px;font-size:14px}
 }
 @media (max-width:620px){
-  /* marcas: tira que se desliza */
-  .marcas{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:calc(-1 * var(--gutter));border-inline:0}
-  .marcas::-webkit-scrollbar{display:none}
-  .marca{flex:0 0 40%;scroll-snap-align:start;padding:12px 14px 14px;border-top:0!important}
-  .marca:nth-child(4){border-left:2px solid var(--negro)}
-  body[data-bc-modo="contado"] .marca:nth-child(n+2){border-left:2px solid var(--negro)}
-  .marca__nombre{font-size:32px}
+  /* marcas: todas a la vista, en dos columnas (antes era una tira que se deslizaba y no se veían todas) */
+  .marcas,body[data-bc-modo="contado"] .marcas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--negro);border:2px solid var(--negro)}
+  .marca,body[data-bc-modo="contado"] .marca{border:0!important;background:var(--blanco);padding:10px 12px 12px;gap:6px}
+  .marca[aria-selected="true"],body[data-bc-modo="contado"] .marca[aria-selected="true"]{background:var(--rojo);color:var(--blanco)}
+  .marca:last-child:nth-child(odd){grid-column:1 / -1}
+  .marca__nombre,body[data-bc-modo="contado"] .marca__nombre{font-size:26px}
+  .marca__chip{font-size:11px}
   /* destacados: tira que se desliza (la lista completa queda debajo) */
   .bc-vidriera{display:grid;grid-auto-flow:column;grid-auto-columns:72%;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);
     gap:12px;margin-inline:calc(-1 * var(--gutter));padding-inline:var(--gutter);scrollbar-width:none}
