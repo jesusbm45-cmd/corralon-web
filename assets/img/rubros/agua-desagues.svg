@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="tanque"><path d="M12 26v50a20 6 0 0 0 40 0V26Z"/></clipPath>
+  </defs>
+  <ellipse cx="50" cy="85" rx="40" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Tanque -->
+  <g clip-path="url(#tanque)">
+    <path fill="#45413C" d="M12 20h40v64H12z"/>
+    <path fill="#141414" d="M41 20h11v64H41z"/>
+    <path fill="#8C877F" d="M17 30h3v46h-3z"/>
+  </g>
+  <path fill="none" stroke="#141414" stroke-width="2" d="M12 44a20 6 0 0 0 40 0M12 62a20 6 0 0 0 40 0"/>
+  <ellipse cx="32" cy="26" rx="20" ry="6" fill="#141414"/>
+  <path fill="#E30613" d="M17 26c0-8 7-12 15-12s15 4 15 12a15 4.5 0 0 1-30 0Z"/>
+  <path fill="#FFFFFF" d="M30 40s-6 8-6 12a6 6 0 0 0 12 0c0-4-6-12-6-12Z"/>
+  <!-- Caño con codo -->
+  <path fill="none" stroke="#E30613" stroke-width="12" d="M38 72h28a12 12 0 0 0 12-12V42"/>
+  <path fill="none" stroke="#B8000F" stroke-width="4" d="M38 76h28a16 16 0 0 0 16-16V42"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M42 68.5h24a8.5 8.5 0 0 0 8.5-8.5V44"/>
+  <path fill="#E30613" d="M70 34h16v8H70z"/>
+  <path fill="#B8000F" d="M80 34h6v8h-6z"/>
+  <ellipse cx="78" cy="34" rx="8" ry="2.6" fill="#B8000F"/>
+  <ellipse cx="78" cy="34" rx="5.6" ry="1.7" fill="#141414"/>
+  <path fill="#E30613" d="M34 64h8v16h-8z"/>
+  <path fill="#B8000F" d="M34 75h8v5h-8z"/>
+  <ellipse cx="34" cy="72" rx="2.6" ry="8" fill="#B8000F"/>
+  <ellipse cx="34" cy="72" rx="1.7" ry="5.6" fill="#141414"/>
+</svg>

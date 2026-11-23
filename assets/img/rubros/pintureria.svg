@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="lata"><path d="M10 40v40a19 4.5 0 0 0 38 0V40Z"/></clipPath>
+  </defs>
+  <ellipse cx="48" cy="85" rx="40" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Lata -->
+  <g clip-path="url(#lata)">
+    <path fill="#FFFFFF" d="M10 36h38v50H10z"/>
+    <path fill="#E0D8CB" d="M39 36h9v50h-9z"/>
+    <path fill="#141414" d="M10 58h38v18H10z"/>
+    <path fill="#E30613" d="M10 40h38v9h-5v6a2.5 2.5 0 0 1-5 0v-6h-9v10a2.5 2.5 0 0 1-5 0V49h-6v3a2.5 2.5 0 0 1-5 0v-3h-3z"/>
+  </g>
+  <path fill="#FFFFFF" d="M16 63h18v3H16zM16 69h11v3H16z"/>
+  <ellipse cx="29" cy="40" rx="19" ry="5" fill="#45413C"/>
+  <ellipse cx="29" cy="40" rx="15.5" ry="3.6" fill="#8C877F"/>
+  <!-- Rodillo -->
+  <path fill="none" stroke="#45413C" stroke-width="3" d="M86 36h4v14H71v8"/>
+  <path fill="#8C877F" d="M67 56h8v6h-8z"/>
+  <rect x="67.5" y="61" width="7" height="23" rx="2" fill="#141414"/>
+  <rect x="52" y="28" width="35" height="16" rx="3" fill="#B8000F"/>
+  <rect x="52" y="28" width="35" height="11" rx="3" fill="#E30613"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M56 31.5h26"/>
+</svg>

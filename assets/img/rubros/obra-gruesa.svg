@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="bolsa"><path d="M12 22C10.6 42 10.2 64 12 84h38c1.8-20 1.4-42 0-62Z"/></clipPath>
+  </defs>
+  <ellipse cx="49" cy="85" rx="41" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Bolsa de cemento -->
+  <path fill="#E0D8CB" d="M13.5 22 16.5 11h29l3 11Z"/>
+  <path fill="none" stroke="#8C877F" stroke-width="2" d="M19 16.5h4m3 0h4m3 0h4m3 0h3"/>
+  <g clip-path="url(#bolsa)">
+    <path fill="#F2EEE7" d="M0 22h96v62H0z"/>
+    <path fill="#E0D8CB" d="M41 22h20v62H41z"/>
+    <path fill="#E30613" d="M0 37h96v22H0z"/>
+    <path fill="#B8000F" d="M41 37h20v22H41z"/>
+  </g>
+  <path fill="#FFFFFF" d="M17 43h18v3.5H17zM17 49.5h11v3.5H17z"/>
+  <path fill="#E0D8CB" d="M17 27h15v3H17z"/>
+  <!-- Pared de ladrillos -->
+  <path fill="#B8000F" d="M80 58l6-5v26l-6 5z"/>
+  <path fill="#E30613" d="M44 58l6-5h36l-6 5zM44 58h36v26H44z"/>
+  <path fill="none" stroke="#F2EEE7" stroke-width="1.5" d="M44 58.75h36M44 64.5h36M44 71h36M44 77.5h36M56 58v6.5M68 58v6.5M50 64.5V71M62 64.5V71M74 64.5V71M56 71v6.5M68 71v6.5M50 77.5V84M62 77.5V84M74 77.5V84M56 58l6-5M68 58l6-5"/>
+  <path fill="none" stroke="#E0D8CB" stroke-width="1.5" d="M80 64.5l6-5M80 71l6-5M80 77.5l6-5"/>
+</svg>

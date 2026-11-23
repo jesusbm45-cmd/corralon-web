@@ -1,0 +1,49 @@
+Herramientas Jadever: el dibujo y la foto de cada artículo.
+
+FOTOS ACTUALES
+30 de los 31 artículos tienen la foto oficial de Jadever (CÓDIGO.webp). Falta IKJ001
+(caja de 119 piezas con taladro): no está en el catálogo del importador.
+
+DIBUJOS (.svg)
+Cada artículo de la lista muestra un dibujo de la herramienta mientras no tenga foto.
+Qué dibujo usa cada uno está en assets/js/jadever-productos.js, en el campo "dibujo".
+No borrar los .svg: si falta uno, ese artículo queda sin imagen.
+
+  soldadoras              soldadoras inverter
+  taladros                taladro percutor inalámbrico
+  rotomartillo            rotomartillos con cable
+  rotomartillo-inalambrico  rotomartillo a batería
+  escaleras               escaleras multipropósito
+  escalera-extensible     escalera extensible
+  bordeadora              bordeadora
+  jardin                  motosierras
+  pistola-calor           pistola de calor
+  pistola-pintar          pistola para pintar
+  electricas              aspiradora de tacho
+  aspiradora-compacta     aspiradora de depósito chico
+  mezclador               mezclador
+  stillson                llaves Stillson
+  caja                    cajas de herramientas de plástico
+  caja-metalica           caja de herramientas metálica
+  kit                     caja de 119 piezas con taladro
+  linterna                linterna recargable
+  medicion                cortadoras de cerámicos
+  nivel-laser             nivel láser
+  manuales                (ilustración del grupo "Manuales y cajas", de reserva)
+
+Son dibujos orientativos del tipo de herramienta, no del modelo exacto.
+
+FOTOS
+Cuando haya foto real, reemplaza al dibujo. Va en esta misma carpeta, con el CÓDIGO
+como nombre (ej. HOJ001.webp).
+
+Cómo tienen que ser las fotos:
+- La foto oficial de Jadever del modelo exacto que vendemos (del catálogo del importador,
+  jadeverherramientas.com, en 2000 px, o pedírsela al representante), o una propia: un solo producto, entero, sobre fondo blanco o liso y claro, sin flash.
+- Cuadrada, 800 x 800 px, en WebP, de 150 KB como máximo.
+- No usar fotos generadas con inteligencia artificial ni sacadas de otros comercios
+  (Mercado Libre, otras ferreterías): tiene que ser la herramienta real, foto oficial o propia.
+
+Para que aparezca en el sitio: abrir assets/js/jadever-productos.js, buscar el artículo
+por su código y escribir el nombre del archivo en "foto" (ej. foto: 'HOJ001.webp').
+O pedírselo a Claude Code: "poné la foto HOJ001 en la lista de Jadever".

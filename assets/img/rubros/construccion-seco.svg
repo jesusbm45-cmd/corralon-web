@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="50" cy="85" rx="40" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Soleras y montantes -->
+  <path fill="#8C877F" d="M10 10h30v5H10zM10 79h30v5H10z"/>
+  <path fill="#45413C" d="M10 13h30v2H10zM10 79h30v2H10z"/>
+  <path fill="#8C877F" d="M12 15h6v64h-6zM28 15h6v64h-6z"/>
+  <path fill="#45413C" d="M14 15h2.5v64H14zM30 15h2.5v64H30z"/>
+  <!-- Placa de yeso atornillada -->
+  <path fill="#E0D8CB" d="M66 10h2.5v74H66z"/>
+  <path fill="#FFFFFF" d="M38 10h28v74H38z"/>
+  <g fill="#8C877F">
+    <circle cx="41.5" cy="16" r="1.2"/><circle cx="41.5" cy="30" r="1.2"/><circle cx="41.5" cy="44" r="1.2"/><circle cx="41.5" cy="58" r="1.2"/><circle cx="41.5" cy="72" r="1.2"/>
+    <circle cx="52" cy="16" r="1.2"/><circle cx="52" cy="30" r="1.2"/><circle cx="52" cy="44" r="1.2"/><circle cx="52" cy="58" r="1.2"/><circle cx="52" cy="72" r="1.2"/>
+    <circle cx="62.5" cy="16" r="1.2"/><circle cx="62.5" cy="30" r="1.2"/><circle cx="62.5" cy="44" r="1.2"/>
+  </g>
+  <!-- Balde de masilla -->
+  <path fill="#E30613" d="M57 56h30l-3 28H60z"/>
+  <path fill="#B8000F" d="M78 56h9l-3 28h-8z"/>
+  <path fill="#E0D8CB" d="M55 51h34v6H55z"/>
+  <path fill="#FFFFFF" d="M55 51h25v6H55z"/>
+  <path fill="#FFFFFF" d="M61 64h14v12H61z"/>
+  <path fill="none" stroke="#E30613" stroke-width="2" d="M64 68h8M64 72h5"/>
+  <path fill="none" stroke="#141414" stroke-width="2" d="M57 55c0-14 30-14 30 0"/>
+</svg>

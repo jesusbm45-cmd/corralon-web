@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="48" cy="87" rx="24" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Líneas del láser -->
+  <path fill="none" stroke="#FFFFFF" stroke-width="2.400" stroke-linecap="round" d="M4 40h20M72 40h20M48 4v18"/>
+  <!-- Trípode -->
+  <path fill="none" stroke="#45413C" stroke-width="3.200" d="M42 66L31 85M48 66v19M54 66l11 19"/>
+  <path fill="#8C877F" d="M36 60h24v6H36z"/>
+  <!-- Cuerpo -->
+  <rect x="28" y="24" width="40" height="38" rx="6" fill="#141414"/>
+  <path fill="#E30613" d="M24 30h7v26h-7a2 2 0 0 1-2-2V32a2 2 0 0 1 2-2ZM65 30h7a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2h-7z"/>
+  <path fill="#B8000F" d="M22 46h9v10h-7a2 2 0 0 1-2-2ZM65 46h9v8a2 2 0 0 1-2 2h-7z"/>
+  <!-- Ventana del láser -->
+  <circle cx="48" cy="40" r="10" fill="#45413C"/>
+  <circle cx="48" cy="40" r="5.500" fill="#8C877F"/>
+  <circle cx="46" cy="38" r="1.800" fill="#FFFFFF"/>
+  <path fill="#E30613" d="M42 54h12v3.500H42z"/>
+</svg>

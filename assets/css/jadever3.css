@@ -1,0 +1,4 @@
+/* Don Coco — página Jadever en el sistema v3 (jadever.html). La lista la arma black-coco.js con la marca jadever. */
+.jad3-hero__titulo{font-size:clamp(52px,6.6vw,100px)}
+.jad3-hero__foto{max-width:460px;justify-self:end;width:100%}
+@media (max-width:960px){.jad3-hero__foto{max-width:360px;justify-self:start}}

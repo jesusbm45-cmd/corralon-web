@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="38" cy="87" rx="28" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Tramo de arriba (atrás) -->
+  <path fill="#8C877F" d="M38 58h4.5l14-52H52zM54 58h4.5l14-52H68z"/>
+  <g fill="#45413C">
+    <path d="M45.2 46.5h11.5V50H45.2zM47.9 36.5h11.5V40H47.9zM50.6 26.5h11.5V30H50.6zM53.3 16.5h11.5V20H53.3z"/>
+  </g>
+  <path fill="#141414" d="M51 4h7v4h-7zM67 4h7v4h-7z"/>
+  <!-- Tramo de abajo (adelante) -->
+  <g fill="#8C877F">
+    <path d="M29.1 72.2h11.5V76H29.1zM31.7 62.2h11.5V66H31.7zM34.3 52.2h11.5V56H34.3zM36.8 42.2h11.5V46H36.8zM39.4 32.2h11.5V36H39.4z"/>
+  </g>
+  <path fill="#FFFFFF" d="M22 84h4.5l15-58H37z"/>
+  <path fill="#F2EEE7" d="M38 84h4.5l15-58H53z"/>
+  <!-- Trabas y regatones -->
+  <path fill="#E30613" d="M38.5 53h7v6h-7zM54.5 53h7v6h-7z"/>
+  <path fill="#B8000F" d="M38.5 57h7v2h-7zM54.5 57h7v2h-7z"/>
+  <path fill="#E30613" d="M20 82h9v5h-9zM36 82h9v5h-9z"/>
+</svg>

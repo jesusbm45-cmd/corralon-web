@@ -1,29 +1,49 @@
-# Don Coco — página temporal "Estamos en obra" (Hostinger / LiteSpeed)
+# Don Coco — configuración del servidor (Hostinger usa LiteSpeed, compatible con .htaccess)
+
 Options -Indexes
 DirectoryIndex index.html
-ErrorDocument 404 /index.html
+ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Forzar HTTPS
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Quitar "www." (si preferís con www, avisá y se invierte)
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
-  # Archivos internos: no se publican
+
+  # No publicar archivos internos del proyecto (documentación, git, configuración)
   RewriteRule (^|/)\.(?!well-known/) - [F,L]
   RewriteRule (^|/)(README|CLAUDE)\.md$ - [F,L]
-  # Archivos de la web vieja: van al inicio
-  RewriteRule ^(app|products)\.js$ / [R=302,L]
+  RewriteRule ^assets/img/(fotos|ofertas|jadever)/LEEME\.txt$ - [F,L]
+  # Cartelería para imprimir: es material interno, no va al sitio público
+  RewriteRule ^carteleria(/|$) - [F,L]
 </IfModule>
 
+# Compresión
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain application/javascript application/json image/svg+xml application/manifest+json
+</IfModule>
+
+# Caché del navegador
 <IfModule mod_expires.c>
   ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
   ExpiresByType text/html "access plus 0 seconds"
-  ExpiresByType image/svg+xml "access plus 1 week"
-  ExpiresByType image/png "access plus 1 week"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
 </IfModule>
 
+# Seguridad básica
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
 </IfModule>

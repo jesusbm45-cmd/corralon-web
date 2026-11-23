@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="48" cy="84" rx="42" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Base -->
+  <path fill="#8C877F" d="M13 60h70l5 12H8z"/>
+  <path fill="#45413C" d="M8 72h80v8H8z"/>
+  <!-- Cerámico con la línea de corte -->
+  <path fill="#FFFFFF" d="M24 58h48l4 11H20z"/>
+  <path fill="#F2EEE7" d="M48 58h24l4 11H48.6z"/>
+  <path fill="none" stroke="#E30613" stroke-width="1.6" d="M48 58l.6 11"/>
+  <!-- Soportes y guías -->
+  <path fill="#141414" d="M9 40h7v24H9zM80 40h7v24h-7z"/>
+  <path fill="#FFFFFF" d="M13 43h70v4.5H13z"/>
+  <path fill="#8C877F" d="M13 47.5h70v2.2H13z"/>
+  <!-- Rodel -->
+  <circle cx="48.3" cy="56.5" r="3.2" fill="#8C877F"/>
+  <circle cx="48.3" cy="56.5" r="1.1" fill="#141414"/>
+  <!-- Palanca -->
+  <path fill="none" stroke="#141414" stroke-width="5" d="M50 42L71 18"/>
+  <path fill="none" stroke="#E30613" stroke-width="8" stroke-linecap="round" d="M64 26l9-10.5"/>
+  <!-- Carro -->
+  <rect x="40" y="37" width="17" height="16" rx="2" fill="#E30613"/>
+  <path fill="#B8000F" d="M40 47h17v4a2 2 0 0 1-2 2H42a2 2 0 0 1-2-2Z"/>
+</svg>

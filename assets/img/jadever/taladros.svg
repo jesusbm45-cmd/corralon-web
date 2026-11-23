@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="42" cy="87" rx="32" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <g transform="translate(-4 2)">
+    <!-- Mecha -->
+    <path fill="#8C877F" d="M74 30h20l2 1.5-2 1.5H74z"/>
+    <path fill="none" stroke="#45413C" stroke-width="1.2" d="M78 30l-1.5 3M82 30l-1.5 3M86 30l-1.5 3M90 30l-1.5 3"/>
+    <!-- Mandril -->
+    <path fill="#8C877F" d="M64 24l12 4v7l-12 4z"/>
+    <path fill="#45413C" d="M64 33h12v2l-12 4z"/>
+    <rect x="60" y="21" width="6" height="21" rx="1" fill="#141414"/>
+    <!-- Cuerpo -->
+    <path fill="#E30613" d="M24 18h34a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6Z"/>
+    <path fill="#B8000F" d="M18 36h46v2a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6Z"/>
+    <rect x="14" y="21" width="9" height="20" rx="3" fill="#141414"/>
+    <path fill="none" stroke="#141414" stroke-width="2" d="M30 23v8M34 23v8M38 23v8"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M44 21.5h14"/>
+    <!-- Empuñadura y gatillo -->
+    <path fill="#141414" d="M30 44h18l-4 26H26z"/>
+    <path fill="#45413C" d="M48 46h5l-1 8h-5z"/>
+    <!-- Batería -->
+    <rect x="20" y="68" width="34" height="16" rx="2" fill="#141414"/>
+    <path fill="#45413C" d="M20 68h34v4H20z"/>
+    <path fill="#E30613" d="M24 76h14v3H24z"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="48" cy="85" rx="40" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Puerta con marco, entreabierta -->
+  <path fill="#45413C" d="M10 8h36v76H10z"/>
+  <path fill="#141414" d="M14 12h28v72H14z"/>
+  <path fill="#B8000F" d="M33 8.5l3 .5v76l-3 .5z"/>
+  <path fill="#E30613" d="M14 12l19-3.5v77L14 84z"/>
+  <path fill="#B8000F" d="M18 17.1l11-1.8v28.1l-11 .7zM18 50l11-.5v29.6l-11-.6z"/>
+  <path fill="#FFFFFF" d="M26 46h5v2.6h-5z"/>
+  <!-- Ventana -->
+  <path fill="#E0D8CB" d="M84 34h4v50h-4z"/>
+  <path fill="#FFFFFF" d="M52 34h32v50H52z"/>
+  <path fill="#45413C" d="M56 38h11v20H56zM69 38h11v20H69zM56 60h11v20H56zM69 60h11v20H69z"/>
+  <path fill="#8C877F" d="M56 47l9-9h2v2l-11 11zM69 47l9-9h2v2l-11 11zM56 69l9-9h2v2l-11 11zM69 69l9-9h2v2l-11 11z"/>
+</svg>

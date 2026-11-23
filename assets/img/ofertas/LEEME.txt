@@ -1,0 +1,10 @@
+Fotos de productos en oferta.
+
+Hoy esta carpeta no se usa: la portada y la sección de destacados muestran las herramientas
+Jadever, que tienen su propia carpeta (assets/img/jadever/, con su LEEME.txt).
+
+Si más adelante se arma otra sección de ofertas, las fotos van acá:
+- Un solo producto por foto, de frente o apenas en 3/4, centrado y entero (que no se corte).
+- Fondo liso y claro (pared blanca o cartulina), con luz de día. Sin flash.
+- Horizontal 4:3. Exportar a WebP, 1200 x 900 px, máx. ~200 KB.
+- Si es foto del proveedor, que sea del producto exacto que vendemos.

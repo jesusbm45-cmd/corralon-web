@@ -1,0 +1,5 @@
+Logos de los medios de pago que se muestran en "Promos con tu tarjeta" (index.html).
+visa.svg, mastercard.svg y banco-hipotecario.svg: marcas oficiales (archivos públicos de Wikimedia Commons).
+mercado-pago.png: logo oficial de Mercado Pago, bajado de su sitio (mercadopago.com.ar, 22/11/2026).
+Para un banco o billetera nueva, guardá acá su logo oficial (el kit para comercios) con el mismo nombre que figura en assets/js/promos-bancarias.js.
+No redibujar ni recolorear logos de terceros.

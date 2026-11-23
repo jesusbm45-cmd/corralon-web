@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="48" cy="85" rx="40" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Pila de cerámicos -->
+  <path fill="#F2EEE7" d="M8 44l30 15v12L8 56z"/>
+  <path fill="#E0D8CB" d="M38 59l30-15v12L38 71z"/>
+  <path fill="none" stroke="#8C877F" stroke-width="1" d="M8 48l30 15 30-15M8 52l30 15 30-15"/>
+  <path fill="#FFFFFF" d="M38 29l30 15-30 15L8 44z"/>
+  <path fill="#E30613" d="M38 29l15 7.5L38 44 23 36.5zM38 44l15 7.5L38 59 23 51.5z"/>
+  <path fill="none" stroke="#E0D8CB" stroke-width="1" d="M23 36.5l30 15M53 36.5l-30 15"/>
+  <!-- Llana dentada -->
+  <rect x="54" y="52" width="28" height="7" rx="3.5" fill="#B8000F"/>
+  <rect x="54" y="51" width="28" height="5.5" rx="2.75" fill="#E30613"/>
+  <path fill="#141414" d="M65 58h6v6h-6z"/>
+  <path fill="#8C877F" d="M48 64h40v12H48z"/>
+  <path fill="#45413C" d="M48 76h40l-2.5 4-2.5-4-2.5 4-2.5-4-2.5 4-2.5-4-2.5 4-2.5-4-2.5 4-2.5-4-2.5 4-2.5-4-2.5 4-2.5-4-2.5 4-2.5-4z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.2" d="M49 65.5h38"/>
+</svg>

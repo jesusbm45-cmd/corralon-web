@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="48" cy="80" rx="42" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Espada y cadena -->
+  <rect x="40" y="43" width="54" height="16" rx="8" fill="#45413C"/>
+  <rect x="42" y="45.6" width="49.4" height="10.8" rx="5.4" fill="#FFFFFF"/>
+  <path fill="#F2EEE7" d="M42 51h49.4a5.4 5.4 0 0 1-5.4 5.4H47.4A5.4 5.4 0 0 1 42 51Z"/>
+  <rect x="40" y="43" width="54" height="16" rx="8" fill="none" stroke="#141414" stroke-width="2.2" stroke-dasharray="2.4 3.4"/>
+  <!-- Manija superior -->
+  <path fill="none" stroke="#141414" stroke-width="5" d="M17 38c0-18 30-20 31-3"/>
+  <!-- Manija trasera -->
+  <path fill="#141414" fill-rule="evenodd" d="M2 42h15v26H2zM6.5 47v16h6V47z"/>
+  <!-- Protector de mano -->
+  <path fill="#45413C" d="M45 26h5.5l1 14H44z"/>
+  <!-- Cuerpo -->
+  <rect x="12" y="34" width="38" height="36" rx="5" fill="#E30613"/>
+  <path fill="#B8000F" d="M12 58h38v7a5 5 0 0 1-5 5H17a5 5 0 0 1-5-5Z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M18 38.5h14"/>
+  <circle cx="32" cy="52" r="8" fill="#141414"/>
+  <circle cx="32" cy="52" r="3.4" fill="#8C877F"/>
+  <path fill="none" stroke="#141414" stroke-width="2" d="M17 44v8M21 44v8"/>
+  <circle cx="19" cy="62" r="2.6" fill="#141414"/>
+</svg>

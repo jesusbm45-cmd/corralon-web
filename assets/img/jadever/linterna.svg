@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="42" cy="84" rx="30" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <g transform="translate(46 56) rotate(-28)">
+    <!-- Haz de luz -->
+    <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" d="M31-13l11-8M32 0h14M31 13l11 8"/>
+    <!-- Cuerpo -->
+    <rect x="-36" y="-8" width="42" height="16" rx="3.500" fill="#141414"/>
+    <path fill="none" stroke="#45413C" stroke-width="1.600" d="M-26-8V8M-22-8V8M-18-8V8M-14-8V8"/>
+    <path fill="#45413C" d="M-39-6.500h4.500v13H-39z"/>
+    <path fill="#E30613" d="M-8-10.500H2v4H-8z"/>
+    <!-- Cabezal -->
+    <path fill="#E30613" d="M4-10h8l11-7v34l-11-7H4z"/>
+    <path fill="#B8000F" d="M4 0h19v17l-11-7H4z"/>
+    <path fill="#8C877F" d="M23-17h4v34h-4z"/>
+    <path fill="#FFFFFF" d="M24.200-13h1.600v10h-1.600z"/>
+  </g>
+</svg>

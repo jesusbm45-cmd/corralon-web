@@ -1,0 +1,131 @@
+/* ==========================================================
+   Don Coco — Página del Club (club.html)
+   Usa las variables de tokens.css y los componentes de styles.css.
+   ========================================================== */
+
+/* El estilo de la página actual en el menú está en styles.css */
+
+/* ---------- Portada ---------- */
+.club-hero {
+  position: relative; overflow: hidden;
+  background: var(--cemento);
+  padding: clamp(40px, 6vw, 96px) var(--gutter) clamp(56px, 7vw, 112px);
+}
+.club-hero__techos { position: absolute; right: -140px; bottom: -220px; width: 760px; height: 760px; fill: var(--cemento-linea); pointer-events: none; }
+.club-hero__grilla { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 64px; }
+.club-hero__texto { flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.club-hero__logo { width: clamp(180px, 22vw, 260px); height: auto; }
+.club-hero__titulo {
+  font-weight: 900; font-size: clamp(38px, 5.4vw, 78px); line-height: .98; letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.club-hero__titulo span { color: var(--rojo); }
+.club-hero__bajada { font-size: clamp(17px, 1.4vw, 20px); line-height: 1.55; color: var(--grafito); max-width: 540px; }
+.club-hero__acciones { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 6px; }
+.club-hero__visual { flex: 1 1 420px; min-width: 0; display: flex; justify-content: center; }
+
+/* Las tarjetas (Tarjeta Club y tarjeta de pases) están en styles.css: se usan también en el inicio. */
+
+/* ---------- Cómo funciona ---------- */
+.club-paso__icono {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--rojo); color: var(--blanco);
+  display: flex; align-items: center; justify-content: center;
+}
+.club-paso__icono svg { width: 34px; height: 34px; }
+.club-paso__icono--amarillo { background: var(--amarillo); color: var(--negro); }
+
+.club-aviso {
+  display: flex; align-items: center; gap: 12px; align-self: flex-start;
+  background: var(--negro); color: var(--blanco); padding: 14px 20px; border-radius: var(--radio-sm);
+  font-weight: 700; font-size: 16px; line-height: 1.4;
+}
+.club-aviso svg { width: 26px; height: 26px; flex: none; stroke: var(--amarillo); }
+
+/* ---------- Niveles ---------- */
+.niveles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--gap); align-items: stretch; }
+.nivel {
+  background: var(--blanco); border-radius: var(--radio-md); padding: 28px;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.nivel__desde {
+  align-self: flex-start;
+  font-family: var(--font-cond); font-weight: 700; font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--rojo-profundo); border: 2px solid currentColor; border-radius: var(--radio-sm); padding: 4px 10px;
+}
+.nivel__nombre { font-weight: 900; font-size: 28px; line-height: 1.05; letter-spacing: -.01em; }
+.nivel__lista { display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.45; }
+.nivel__lista li { position: relative; padding-left: 28px; }
+.nivel__lista li::before {
+  content: ""; position: absolute; left: 0; top: 7px; width: 18px; height: 9px; background: var(--rojo);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%, 80% 100%, 50% 32%, 20% 100%);
+}
+.nivel__texto { font-size: 16px; line-height: 1.55; }
+
+.nivel--club { background: var(--amarillo); box-shadow: var(--sombra-bloque); }
+.nivel--club .nivel__desde { color: var(--negro); }
+.nivel--inversor { background: var(--negro); color: var(--blanco); }
+.nivel--inversor .nivel__desde { color: var(--amarillo); }
+.nivel--inversor .nivel__nombre { color: var(--amarillo); }
+
+/* ---------- Sorteo ---------- */
+.club-sorteo { background: var(--negro); color: var(--blanco); }
+.club-sorteo .antetitulo { color: var(--amarillo); }
+.club-sorteo .antetitulo svg { fill: var(--amarillo); }
+.club-sorteo__grilla { display: flex; flex-wrap: wrap; align-items: center; gap: 48px 72px; }
+.club-sorteo__foto { flex: 0 1 380px; position: relative; padding: 18px; }
+.club-sorteo__foto::before { content: ""; position: absolute; inset: 0; background: var(--amarillo); transform: rotate(-3deg); }
+.club-sorteo__foto img { position: relative; width: 100%; height: auto; border: 4px solid var(--negro); }
+.club-sorteo__texto { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.club-sorteo__bajada { font-size: 18px; line-height: 1.55; color: var(--cemento); max-width: 52ch; }
+.club-sorteo__datos { display: grid; grid-template-columns: auto 1fr; gap: 10px 20px; font-size: 18px; }
+.club-sorteo__datos dt { font-family: var(--font-cond); font-weight: 700; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: var(--amarillo); padding-top: 3px; }
+.club-sorteo__datos dd { font-weight: 800; }
+
+.club-sorteo__legal { font-size: 14px; color: var(--cemento); opacity: .85; }
+
+/* ---------- Profesionales ---------- */
+.club-pro { background: var(--amarillo); }
+.club-pro__grilla { display: flex; flex-wrap: wrap; align-items: center; gap: 40px 72px; }
+.club-pro__texto { flex: 2 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.club-pro .titulo span { color: var(--rojo-profundo); }
+.club-pro__bajada { font-size: 18px; line-height: 1.55; max-width: 56ch; }
+.club-pro .nivel__lista li::before { background: var(--negro); }
+.club-pro .antetitulo { color: var(--rojo-profundo); }
+.club-pro__dato {
+  flex: 1 1 280px; max-width: 420px; display: flex; flex-direction: column; align-items: center; gap: 28px;
+  background: var(--negro); color: var(--amarillo); padding: 40px 28px 52px; border-radius: var(--radio-md);
+}
+.club-pro__rotulo { font-family: var(--font-cond); font-weight: 800; font-size: 20px; letter-spacing: .08em; text-transform: uppercase; }
+.club-pro__dato .etiqueta-sombra { transform: scale(1.7); filter: drop-shadow(3px 3px 0 var(--rojo)); }
+
+/* ---------- Preguntas ---------- */
+.club-preguntas { display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-start; }
+.club-preguntas .encabezado__texto { flex: 1 1 300px; }
+.preguntas { flex: 2 1 520px; min-width: 0; }
+.pregunta { border-top: 3px solid var(--negro); }
+.pregunta:last-child { border-bottom: 3px solid var(--negro); }
+.pregunta summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 44px; padding: 18px 0;
+  font-weight: 800; font-size: 19px; line-height: 1.3;
+}
+.pregunta summary::-webkit-details-marker { display: none; }
+.pregunta summary::after {
+  content: ""; flex: none; width: 22px; height: 11px; background: var(--rojo);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%, 80% 100%, 50% 32%, 20% 100%);
+  transform: rotate(180deg); transition: transform .15s;
+}
+.pregunta[open] summary::after { transform: none; }
+.pregunta p { padding: 0 0 20px; font-size: 16px; line-height: 1.6; color: var(--grafito); max-width: 62ch; }
+
+/* ---------- Cierre ---------- */
+.club-cierre { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; }
+.club-cierre .titulo { max-width: 16ch; }
+.club-cierre__acciones { display: flex; flex-wrap: wrap; gap: 16px; }
+
+@media (max-width: 560px) {
+  .club-sorteo__foto { flex-basis: 100%; max-width: 320px; }
+  .nivel { padding: 22px; }
+}

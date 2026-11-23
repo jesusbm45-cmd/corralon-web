@@ -1,0 +1,91 @@
+/* Don Coco — página del Club en el sistema v3 (club.html). Usa v3.css; acá solo lo propio del Club. */
+
+/* Portada */
+.club3-hero__logo{width:clamp(200px,22vw,280px);height:auto}
+.club3-hero__titulo{font-size:clamp(56px,7.4vw,112px)}
+.club3-hero .hero__visual{display:grid}
+
+/* Niveles */
+.niveles3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.nivel3{background:var(--blanco);border:2px solid var(--negro);padding:clamp(22px,2.6vw,34px);display:grid;gap:14px;align-content:start}
+.nivel3 .lab{color:var(--rojo)}
+.nivel3__nombre{font-size:clamp(36px,3.6vw,52px)}
+.nivel3__lista{border-top:2px solid var(--negro)}
+.nivel3__lista li{padding:10px 0;border-bottom:1px solid rgba(20,20,20,.25);font-size:15px}
+.nivel3__texto{font-size:17px}
+.nivel3--club{background:var(--amarillo);box-shadow:8px 8px 0 var(--negro);transform:translateY(-8px)}
+.nivel3--club .lab{color:var(--negro)}
+.nivel3--negro{background:var(--negro);color:var(--blanco);border-color:var(--negro)}
+.nivel3--negro .lab{color:var(--amarillo)}
+.nivel3--negro b{color:var(--amarillo)}
+
+/* Lista Club: pestañas por rubro y tarjetas con foto, sin precios */
+#lista-club .encabezado .bajada{max-width:46ch}
+.lc-tabs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:thin;padding-bottom:6px;margin-bottom:20px}
+.lc-tab{flex:0 0 auto;font:700 18px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:14px 22px;border:2px solid var(--negro);background:var(--blanco);color:var(--negro);cursor:pointer}
+.lc-tab:hover{background:var(--amarillo)}
+.lc-tab[aria-selected="true"]{background:var(--negro);color:var(--blanco)}
+.lc-panel{position:relative}
+.lc-pista{margin:0;padding:4px 2px 12px;display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3 * 16px) / 4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.lc-pista::-webkit-scrollbar{display:none}
+.lc-card{scroll-snap-align:start;display:flex;flex-direction:column;background:var(--blanco);border:2px solid var(--negro);min-width:0}
+.lc-card__foto{position:relative;aspect-ratio:1;background:var(--blanco);border-bottom:2px solid var(--negro)}
+.lc-card__foto img{width:100%;height:100%;object-fit:contain;padding:7%}
+.lc-chip{position:absolute;top:12px;left:12px;z-index:1;background:var(--rojo);color:var(--blanco);font:700 14px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}
+.lc-card__marca{margin:16px 18px 0;font:700 13px/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:#6b665c}
+.lc-card__nombre{margin:6px 18px 0;font-size:17px;line-height:1.25;font-weight:700}
+.lc-card__detalle{margin:6px 18px 0;font-size:14px}
+.lc-card__btn{margin:16px 18px 18px;margin-top:auto;display:block;text-align:center;background:var(--amarillo);color:var(--negro);font:800 17px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:14px 12px;border:2px solid var(--negro)}
+.lc-card__detalle + .lc-card__btn{margin-top:18px}
+.lc-card__btn:hover{background:var(--negro);color:var(--amarillo)}
+.lc-flecha{position:absolute;top:36%;z-index:2;width:52px;height:52px;border:2px solid var(--negro);background:var(--amarillo);font-size:22px;font-weight:700;cursor:pointer}
+.lc-flecha:hover{background:var(--negro);color:var(--amarillo)}
+.lc-flecha--izq{left:-26px}.lc-flecha--der{right:-26px}
+.lc-flecha[disabled]{opacity:0;pointer-events:none}
+
+/* Profesionales */
+.club3-pro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,6vw,96px);align-items:center}
+.club3-pro__texto{display:grid;gap:22px;min-width:0}
+.club3-lista{border-top-color:var(--blanco)}
+.club3-lista li{border-bottom-color:var(--blanco)}
+.club3-lista li span{color:var(--amarillo)}
+.club3-lista b{color:var(--amarillo)}
+.club3-pro__dato{background:var(--amarillo);color:var(--negro);padding:clamp(28px,4vw,48px);display:grid;gap:12px;justify-items:start;transform:rotate(-2deg);box-shadow:10px 10px 0 var(--rojo)}
+.club3-pro__monto{font-size:clamp(72px,9vw,140px);line-height:.85}
+
+/* Sorteo */
+.club3-sorteo{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:center}
+.club3-sorteo__foto img{width:100%;height:auto;border:2px solid var(--negro);box-shadow:10px 10px 0 var(--amarillo)}
+.club3-sorteo__texto{display:grid;gap:20px;min-width:0}
+.club3-datos{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;border-top:2px solid var(--negro);padding-top:18px;margin:0}
+.club3-datos dt{color:var(--rojo);padding-top:3px}
+.club3-datos dd{margin:0;font-weight:700}
+.club3-sorteo .nota{margin-top:0}
+
+/* Preguntas */
+.club3-preguntas{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.club3-preguntas header{display:grid;gap:14px}
+.club3-faq{border-top:2px solid var(--negro)}
+.club3-q{border-bottom:2px solid var(--negro)}
+.club3-q summary{list-style:none;cursor:pointer;padding:18px 44px 18px 0;font-weight:700;font-size:17px;position:relative}
+.club3-q summary::-webkit-details-marker{display:none}
+.club3-q summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:900 30px/1 var(--display);color:var(--rojo)}
+.club3-q[open] summary::after{content:"−"}
+.club3-q p{padding:0 0 20px;max-width:64ch}
+
+/* Cierre */
+.club3-cierre{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.club3-cierre .titulo{max-width:14ch}
+
+@media (max-width:960px){
+  .niveles3,.club3-pro,.club3-sorteo,.club3-preguntas{grid-template-columns:1fr}
+  .nivel3--club{transform:none}
+  .lc-pista{grid-auto-columns:calc((100% - 2 * 16px) / 3)}
+  .club3-sorteo__foto{max-width:420px}
+}
+@media (max-width:700px){
+  .lc-pista{grid-auto-columns:68%}
+  .lc-flecha{display:none}
+  .lc-tab{font-size:16px;padding:12px 16px}
+  .club3-pro__dato{transform:none}
+}

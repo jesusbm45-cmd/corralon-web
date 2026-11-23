@@ -1,0 +1,43 @@
+/* ==========================================================
+   Don Coco — Tokens de marca
+   Fuente: manual de identidad (nov. 2026). No inventar colores
+   nuevos: si hace falta uno, se agrega acá primero.
+   ========================================================== */
+
+:root {
+  /* Color de marca */
+  --amarillo: #FFE500;        /* Pantone 102 C — insignia, precios, destacados */
+  --amarillo-suave: #FFF4A3;  /* fondos de aviso, hover sobre blanco */
+  --rojo: #E30613;            /* Pantone 2347 C — acción y fondo de marca */
+  --rojo-profundo: #B8000F;   /* hover de rojo; texto rojo chico sobre claro */
+
+  /* Neutros */
+  --negro: #141414;           /* "negro obra": texto principal, footer */
+  --grafito: #45413C;         /* texto secundario */
+  --hormigon: #8C877F;        /* bordes y divisores (no para texto) */
+  --cemento: #F2EEE7;         /* superficie alternativa */
+  --cemento-linea: #E0D8CB;   /* juntas del patrón de ladrillos */
+  --blanco: #FFFFFF;
+
+  /* Estado */
+  --verde-stock: #1F7A3A;     /* solo "En stock", siempre con la palabra */
+
+  /* Tipografía */
+  --font-sans: "Montserrat", "Gotham", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-cond: "Barlow Condensed", "Arial Narrow", sans-serif;
+
+  /* Forma */
+  --radio-sm: 4px;            /* botones, inputs, chips */
+  --radio-md: 8px;            /* tarjetas y fotos */
+  --radio-pill: 999px;        /* solo botón flotante de WhatsApp */
+  --sombra-bloque: 6px 6px 0 var(--negro);   /* firma de la marca: nunca difuminada */
+  --sombra-suave: 0 10px 30px rgba(20, 20, 20, .12);
+  --sombra-flotante: 0 24px 60px rgba(0, 0, 0, .45);  /* tarjetas sobre foto oscura */
+  --velo: rgba(20, 20, 20, .72);  /* oscurece la foto del hero (parejo, nunca degradé) */
+
+  /* Espaciado y layout */
+  --ancho: 1312px;
+  --gutter: clamp(16px, 4vw, 64px);
+  --seccion: clamp(56px, 7vw, 96px);
+  --gap: 24px;
+}

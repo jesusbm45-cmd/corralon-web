@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <ellipse cx="38" cy="87" rx="26" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Cable -->
+  <path fill="none" stroke="#141414" stroke-width="2.6" d="M38 80c0 8-12 3-16 7"/>
+  <!-- Boquilla -->
+  <path fill="#8C877F" d="M56 29h23v18H56z"/>
+  <path fill="#45413C" d="M56 41h23v6H56z"/>
+  <path fill="#45413C" d="M78 26.5h4.5v23H78z"/>
+  <!-- Empuñadura y gatillo -->
+  <path fill="#141414" d="M28 50h20l-4 32H30z"/>
+  <path fill="#45413C" d="M47.5 54h5.5l-1 9h-5.5z"/>
+  <!-- Cuerpo -->
+  <rect x="6" y="22" width="52" height="32" rx="11" fill="#E30613"/>
+  <path fill="#B8000F" d="M6 42h52v1a11 11 0 0 1-11 11H17A11 11 0 0 1 6 43Z"/>
+  <path fill="none" stroke="#141414" stroke-width="2" d="M15 30v14M19 30v14M23 30v14"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M31 26.5h19"/>
+  <!-- Aire caliente -->
+  <path fill="none" stroke="#E30613" stroke-width="2.2" d="M86 27c3.5 2.2 3.5 4.8 0 7M90 34.500c3.5 2.2 3.5 4.800 0 7M86 42c3.500 2.2 3.500 4.800 0 7"/>
+</svg>

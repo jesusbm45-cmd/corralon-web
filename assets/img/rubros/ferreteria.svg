@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="cuerpo"><rect x="12" y="42" width="38" height="38" rx="5"/></clipPath>
+  </defs>
+  <ellipse cx="50" cy="85" rx="40" ry="3.5" fill="#141414" fill-opacity=".15"/>
+  <!-- Candado -->
+  <path fill="none" stroke="#8C877F" stroke-width="6" d="M20 46V30a11 11 0 0 1 22 0v16"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.2" d="M17.8 44V30A13.2 13.2 0 0 1 31 16.8"/>
+  <g clip-path="url(#cuerpo)">
+    <path fill="#E30613" d="M12 42h38v38H12z"/>
+    <path fill="#B8000F" d="M42 42h8v38h-8z"/>
+  </g>
+  <path fill="#FFFFFF" d="M16 47h2.6v28H16z"/>
+  <circle cx="31" cy="57" r="4.2" fill="#141414"/>
+  <path fill="#141414" d="M29.2 59h3.6l1 9h-5.6z"/>
+  <!-- Bulón -->
+  <g transform="rotate(-50 64 60)">
+    <path fill="#45413C" d="M40 51h10v18H40z"/>
+    <path fill="#8C877F" d="M40 55h10v10H40z"/>
+    <path fill="#8C877F" d="M50 50h2.5v20H50z"/>
+    <path fill="#8C877F" d="M52.5 55.5H84v9H52.5z"/>
+    <path fill="#45413C" d="M52.5 60.5H84v4H52.5z"/>
+    <path fill="none" stroke="#45413C" stroke-width="1.2" d="M62 55.5l-2 9M65 55.5l-2 9M68 55.5l-2 9M71 55.5l-2 9M74 55.5l-2 9M77 55.5l-2 9M80 55.5l-2 9M83 55.5l-2 9"/>
+    <path fill="#8C877F" d="M84 55.5l3 2v5l-3 2z"/>
+  </g>
+  <!-- Tuerca -->
+  <path fill="#45413C" d="M89 75l-4.5 7.8h-9L71 75l4.5-7.8h9z"/>
+  <path fill="#8C877F" d="M89 72l-4.5 7.8h-9L71 72l4.5-7.8h9z"/>
+  <circle cx="80" cy="72" r="4" fill="#141414"/>
+  <circle cx="80" cy="72" r="4" fill="none" stroke="#45413C" stroke-width="1.2"/>
+</svg>

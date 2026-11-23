@@ -1,987 +1,348 @@
 <!doctype html>
-<html lang="es-AR" data-tema="oscuro">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Don Coco · Corralón y Ferretería en Salta · Nueva web en obra</title>
-  <meta name="description" content="Corralón y ferretería en Barrio 31 de Octubre, Zona Sur de Salta. Estamos construyendo la nueva web: mientras tanto, pedí por WhatsApp al 387 474-2440. Lunes a viernes de 8:30 a 18 y sábados de 8:30 a 14.">
-  <meta name="theme-color" content="#E30613">
+  <title>Don Coco — Corralón y Ferretería en Salta</title>
+  <meta name="description" content="Materiales de construcción, ferretería y pinturería en Salta. Pedí por WhatsApp sin hacer fila: retirás en el corralón o te lo llevamos a la obra.">
+  <meta name="theme-color" content="#141414">
   <link rel="canonical" href="https://cdoncoco.com/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
-  <meta property="og:title" content="Don Coco · Corralón y Ferretería">
-  <meta property="og:description" content="Estamos construyendo la nueva web. Mientras tanto, pedí por WhatsApp.">
+  <meta property="og:title" content="Don Coco — Corralón y Ferretería">
+  <meta property="og:description" content="Todo para tu obra, en un solo lugar. Pedí por WhatsApp.">
   <meta property="og:url" content="https://cdoncoco.com/">
   <meta property="og:image" content="https://cdoncoco.com/assets/img/og-don-coco.jpg">
-  <link rel="icon" href="/assets/img/iconos/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/assets/img/iconos/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/img/iconos/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="assets/img/iconos/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/iconos/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Montserrat:wght@500;600;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/v3.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HardwareStore",
-    "name": "Don Coco — Corralón y Ferretería",
-    "url": "https://cdoncoco.com/",
-    "logo": "https://cdoncoco.com/assets/img/iconos/icon-512.png",
-    "image": "https://cdoncoco.com/assets/img/og-don-coco.jpg",
-    "telephone": "+5493874742440",
-    "address": { "@type": "PostalAddress", "streetAddress": "Barrio 31 de Octubre, Mza. 1B Lote 1", "addressLocality": "Salta", "addressRegion": "Salta", "addressCountry": "AR" },
-    "openingHours": "Mo-Fr 08:30-18:00, Sa 08:30-14:00",
-    "sameAs": ["https://instagram.com/corralon.doncoco", "https://facebook.com/doncoco.corralonyferreteria"]
-  }
+  {"@context":"https://schema.org","@type":"HardwareStore","name":"Don Coco — Corralón y Ferretería","url":"https://cdoncoco.com/",
+   "telephone":"+5493874742440","address":{"@type":"PostalAddress","streetAddress":"Barrio 31 de Octubre, Mza. 1B Lote 1","addressLocality":"Salta","addressRegion":"Salta","addressCountry":"AR"},
+   "openingHours":"Mo-Fr 08:30-18:00, Sa 08:30-14:00","sameAs":["https://instagram.com/corralon.doncoco","https://facebook.com/doncoco.corralonyferreteria"]}
   </script>
-  <style>
-    /* ---------- Marca Don Coco (manual de identidad) ---------- */
-    :root {
-      --amarillo: #FFE500;
-      --rojo: #E30613;
-      --rojo-profundo: #B8000F;
-      --negro: #141414;
-      --grafito: #45413C;
-      --hormigon: #8C877F;
-      --cemento: #F2EEE7;
-      --blanco: #FFFFFF;
-      --font-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --font-cond: "Barlow Condensed", "Arial Narrow", sans-serif;
-      --obra: cubic-bezier(0.16, 1, 0.3, 1);      /* salida rápida y frenada suave: la de toda la página */
-      --vaiven: cubic-bezier(0.45, 0, 0.55, 1);   /* ida y vuelta, nunca lineal */
-      --gutter: clamp(20px, 5vw, 72px);
-    }
-    /* FONDO: para probar la versión clara, cambiar data-tema="oscuro" por data-tema="claro" en la etiqueta <html>. */
-    html[data-tema="oscuro"] {
-      --fondo: #141414; --linea: rgba(255, 255, 255, .055);
-      --texto: #FFFFFF; --texto-2: #D8D2C8; --rotulo: var(--amarillo); --borde: rgba(255, 255, 255, .16);
-      --btn-fondo: var(--amarillo); --btn-texto: var(--negro); --btn-hover: #FFF06A;
-      --linea-btn: #FFFFFF; --linea-btn-hover-texto: var(--negro);
-      --chip-fondo: rgba(255, 255, 255, .09); --chip-texto: #B9B2A7; --chip-listo-fondo: #FFFFFF; --chip-listo-texto: var(--negro);
-    }
-    html[data-tema="claro"] {
-      --fondo: #FFFFFF; --linea: #EDE8E0;
-      --texto: #141414; --texto-2: #45413C; --rotulo: var(--rojo-profundo); --borde: #E0D8CB;
-      --btn-fondo: var(--rojo); --btn-texto: #FFFFFF; --btn-hover: var(--rojo-profundo);
-      --linea-btn: #141414; --linea-btn-hover-texto: var(--amarillo);
-      --chip-fondo: #F2EEE7; --chip-texto: #8C877F; --chip-listo-fondo: var(--negro); --chip-listo-texto: #FFFFFF;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; background: var(--fondo); }
-    body {
-      margin: 0; min-height: 100vh; min-height: 100svh;
-      font-family: var(--font-sans); font-weight: 500; color: var(--texto);
-      background-color: var(--fondo);
-      /* Plano técnico: grilla de 40 px que se desplaza despacio */
-      background-image: linear-gradient(var(--linea) 1px, transparent 1px), linear-gradient(90deg, var(--linea) 1px, transparent 1px);
-      background-size: 40px 40px;
-      animation: grilla 24s var(--vaiven) infinite alternate;
-      overflow-x: hidden;
-      display: flex; flex-direction: column;
-    }
-    @keyframes grilla { from { background-position: 0 0, 0 0; } to { background-position: 0 120px, 80px 0; } }
-    a { color: inherit; }
-    :focus-visible { outline: 3px solid var(--amarillo); outline-offset: 3px; }
-
-    /* ---------- Aviso de campaña (se va solo con data-hasta) ---------- */
-    .aviso { margin: 0; background: #000; color: var(--amarillo); text-align: center; padding: 9px var(--gutter); font-size: 14px; font-weight: 700; }
-    .aviso a { color: var(--amarillo); text-underline-offset: 3px; }
-
-    /* ---------- Encabezado: la barra roja del sitio, con el logo adentro ---------- */
-    .cabecera { background: var(--rojo); }
-    .cabecera__barra { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1440px; margin: 0 auto; padding: 14px var(--gutter); }
-    .cabecera__logo { display: block; line-height: 0; }
-    .logo { display: block; width: clamp(150px, 17vw, 228px); height: auto; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 10px; flex: none;
-      background: var(--negro); color: #FFFFFF; border-radius: 4px; padding: 8px 14px 8px 12px;
-      font-family: var(--font-cond); font-weight: 800; font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
-    }
-    .chip__luz { width: 10px; height: 10px; border-radius: 50%; background: var(--amarillo); animation: baliza 1.6s var(--vaiven) infinite; }
-    @keyframes baliza { 0% { box-shadow: 0 0 0 0 rgba(255, 229, 0, .65); } 70% { box-shadow: 0 0 0 9px rgba(255, 229, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 229, 0, 0); } }
-
-    /* ---------- Portada ---------- */
-    .portada {
-      flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.18fr);
-      align-items: center; gap: 24px clamp(16px, 3vw, 48px);
-      padding: clamp(24px, 4vw, 48px) var(--gutter) clamp(28px, 4vw, 48px);
-      max-width: 1440px; width: 100%; margin: 0 auto;
-    }
-    .texto { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
-    .antetitulo { display: flex; align-items: center; gap: 10px; margin: 0; font-family: var(--font-cond); font-weight: 800; font-size: 16px; letter-spacing: .16em; text-transform: uppercase; color: var(--rotulo); }
-    .antetitulo svg { width: 28px; height: 14px; fill: currentColor; flex: none; }
-    .titulo { margin: 0; font-weight: 900; text-transform: uppercase; letter-spacing: -0.04em; line-height: .96; font-size: clamp(36px, 4.4vw, 68px); color: var(--texto); }
-    html[data-tema="oscuro"] .titulo__marca { color: var(--amarillo); }
-    html[data-tema="claro"] .titulo__marca { background: var(--amarillo); padding: 0 .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-    .titulo__punto { color: var(--rojo); }
-    .bajada { margin: 0; max-width: 540px; font-size: clamp(17px, 1.4vw, 20px); line-height: 1.6; color: var(--texto-2); }
-    .acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px;
-      border-radius: 4px; border: 2px solid transparent; text-decoration: none;
-      font-family: var(--font-cond); font-weight: 800; font-size: 19px; letter-spacing: .06em; text-transform: uppercase;
-      transition: background-color .35s var(--obra), color .35s var(--obra), transform .45s var(--obra);
-    }
-    .btn svg { width: 22px; height: 22px; flex: none; }
-    .btn--principal { background: var(--btn-fondo); color: var(--btn-texto); }
-    .btn--principal:hover { background: var(--btn-hover); transform: translateY(-2px); }
-    .btn--linea { border-color: var(--linea-btn); color: var(--linea-btn); background: transparent; }
-    .btn--linea:hover { background: var(--linea-btn); color: var(--linea-btn-hover-texto); transform: translateY(-2px); }
-    .datos { display: grid; grid-template-columns: auto 1fr; gap: 8px 18px; margin: 10px 0 0; padding-top: 20px; border-top: 1px solid var(--borde); max-width: 560px; font-size: 15px; line-height: 1.45; }
-    .datos dt { font-family: var(--font-cond); font-weight: 800; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--rotulo); padding-top: 2px; }
-    .datos dd { margin: 0; font-weight: 600; }
-    .datos a { text-decoration: none; border-bottom: 2px solid var(--amarillo); }
-    .datos a:hover { border-color: var(--rojo); }
-
-    /* ---------- Escena 3D ---------- */
-    .obra { position: relative; min-width: 0; aspect-ratio: 6 / 5; max-height: 78vh; width: 100%; justify-self: center; }
-    .obra canvas { position: absolute; inset: 0; width: 100% !important; height: 100% !important; display: block; }
-    .obra__respaldo { position: absolute; inset: 12% 14%; width: 72%; height: 76%; display: none; }
-    .obra.sin-3d .obra__respaldo { display: block; }
-    .fases { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); display: flex; gap: 6px; margin: 0; padding: 0; list-style: none; white-space: nowrap; }
-    .fase {
-      font-variant-numeric: tabular-nums;
-      font-family: var(--font-cond); font-weight: 800; font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
-      padding: 5px 10px; border-radius: 4px; background: var(--chip-fondo); color: var(--chip-texto);
-      transition: background-color .5s var(--obra), color .5s var(--obra);
-    }
-    .fase.is-activa { background: var(--amarillo); color: var(--negro); }
-    .fase.is-lista { background: var(--chip-listo-fondo); color: var(--chip-listo-texto); }
-
-    /* ---------- Cinta de obra y pie ---------- */
-    .cinta { height: 16px; background: repeating-linear-gradient(-47deg, var(--amarillo) 0 18px, var(--negro) 18px 36px); background-size: 200% 100%; animation: cinta 6s var(--vaiven) infinite alternate; }
-    @keyframes cinta { from { background-position: 0 0; } to { background-position: 98px 0; } }
-    .pie { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 16px var(--gutter) calc(16px + env(safe-area-inset-bottom)); background: #000; color: #B9B2A7; font-size: 13px; }
-    .pie a { color: var(--amarillo); text-decoration: none; }
-    .pie a:hover { text-decoration: underline; }
-
-    /* Entrada escalonada (la hace GSAP; sin JS se ve todo) */
-    .js [data-aparece] { opacity: 0; transform: translateY(28px); }
-
-    /* ---------- Celular y tablet ---------- */
-    @media (max-width: 900px) {
-      .portada { grid-template-columns: 1fr; }
-      .obra { order: -1; aspect-ratio: 4 / 3; max-height: none; }
-      .titulo { font-size: clamp(34px, 10vw, 60px); }
-    }
-    @media (max-width: 480px) {
-      .chip { font-size: 13px; padding: 7px 10px; gap: 8px; }
-      .logo { width: 138px; }
-      .cabecera__barra { padding-block: 12px; }
-      .btn { width: 100%; }
-      .fase { font-size: 12px; padding: 4px 8px; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      body, .cinta, .chip__luz { animation: none; }
-      .js [data-aparece] { opacity: 1; transform: none; }
-    }
-  </style>
 </head>
 <body>
-<svg aria-hidden="true" style="display:none">
-  <symbol id="i-techo" viewBox="0 0 40 20"><path d="M0 20 20 0l20 20h-7L20 7 7 20Z"/></symbol>
-  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.9-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
-</svg>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 
-<!-- AVISO BLACK COCO: se oculta solo desde el 29/11 (data-hasta). -->
-<p class="aviso" data-hasta="2026-11-28">Jueves 26 al sábado 28/11 · <strong>Black Coco</strong>: hasta 23% OFF en 5 marcas. <a href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20consultar%20por%20Black%20Coco" data-wa>Consultá por WhatsApp</a></p>
+<div class="topbar">
+  <div class="contenedor topbar__fila">
+    <a class="topbar__aviso" href="black-coco.html" data-hasta="2026-11-28"><span class="lab">Black Coco</span><span>Jueves 26 al sábado 28/11 · hasta 23% en 5 marcas →</span></a>
+    <span class="topbar__aviso" data-desde="2026-11-29"><span>Envío a domicilio: te lo llevamos a la obra</span></span>
+    <span class="topbar__datos"><span>Lun a vie 8:30 a 18 · Sáb 8:30 a 14</span><a href="tel:+5493874742440">387 474-2440</a></span>
+  </div>
+</div>
 
-<header class="cabecera">
-  <div class="cabecera__barra">
-    <a class="cabecera__logo" href="./" aria-label="Don Coco, corralón y ferretería">
-      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-260 -277 5814 1392" role="img" aria-label="Don Coco"><title>Don Coco</title><g fill="#FFE500"><path d="M-0.50 -0.37L208.38 -0.37C265.52 -0.11 320.86 8.90 372.00 35.50C415.92 58.35 453.31 93.16 477.13 136.75C498.39 175.67 507.45 219.40 507.72 263.52C508.11 328.93 491.31 388.53 447.83 438.54C402.87 490.24 337.98 519.74 270.94 529.45C250.19 532.45 229.32 533.48 208.38 533.58L-0.50 533.58ZM147.50 403.90L206.00 403.90C238.94 403.77 272.06 398.31 300.16 380.12C341.49 353.38 356.04 312.39 355.62 264.78C355.33 230.79 345.95 198.48 322.11 173.44C291.39 141.16 249.07 131.69 206.00 131.52L147.50 131.52ZM566.66 267.62C567.28 226.16 574.80 187.32 592.46 149.61C604.46 123.99 620.51 100.31 639.81 79.63C753.68 -42.40 961.49 -41.05 1073.45 82.87C1094.38 106.03 1111.26 132.78 1123.11 161.67C1136.67 194.73 1143.44 230.30 1143.62 266.02C1143.80 301.84 1137.45 337.55 1124.21 370.87C1112.67 399.88 1096.08 426.81 1075.40 450.20C964.00 576.19 754.43 578.45 639.81 455.62C620.51 434.94 604.46 411.26 592.46 385.64C574.80 347.93 567.28 309.09 566.66 267.62ZM718.74 267.64C719.06 291.39 723.55 314.67 733.99 336.13C745.29 359.34 762.91 379.35 784.92 392.91C831.02 421.30 892.91 418.57 936.18 386.01C972.80 358.45 992.05 313.77 992.24 268.50C992.44 223.12 973.77 178.19 937.33 150.14C894.00 116.80 831.46 113.71 784.92 142.37C762.91 155.93 745.29 175.94 733.99 199.15C723.55 220.60 719.06 243.89 718.74 267.64ZM1725.97 534.73L1596.00 534.73L1367.50 243.70L1367.50 534.94L1221.03 534.94L1221.03 -0.01L1359.00 -0.01L1579.41 280.30L1579.41 0.53L1725.97 0.53Z"/><path d="M3503.96 92.20C3461.92 37.40 3404.82 1.71 3336.97 -11.72C3287.97 -21.42 3235.81 -19.34 3187.95 -4.88C3137.95 10.23 3092.58 39.36 3058.75 79.23C2979.01 173.20 2972.39 318.65 3041.48 420.40C3095.48 499.92 3184.66 540.67 3279.59 539.81C3323.15 539.42 3366.52 530.13 3405.78 511.06C3448.24 490.45 3483.12 459.84 3510.24 421.36L3390.23 336.98C3378.90 357.56 3363.05 375.19 3342.68 387.14C3298.40 413.13 3238.08 409.36 3197.93 377.22C3165.78 351.50 3149.22 311.43 3147.24 270.94C3145.08 226.86 3157.91 181.45 3190.91 150.71C3230.14 114.17 3292.67 107.28 3339.57 132.97C3360.24 144.29 3376.57 161.40 3388.43 181.62ZM3537.66 267.62C3538.28 226.16 3545.80 187.32 3563.46 149.61C3575.46 123.99 3591.51 100.31 3610.81 79.63C3724.68 -42.40 3932.49 -41.05 4044.45 82.87C4065.38 106.03 4082.26 132.78 4094.11 161.67C4107.67 194.73 4114.44 230.30 4114.62 266.02C4114.80 301.84 4108.45 337.55 4095.21 370.87C4083.67 399.88 4067.08 426.81 4046.40 450.20C3935.00 576.19 3725.43 578.45 3610.81 455.62C3591.51 434.94 3575.46 411.26 3563.46 385.64C3545.80 347.93 3538.28 309.09 3537.66 267.62ZM3689.74 267.64C3690.06 291.39 3694.55 314.67 3704.99 336.13C3716.29 359.34 3733.91 379.35 3755.92 392.91C3802.02 421.30 3863.91 418.57 3907.18 386.01C3943.80 358.45 3963.05 313.77 3963.24 268.50C3963.44 223.12 3944.77 178.19 3908.33 150.14C3865.00 116.80 3802.46 113.71 3755.92 142.37C3733.91 155.93 3716.29 175.94 3704.99 199.15C3694.55 220.60 3690.06 243.89 3689.74 267.64ZM4683.96 92.20C4641.92 37.40 4584.82 1.71 4516.97 -11.72C4467.97 -21.42 4415.81 -19.34 4367.95 -4.88C4317.95 10.23 4272.58 39.36 4238.75 79.23C4159.01 173.20 4152.39 318.65 4221.48 420.40C4275.48 499.92 4364.66 540.67 4459.59 539.81C4503.15 539.42 4546.52 530.13 4585.78 511.06C4628.24 490.45 4663.12 459.84 4690.24 421.36L4570.23 336.98C4558.90 357.56 4543.05 375.19 4522.68 387.14C4478.40 413.13 4418.08 409.36 4377.93 377.22C4345.78 351.50 4329.22 311.43 4327.24 270.94C4325.08 226.86 4337.91 181.45 4370.91 150.71C4410.14 114.17 4472.67 107.28 4519.57 132.97C4540.24 144.29 4556.57 161.40 4568.43 181.62ZM4716.66 267.62C4717.28 226.16 4724.80 187.32 4742.46 149.61C4754.46 123.99 4770.51 100.31 4789.81 79.63C4903.68 -42.40 5111.49 -41.05 5223.45 82.87C5244.38 106.03 5261.26 132.78 5273.11 161.67C5286.67 194.73 5293.44 230.30 5293.62 266.02C5293.80 301.84 5287.45 337.55 5274.21 370.87C5262.67 399.88 5246.08 426.81 5225.40 450.20C5114.00 576.19 4904.43 578.45 4789.81 455.62C4770.51 434.94 4754.46 411.26 4742.46 385.64C4724.80 347.93 4717.28 309.09 4716.66 267.62ZM4868.74 267.64C4869.06 291.39 4873.55 314.67 4883.99 336.13C4895.29 359.34 4912.91 379.35 4934.92 392.91C4981.02 421.30 5042.91 418.57 5086.18 386.01C5122.80 358.45 5142.05 313.77 5142.24 268.50C5142.44 223.12 5123.77 178.19 5087.33 150.14C5044.00 116.80 4981.46 113.71 4934.92 142.37C4912.91 155.93 4895.29 175.94 4883.99 199.15C4873.55 220.60 4869.06 243.89 4868.74 267.64Z"/></g><g fill="#FFE500"><path d="M1870.00 536.00L1938.00 463.39L1938.00 170.00L2028.00 170.00L2028.00 367.30L2372.00 0.00L2874.00 536.00L2751.00 536.00L2372.00 131.33L1993.00 536.00Z"/><path d="M2179.50 344.40L2255.48 344.40C2287.30 344.56 2318.85 353.81 2340.10 378.76C2354.01 395.10 2360.65 415.84 2360.97 437.12C2361.53 474.20 2345.19 505.40 2311.58 522.43C2294.16 531.27 2274.87 534.46 2255.48 534.55L2179.50 534.55ZM2232.50 488.71L2251.00 488.71C2266.34 488.66 2282.31 485.76 2293.73 474.70C2303.18 465.54 2306.59 453.02 2306.61 440.16C2306.63 424.54 2302.06 410.49 2288.95 401.06C2277.90 393.12 2264.30 391.09 2251.00 391.04L2232.50 391.04ZM2564.31 379.62C2549.71 360.64 2529.05 347.58 2505.56 342.72C2487.87 339.05 2469.00 339.74 2451.70 344.96C2408.00 358.14 2381.16 398.05 2382.37 443.19C2382.87 461.82 2388.28 480.19 2398.59 495.77C2417.39 524.20 2449.95 539.61 2483.65 539.47C2499.19 539.40 2514.67 536.17 2528.72 529.45C2543.82 522.22 2556.51 511.25 2566.22 497.67L2523.71 467.19C2509.98 491.88 2477.45 499.34 2455.09 481.46C2443.63 472.30 2437.65 458.04 2436.90 443.60C2436.09 427.89 2440.67 411.70 2452.36 400.68C2473.74 380.53 2507.99 386.32 2522.91 411.15Z"/></g><path fill="#FFFFFF" d="M848.42 728.70C836.43 713.49 819.52 703.26 800.46 699.69C786.41 697.07 771.49 697.75 757.82 701.98C723.11 712.70 702.19 744.35 703.08 780.22C703.46 795.57 707.97 810.70 716.65 823.41C731.76 845.53 757.39 857.33 783.85 857.31C796.34 857.30 808.79 854.83 820.13 849.51C832.41 843.74 842.73 834.87 850.58 823.84L815.89 799.74C805.10 819.16 779.13 825.08 761.44 811.08C752.38 803.91 747.67 792.71 746.96 781.36C746.17 768.67 749.54 755.44 758.94 746.42C775.82 730.23 803.59 734.80 815.35 754.61ZM901.92 777.64C902.10 765.96 904.32 754.56 909.30 743.94C938.72 681.17 1035.51 683.54 1061.22 748.16C1064.89 757.38 1066.72 767.27 1066.77 777.18C1066.82 787.41 1065.01 797.61 1061.22 807.12C1035.51 871.75 938.72 874.12 909.30 811.34C904.32 800.72 902.10 789.32 901.92 777.64ZM945.44 777.65C945.53 784.45 946.80 791.11 949.78 797.25C960.26 818.84 988.13 826.08 1007.48 811.50C1017.95 803.61 1023.40 790.83 1023.46 777.90C1023.51 764.94 1018.22 752.08 1007.81 744.06C988.49 729.16 960.33 736.32 949.78 758.05C946.80 764.20 945.53 770.86 945.44 777.65ZM1225.51 854.24L1193.28 807.72L1175.00 808.56L1175.00 853.35C1162.66 856.02 1146.61 855.45 1134.00 853.80C1130.76 838.21 1133.00 812.99 1133.00 796.06C1133.00 765.85 1130.96 731.69 1133.42 702.03C1148.62 700.43 1201.95 700.24 1217.37 701.66C1224.38 702.30 1232.02 703.87 1238.45 706.78C1267.74 720.08 1277.56 754.64 1260.62 781.94C1255.13 790.78 1246.38 795.42 1238.31 801.15L1272.11 853.44C1259.02 856.39 1239.51 854.95 1225.51 854.24ZM1175.03 738.68L1175.03 773.66C1186.37 775.53 1212.69 777.28 1221.37 768.30C1229.25 760.17 1226.64 745.56 1216.64 740.54C1206.91 735.65 1185.26 736.38 1175.03 738.68ZM1472.50 854.47L1425.68 854.47L1394.03 807.60L1375.98 807.60L1375.98 853.82C1362.89 855.31 1346.76 856.09 1333.99 853.36L1333.99 702.58C1345.18 700.05 1358.78 701.50 1370.65 701.50C1394.60 701.50 1422.24 697.52 1444.18 709.20C1469.75 722.81 1477.39 760.20 1460.17 783.41C1454.38 791.20 1446.74 795.62 1438.91 800.92C1445.24 814.75 1469.43 843.32 1472.76 852.16C1474.77 857.50 1470.36 847.36 1472.50 854.47ZM1376.04 737.82L1376.04 773.63C1386.31 775.40 1408.02 776.60 1417.50 771.49C1427.95 765.85 1429.56 749.42 1419.83 742.30C1408.74 734.19 1388.91 737.13 1376.04 737.82ZM1689.43 854.10L1646.50 854.10L1634.69 828.00L1631.50 826.54L1576.50 826.54L1562.50 853.61L1520.92 853.61L1586.20 700.50L1625.73 700.50ZM1619.50 792.97L1620.72 790.00L1604.50 752.53L1588.50 792.97ZM1865.11 853.63L1750.53 853.63L1750.53 702.50L1792.21 702.50L1792.21 817.13L1865.11 817.13ZM1913.92 777.64C1914.10 765.96 1916.32 754.56 1921.30 743.94C1950.72 681.17 2047.51 683.54 2073.22 748.16C2076.89 757.38 2078.72 767.27 2078.77 777.18C2078.82 787.41 2077.01 797.61 2073.22 807.12C2047.51 871.75 1950.72 874.12 1921.30 811.34C1916.32 800.72 1914.10 789.32 1913.92 777.64ZM1957.44 777.65C1957.53 784.45 1958.80 791.11 1961.78 797.25C1972.26 818.84 2000.13 826.08 2019.48 811.50C2029.95 803.61 2035.40 790.83 2035.46 777.90C2035.51 764.94 2030.22 752.08 2019.81 744.06C2000.49 729.16 1972.33 736.32 1961.78 758.05C1958.80 764.20 1957.53 770.86 1957.44 777.65ZM2288.14 853.53L2251.50 853.53L2187.59 772.70L2187.59 853.13L2145.53 853.13L2145.53 702.27L2185.50 702.27L2247.50 779.76L2247.50 702.03L2288.14 702.03ZM2550.39 853.59L2509.02 853.59L2509.02 797.00L2452.50 701.87L2498.79 701.87L2530.50 755.48L2562.23 702.00L2607.89 702.00L2550.39 797.00ZM2771.87 853.50L2771.87 702.03L2892.44 702.03L2892.44 739.00L2813.08 739.00L2814.50 764.71L2884.47 764.71L2884.47 799.47L2813.04 799.47L2813.04 853.50ZM3080.10 853.97L2957.50 853.97L2957.50 702.03L3078.47 702.03L3078.47 738.00L2998.08 738.00L2999.50 760.59L3071.47 760.59L3071.47 793.38L2999.50 793.38L2998.00 815.00L3000.50 818.72L3080.10 818.72ZM3238.67 853.81L3206.18 807.69C3199.93 807.46 3193.98 807.37 3188.00 808.62L3188.00 853.39C3175.65 855.94 3159.46 855.58 3146.96 853.79C3143.77 837.67 3146.00 812.43 3146.00 795.05C3146.00 764.31 3143.98 732.63 3146.41 702.08C3159.18 700.60 3219.80 700.19 3232.25 701.76C3239.23 702.63 3246.80 704.54 3253.15 707.59C3282.24 721.60 3291.65 760.32 3270.93 785.79C3265.57 792.37 3258.34 796.47 3251.39 800.89L3285.17 853.15C3274.34 856.16 3250.25 855.42 3238.67 853.81ZM3188.03 738.67L3188.03 773.65C3199.36 775.54 3225.69 777.27 3234.37 768.30C3241.67 760.75 3240.15 745.94 3230.59 740.92C3220.56 735.66 3198.68 736.30 3188.03 738.67ZM3439.63 853.79C3427.23 840.98 3418.36 822.88 3408.05 808.16C3401.63 807.31 3395.31 807.30 3389.00 808.62L3389.00 853.37C3376.09 855.92 3359.96 855.58 3347.01 853.65L3347.01 701.90C3367.95 700.42 3433.44 699.10 3450.80 706.07C3478.52 717.21 3491.67 750.95 3477.19 777.88C3471.28 788.89 3461.72 794.31 3452.30 801.30C3461.87 819.22 3477.88 835.17 3486.12 853.45C3474.75 855.98 3451.64 855.50 3439.63 853.79ZM3389.03 738.64L3389.03 773.63C3400.84 775.65 3428.48 777.49 3436.76 766.88C3439.63 763.19 3440.29 758.25 3439.86 753.71C3437.99 733.62 3402.90 735.66 3389.03 738.64ZM3671.10 853.63L3548.53 853.63L3548.53 702.03L3670.00 702.03L3670.00 738.09L3590.08 738.09L3591.50 760.71L3662.47 760.71L3662.47 793.26L3591.50 793.26L3590.00 814.00L3592.50 818.72L3671.10 818.72ZM3816.29 853.59L3775.21 853.59L3775.21 739.00L3729.90 739.00L3729.90 702.03L3862.47 702.03L3862.47 739.00L3816.29 739.00ZM4048.97 853.37L3926.53 853.37L3926.53 702.03L4047.47 702.03L4047.47 738.00L3967.08 738.00L3968.50 760.71L4040.47 760.71L4040.47 793.38L3968.50 793.38L3967.00 815.00L3969.50 818.72L4048.97 818.72ZM4254.50 854.46L4207.77 854.46L4176.26 807.56L4157.98 807.56L4157.98 854.46L4116.01 854.46L4116.01 702.09C4129.49 700.62 4188.23 700.13 4201.22 701.75C4209.37 702.77 4217.50 705.04 4224.92 708.57C4249.79 720.40 4259.42 756.44 4244.66 779.74C4238.51 789.44 4229.74 795.05 4220.44 801.20C4226.34 811.07 4252.36 845.77 4254.76 852.16C4256.78 857.54 4252.35 847.32 4254.50 854.46ZM4158.04 737.79L4158.04 773.58C4168.24 775.45 4190.06 776.61 4199.49 771.49C4209.97 765.81 4211.72 749.67 4201.94 742.39C4190.87 734.14 4170.95 737.17 4158.04 737.79ZM4356.50 854.45L4322.50 854.45L4317.78 852.00L4317.78 702.29L4358.96 702.29L4358.96 851.00ZM4588.50 854.19L4546.50 854.19L4534.21 828.00L4530.50 826.53L4476.50 826.53L4462.50 853.92L4420.50 853.92L4485.21 700.50L4525.69 700.50L4588.73 850.00ZM4489.39 792.98L4520.50 792.98L4504.50 752.26L4489.39 788.00ZM1971.00 686.00L2003.00 686.00L2033.00 640.00L1999.00 640.00ZM4312.50 686.00L4344.50 686.00L4374.50 640.00L4340.50 640.00Z"/></svg>
-
-    </a>
-    <span class="chip"><span class="chip__luz" aria-hidden="true"></span>Nueva web en obra</span>
+<header class="header">
+  <div class="contenedor header__fila">
+    <a class="header__logo" href="./" aria-label="Don Coco, inicio"><img src="assets/img/logo/don-coco-logo-amarillo-blanco.svg" alt="Don Coco, corralón y ferretería" width="234" height="56"></a>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="jadever.html">Jadever</a>
+      <a href="black-coco.html" data-hasta="2026-11-28">Black Coco</a>
+      <a href="precios.html" data-desde="2026-11-29">Precios</a>
+      <a href="#razones">Por qué elegirnos</a>
+      <a href="club.html">Club</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--amarillo btn--chico btn--sin-flecha" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
   </div>
 </header>
 
-<main class="portada">
-  <div class="texto">
-    <p class="antetitulo" data-aparece><svg aria-hidden="true"><use href="#i-techo"/></svg>Corralón y ferretería · Zona Sur, Salta</p>
-    <h1 class="titulo" data-aparece>Estamos construyendo <span class="titulo__marca">la nueva web</span><span class="titulo__punto">.</span></h1>
-    <p class="bajada" data-aparece>Muy pronto vas a ver acá los precios, las promos con tarjeta y el Club Don Coco. Mientras tanto, pedí por WhatsApp: pasás a retirar o te lo llevamos a la obra.</p>
-    <div class="acciones" data-aparece>
-      <a class="btn btn--principal" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20hacer%20un%20pedido" data-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir por WhatsApp</a>
-      <a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&amp;query=Corral%C3%B3n%20Don%20Coco%20Salta&amp;query_place_id=ChIJsfjE4EzdG5QRibjAl9jiF-U" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+<main id="contenido">
+
+  <!-- PORTADA -->
+  <section class="hero grano">
+    <!-- Fondo: foto propia de materiales, tapada al 80% con negro para que apenas se vea -->
+    <div class="hero__fondo" aria-hidden="true"><picture><source media="(max-width: 620px)" srcset="assets/img/fotos/hero-salon-v.webp" width="900" height="1600"><img src="assets/img/fotos/hero-salon.webp" alt="" width="1600" height="867" fetchpriority="high"></picture></div>
+    <div class="regla-v" data-regla aria-hidden="true"></div>
+    <div class="contenedor hero__grilla">
+      <div class="hero__texto">
+        <p class="lab">Corralón y ferretería · Salta</p>
+        <h1 class="d hero__titulo">Todo para tu obra, <span>en un solo lugar.</span></h1>
+        <p class="bajada">Materiales de construcción, ferretería y pinturería con asesoramiento de mostrador. Pedí por WhatsApp sin hacer fila: pasás a retirar o te lo llevamos a la obra.</p>
+        <div class="acciones">
+          <a class="btn btn--amarillo" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20pedir%20un%20presupuesto">Pedir presupuesto</a>
+          <a class="btn btn--linea" href="#catalogo">Ver el catálogo</a>
+        </div>
+        <div class="hero__datos">
+          <p><span class="lab">Horario</span> &nbsp;Lun a vie 8:30 a 18 · Sáb 8:30 a 14</p>
+          <p><span class="lab">Dónde</span> &nbsp;Barrio 31 de Octubre, Salta</p>
+        </div>
+      </div>
+      <!-- Carrusel de promociones. Las diapositivas con data-hasta/data-desde se sacan o aparecen solas (vigencia.js);
+           las de tarjeta salen de promos-bancarias.js (vitrina: true) y las inserta v3.js donde está el template. -->
+      <div class="hero__visual carrusel" aria-roledescription="carrusel" aria-label="Promociones">
+        <div class="carrusel__pista" data-pista tabindex="0">
+  
+          <article class="slide slide--negro grano" data-hasta="2026-11-28" aria-roledescription="diapositiva">
+            <div class="slide__visual slide__visual--trio">
+              <figure><img src="assets/img/black-coco/NTJ001.webp" alt="Taladro percutor inalámbrico Jadever" width="400" height="400" loading="lazy"><figcaption><img src="assets/img/marcas/jadever-blanco.svg" alt="Jadever" width="138" height="28" loading="lazy"></figcaption></figure>
+              <figure><img src="assets/img/black-coco/RTQ001.webp" alt="Rotomartillo Lusqtoff" width="400" height="400" loading="lazy"><figcaption><img src="assets/img/marcas/lusqtoff-blanco.svg" alt="Lusqtoff" width="232" height="39" loading="lazy"></figcaption></figure>
+              <figure><img src="assets/img/black-coco/GMZ042.webp" alt="Monocomando de cocina Mozart" width="400" height="400" loading="lazy"><figcaption><img src="assets/img/marcas/mozart-blanco.png" alt="Mozart" width="410" height="120" loading="lazy"></figcaption></figure>
+              <p class="d slide__sello" aria-hidden="true">23%<span>off</span></p>
+            </div>
+            <div class="slide__texto">
+              <p class="lab slide__etiqueta">Black Coco · jue 26 al sáb 28</p>
+              <p class="d slide__titulo">Hasta <span class="amarillo">23%</span></p>
+              <p class="slide__bajada">Jadever, Lusqtoff y Mozart con 23% OFF, y liquidación de TOTAL y FV. De contado o transferencia, hasta agotar stock.</p>
+              <div class="acciones"><a class="btn btn--amarillo" href="black-coco.html">Ver los precios</a></div>
+            </div>
+          </article>
+  
+          <template data-slides-tarjeta></template>
+  
+          <article class="slide slide--amarillo" data-hasta="2026-11-28" aria-roledescription="diapositiva">
+            <div class="slide__texto">
+              <img class="slide__club" src="assets/img/club/club-don-coco-horizontal-claro.svg" alt="Club Don Coco" width="1735" height="578" loading="lazy">
+              <p class="lab">Sorteo del mes · sábado 28/11, 11 h</p>
+              <p class="d slide__titulo">Ganate una hidrolavadora</p>
+              <p class="slide__bajada">Lusqtoff 1200 W. Se sortea en vivo por Instagram. Completá tu tarjeta de pases en el mes o pedí un cupón gratis en caja o por WhatsApp.</p>
+              <p class="slide__legal">Sin obligación de compra. Bases en el local.</p>
+              <div class="acciones"><a class="btn btn--negro" href="club.html">Cómo participar</a></div>
+            </div>
+            <div class="slide__visual slide__visual--premio slide__visual--recorte">
+              <img src="assets/img/club/premio-del-mes.webp" alt="Hidrolavadora Lusqtoff 1200 W, premio del sorteo de noviembre" width="579" height="900" loading="lazy">
+              <p class="d slide__sello slide__sello--sorteo" aria-hidden="true">Sorteo<span>28/11</span></p>
+              <span class="slide__marca"><img src="assets/img/marcas/lusqtoff-blanco.svg" alt="Lusqtoff" width="232" height="39" loading="lazy"></span>
+            </div>
+          </article>
+  
+          <article class="slide slide--rojo slide--envio" aria-roledescription="diapositiva">
+            <div class="slide__texto">
+              <p class="lab slide__etiqueta slide__etiqueta--amarilla">Envío a domicilio</p>
+              <p class="d slide__titulo">Te lo llevamos <span class="amarillo">a la obra</span></p>
+              <ol class="envio-pasos">
+                <li><span class="d">1</span>Pedís por WhatsApp</li>
+                <li><span class="d">2</span>Te avisamos 2 h antes</li>
+                <li><span class="d">3</span>Llega a tu obra</li>
+              </ol>
+              <p class="slide__bajada">El costo del envío depende de tu zona.</p>
+              <div class="acciones"><a class="btn btn--amarillo" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20consultar%20un%20env%C3%ADo">Consultar envío</a></div>
+            </div>
+            <div class="slide__visual slide__visual--foto slide__visual--envio">
+              <img src="assets/img/fotos/envio-camion.webp" alt="Camión de Don Coco cargado con materiales para una entrega" width="1200" height="650" loading="lazy">
+              <p class="d slide__sello slide__sello--envio" aria-hidden="true">Aviso<span>2 h</span>antes</p>
+            </div>
+          </article>
+  
+        </div>
+        <div class="carrusel__pie">
+          <div class="carrusel__puntos" data-puntos></div>
+          <div class="carrusel__controles">
+            <span class="lab carrusel__contador" data-contador aria-live="polite"></span>
+            <button class="carrusel__btn" type="button" data-prev aria-label="Promoción anterior">←</button>
+            <button class="carrusel__btn" type="button" data-next aria-label="Promoción siguiente">→</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <dl class="datos" data-aparece>
-      <dt>Dirección</dt><dd>Barrio 31 de Octubre, Mza. 1B, Lote 1 · Zona Sur, Salta Capital</dd>
-      <dt>Horarios</dt><dd>Lunes a viernes de 8:30 a 18 · Sábados de 8:30 a 14</dd>
-      <dt>WhatsApp</dt><dd><a href="https://wa.me/5493874742440">Luisa · 387 474-2440</a> &nbsp;·&nbsp; <a href="https://wa.me/5493874452416">Dante · 387 445-2416</a></dd>
-    </dl>
+  </section>
+
+  <!-- Beneficios sobre la cinta métrica -->
+  <!-- Beneficios: una cinta métrica que corre (quieta si el visitante pidió menos movimiento) -->
+  <div class="cinta" role="region" aria-label="Beneficios">
+    <ul class="cinta__pista"><li>Envío a domicilio</li><li>Asesoramiento sin cargo</li><li>Presupuesto en el día</li><li>Hasta 12 cuotas</li><li aria-hidden="true">Envío a domicilio</li><li aria-hidden="true">Asesoramiento sin cargo</li><li aria-hidden="true">Presupuesto en el día</li><li aria-hidden="true">Hasta 12 cuotas</li><li aria-hidden="true">Envío a domicilio</li><li aria-hidden="true">Asesoramiento sin cargo</li><li aria-hidden="true">Presupuesto en el día</li><li aria-hidden="true">Hasta 12 cuotas</li><li aria-hidden="true">Envío a domicilio</li><li aria-hidden="true">Asesoramiento sin cargo</li><li aria-hidden="true">Presupuesto en el día</li><li aria-hidden="true">Hasta 12 cuotas</li><li aria-hidden="true">Envío a domicilio</li><li aria-hidden="true">Asesoramiento sin cargo</li><li aria-hidden="true">Presupuesto en el día</li><li aria-hidden="true">Hasta 12 cuotas</li><li aria-hidden="true">Envío a domicilio</li><li aria-hidden="true">Asesoramiento sin cargo</li><li aria-hidden="true">Presupuesto en el día</li><li aria-hidden="true">Hasta 12 cuotas</li></ul>
   </div>
 
-  <div class="obra" id="obra" aria-hidden="true" data-aparece>
-    <!-- Respaldo si el navegador no tiene 3D: la casita a medio levantar, quieta -->
-    <svg class="obra__respaldo" viewBox="0 0 240 200" role="img" aria-label="Casa en construcción">
-      <path fill="#FFE500" d="M20 96 120 12l100 84h-30L120 37 50 96Z"/>
-      <g fill="#E30613">
-        <rect x="52" y="150" width="42" height="20"/><rect x="98" y="150" width="42" height="20"/><rect x="144" y="150" width="42" height="20"/>
-        <rect x="52" y="126" width="19" height="20"/><rect x="75" y="126" width="42" height="20"/><rect x="121" y="126" width="42" height="20"/><rect x="167" y="126" width="19" height="20"/>
-        <rect x="52" y="102" width="42" height="20"/><rect x="98" y="102" width="42" height="20"/>
-      </g>
-      <rect x="144" y="102" width="42" height="20" rx="2" fill="#141414" stroke="#8C877F" stroke-width="2"/>
-      <text x="165" y="117" text-anchor="middle" font-family="monospace" font-weight="700" font-size="14" fill="#FFE500">&lt;/&gt;</text>
-      <rect x="40" y="174" width="158" height="10" fill="#8C877F"/>
-    </svg>
-    <ol class="fases">
-      <li class="fase is-lista">Cimientos</li>
-      <li class="fase">Paredes</li>
-      <li class="fase">Techo</li>
-    </ol>
-  </div>
+  <!-- PROMOS CON TARJETA (las arma v3.js con promos-bancarias.js) -->
+  <section class="seccion seccion--crema" id="tarjetas" aria-labelledby="titulo-tarjetas">
+    <div class="contenedor">
+      <header class="encabezado aparece">
+        <div class="encabezado__texto">
+          <p class="lab">Promos con tu tarjeta</p>
+          <h2 class="d titulo" id="titulo-tarjetas">Pagá en cuotas y con descuento</h2>
+          <p class="bajada">Las promos de este mes con tu banco o tu billetera. Mostrá la tarjeta en caja o avisanos por WhatsApp cuando pidas.</p>
+        </div>
+      </header>
+      <div class="promos" data-promos><noscript><p class="bajada">Consultá las promos por WhatsApp al 387 474-2440.</p></noscript></div>
+      <p class="nota" data-promos-legal></p>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO: índice tipográfico, sin íconos -->
+  <section class="seccion seccion--blanco" id="catalogo" aria-labelledby="titulo-catalogo">
+    <div class="contenedor catalogo">
+      <div class="catalogo__lado">
+        <p class="lab">Catálogo por rubro</p>
+        <h2 class="d titulo" id="titulo-catalogo">De los cimientos al último tornillo</h2>
+        <p class="bajada">Elegí el rubro y mandanos qué necesitás. Te pasamos precio y stock por WhatsApp.</p>
+        <div class="acciones"><a class="btn btn--linea" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20consultar%20por%20un%20producto">Consultar un producto</a></div>
+        <div class="catalogo__foto"><div class="marco casa"><img class="casa" src="assets/img/fotos/pasillo-v.webp" alt="Mostrador de Don Coco con caños y accesorios para agua" width="1000" height="1250" loading="lazy"></div></div>
+      </div>
+      <ol class="rubros">
+        <li><a class="rubro" data-rubro="obra-gruesa" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20obra%20gruesa"><span class="rubro__n">01</span><span><span class="d rubro__nombre">Obra gruesa</span><span class="rubro__detalle">Cemento, cal, áridos y ladrillos.</span></span><span class="rubro__accion">Cotizar</span></a></li>
+        <li><a class="rubro" data-rubro="hierros-mallas" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20hierros%20y%20mallas"><span class="rubro__n">02</span><span><span class="d rubro__nombre">Hierros y mallas</span><span class="rubro__detalle">Hierro, mallas, alambres y perfiles.</span></span><span class="rubro__accion">Cotizar</span></a></li>
+        <li><a class="rubro" data-rubro="construccion-seco" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20construcci%C3%B3n%20en%20seco"><span class="rubro__n">03</span><span><span class="d rubro__nombre">Construcción en seco</span><span class="rubro__detalle">Placas, perfiles y masillas.</span></span><span class="rubro__accion">Cotizar</span></a></li>
+        <li><a class="rubro" data-rubro="sanitarios" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20sanitarios"><span class="rubro__n">04</span><span><span class="d rubro__nombre">Sanitarios</span><span class="rubro__detalle">Inodoros, bidets y lavatorios.</span></span><span class="rubro__accion">Cotizar</span></a><p class="rubro__marcas"><span class="lab">Ver precios</span><a href="precios.html#roca" data-desde="2026-11-29">Roca</a></p></li>
+        <li><a class="rubro" data-rubro="agua-desagues" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20agua%20y%20desag%C3%BCes"><span class="rubro__n">05</span><span><span class="d rubro__nombre">Agua y desagües</span><span class="rubro__detalle">Caños, conexiones y tanques.</span></span><span class="rubro__accion">Cotizar</span></a><p class="rubro__marcas"><span class="lab">Ver precios</span><a href="precios.html#tinacos" data-desde="2026-11-29">Tanques Tinacos</a></p></li>
+        <li><a class="rubro" data-rubro="griferia" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20grifer%C3%ADa"><span class="rubro__n">06</span><span><span class="d rubro__nombre">Grifería</span><span class="rubro__detalle">Baño, cocina y lavadero.</span></span><span class="rubro__accion">Cotizar</span></a><p class="rubro__marcas"><span class="lab">Ver precios</span><a href="black-coco.html#mozart" data-hasta="2026-11-28">Mozart</a><a href="black-coco.html#fv" data-hasta="2026-11-28">FV</a><a href="precios.html#mozart" data-desde="2026-11-29">Mozart</a><a href="precios.html#fv" data-desde="2026-11-29">FV</a><a href="precios.html#peirano" data-desde="2026-11-29">Peirano</a></p></li>
+        <li><a class="rubro" data-rubro="ceramicos" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20cer%C3%A1micos%20y%20porcelanatos"><span class="rubro__n">07</span><span><span class="d rubro__nombre">Cerámicos y porcelanatos</span><span class="rubro__detalle">Pisos, revestimientos y pegamentos.</span></span><span class="rubro__accion">Cotizar</span></a></li>
+        <li><a class="rubro" data-rubro="aberturas" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20aberturas"><span class="rubro__n">08</span><span><span class="d rubro__nombre">Aberturas</span><span class="rubro__detalle">Puertas, ventanas y marcos.</span></span><span class="rubro__accion">Cotizar</span></a><p class="rubro__marcas"><span class="lab">Ver precios</span><a href="precios.html#oblak" data-desde="2026-11-29">Puertas Oblak</a></p></li>
+        <li><a class="rubro" data-rubro="electricidad" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20electricidad"><span class="rubro__n">09</span><span><span class="d rubro__nombre">Electricidad</span><span class="rubro__detalle">Cables, térmicas e iluminación.</span></span><span class="rubro__accion">Cotizar</span></a></li>
+        <li><a class="rubro" data-rubro="pintureria" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20pinturer%C3%ADa"><span class="rubro__n">10</span><span><span class="d rubro__nombre">Pinturería</span><span class="rubro__detalle">Látex, esmaltes e impermeabilizantes.</span></span><span class="rubro__accion">Cotizar</span></a><p class="rubro__marcas"><span class="lab">Ver precios</span><a href="precios.html#polacrin" data-desde="2026-11-29">Polacrin</a><a href="precios.html#talento" data-desde="2026-11-29">Talento</a><a href="precios.html#megaflex" data-desde="2026-11-29">Megaflex</a></p></li>
+        <li><a class="rubro" data-rubro="ferreteria" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20ferreter%C3%ADa"><span class="rubro__n">11</span><span><span class="d rubro__nombre">Ferretería</span><span class="rubro__detalle">Tornillos, bulones y cerraduras.</span></span><span class="rubro__accion">Cotizar</span></a></li>
+        <li><a class="rubro" data-rubro="herramientas" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20herramientas"><span class="rubro__n">12</span><span><span class="d rubro__nombre">Herramientas</span><span class="rubro__detalle">Manuales y eléctricas.</span></span><span class="rubro__accion">Cotizar</span></a><p class="rubro__marcas"><span class="lab">Ver precios</span><a href="jadever.html">Jadever</a><a href="black-coco.html#lusqtoff" data-hasta="2026-11-28">Lusqtoff</a><a href="black-coco.html#total" data-hasta="2026-11-28">TOTAL</a><a href="precios.html#lusqtoff" data-desde="2026-11-29">Lusqtoff</a><a href="precios.html#total" data-desde="2026-11-29">TOTAL</a></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PRECIOS POR MARCA: las 8 tarjetas las arma v3.js con black-coco-productos.js (campo "vidriera") -->
+  <section class="seccion seccion--crema" id="marcas" aria-labelledby="titulo-marcas">
+    <div class="contenedor">
+      <header class="encabezado aparece">
+        <div class="encabezado__texto">
+          <p class="lab">Herramientas y griferías · 5 marcas</p>
+          <h2 class="d titulo" id="titulo-marcas">Con el precio a la vista</h2>
+          <p class="bajada">Jadever, Lusqtoff, TOTAL, Mozart y FV. <span data-hasta="2026-11-28">Del jueves 26 al sábado 28, hasta 23% OFF en Black Coco.</span><span data-desde="2026-11-29">Precio de contado o transferencia, marca por marca.</span></p>
+        </div>
+        <a class="btn btn--linea" href="black-coco.html" data-hasta="2026-11-28">Ver todos los precios</a>
+        <a class="btn btn--linea" href="precios.html" data-desde="2026-11-29">Ver todos los precios</a>
+      </header>
+      <nav class="marcas-logos aparece" aria-label="Precios por marca">
+        <a href="black-coco.html#jadever"><img src="assets/img/marcas/jadever-blanco.svg" alt="Jadever" width="138" height="28" loading="lazy"></a>
+        <a href="black-coco.html#lusqtoff"><img src="assets/img/marcas/lusqtoff-blanco.svg" alt="Lusqtoff" width="232" height="39" loading="lazy"></a>
+        <a href="black-coco.html#total"><img src="assets/img/marcas/total-blanco.png" alt="TOTAL" width="293" height="59" loading="lazy"></a>
+        <a href="black-coco.html#mozart"><img src="assets/img/marcas/mozart-blanco.png" alt="Mozart" width="410" height="120" loading="lazy"></a>
+        <a href="black-coco.html#fv"><img src="assets/img/marcas/fv-blanco.png" alt="FV" width="120" height="119" loading="lazy"></a>
+      </nav>
+      <div class="vidriera" data-vidriera></div>
+      <p class="nota" data-hasta="2026-11-28">Precio Black Coco: de contado o transferencia, con 23% OFF en Jadever, Lusqtoff y Mozart del jueves 26 al sábado 28/11/2026; TOTAL y FV en liquidación hasta agotar stock. Debajo, el precio de lista. Pueden cambiar sin aviso y dependen del stock.</p>
+      <p class="nota" data-desde="2026-11-29">Precio grande: contado o transferencia. Debajo, el precio de lista. Pueden cambiar sin aviso y dependen del stock disponible.</p>
+    </div>
+  </section>
+
+  <!-- CÓMO PEDIR -->
+  <section class="seccion oscuro seccion--rojo grano" id="como-pedir" aria-labelledby="titulo-pedir">
+    <div class="contenedor">
+      <header class="encabezado aparece">
+        <div class="encabezado__texto">
+          <p class="lab">Cómo pedir</p>
+          <h2 class="d titulo" id="titulo-pedir">Mandá tu lista. Nosotros hacemos el resto.</h2>
+        </div>
+      </header>
+      <ol class="pasos">
+        <li class="paso aparece"><span class="d paso__n" aria-hidden="true">01</span><span class="d paso__titulo">Escribinos por WhatsApp</span><span class="paso__texto">Mandanos la lista de materiales que te armó tu albañil o contanos qué querés hacer.</span></li>
+        <li class="paso aparece"><span class="d paso__n" aria-hidden="true">02</span><span class="d paso__titulo">Te pasamos el presupuesto</span><span class="paso__texto">Armamos el presupuesto con tu lista y te confirmamos precio y disponibilidad.</span></li>
+        <li class="paso aparece"><span class="d paso__n" aria-hidden="true">03</span><span class="d paso__titulo">Retirás o te lo llevamos</span><span class="paso__texto">Como ya pediste por WhatsApp, no hacés fila para pedir: pasás solo a retirar o lo entregamos en tu obra.</span></li>
+      </ol>
+      <div class="acciones pasos__accion"><a class="btn btn--amarillo" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20te%20paso%20mi%20lista%20de%20materiales">Empezar mi pedido</a></div>
+    </div>
+  </section>
+
+  <!-- RAZONES -->
+  <section class="seccion seccion--crema" id="razones" aria-labelledby="titulo-razones">
+    <div class="contenedor">
+      <header class="encabezado aparece">
+        <div class="encabezado__texto">
+          <p class="lab">Por qué Don Coco</p>
+          <h2 class="d titulo" id="titulo-razones">Razones para elegirnos</h2>
+        </div>
+      </header>
+      <ul class="razones">
+        <li class="razon aparece"><p class="lab">01</p><h3 class="d razon__titulo">Atención que resuelve</h3><p class="razon__texto">Te asesoramos sobre qué conviene para cada trabajo y te pasamos el presupuesto en el día.</p></li>
+        <li class="razon aparece"><p class="lab">02</p><h3 class="d razon__titulo">Gestionamos tu stock</h3><p class="razon__texto">Comprás todo junto y lo vas retirando a medida que avanza la obra. Tu material queda a tu nombre.</p></li>
+        <li class="razon aparece"><p class="lab">03</p><h3 class="d razon__titulo">Cambios con tu vendedor</h3><p class="razon__texto">Tenés un vendedor que conoce tu pedido. Si hay que cambiar o devolver algo, lo resolvés con él.</p></li>
+        <li class="razon aparece"><p class="lab">04</p><h3 class="d razon__titulo">Envío a domicilio</h3><p class="razon__texto">Te lo llevamos a la obra y te avisamos por WhatsApp 2 horas antes de salir. Clientes Club y Profesionales, con envío prioritario de 24 a 48 h.</p></li>
+      </ul>
+      <div class="fotos">
+        <figure class="aparece"><img src="assets/img/fotos/envio-camion.webp" alt="Camión de Don Coco cargado con materiales para una entrega" width="1200" height="650" loading="lazy"><figcaption class="lab">Envío a domicilio</figcaption></figure>
+        <figure class="aparece"><img src="assets/img/fotos/mostrador-h.webp" alt="Vendedores de Don Coco atendiendo en el mostrador" width="1200" height="800" loading="lazy"><figcaption class="lab">Atención de mostrador</figcaption></figure>
+        <figure class="aparece"><img src="assets/img/fotos/gondola-h.webp" alt="Góndola de herramientas Jadever en el salón" width="1200" height="800" loading="lazy"><figcaption class="lab">Herramientas en exhibición</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUB -->
+  <section class="seccion seccion--blanco" id="club" aria-labelledby="titulo-club">
+    <div class="contenedor club">
+      <div class="club__texto aparece">
+        <img class="club__logo" src="assets/img/club/club-don-coco-horizontal-claro.svg" alt="Club Don Coco" width="1735" height="578" loading="lazy">
+        <h2 class="d club__titulo" id="titulo-club">Cuanto más construís, <span class="rojo">más ganás.</span></h2>
+        <p class="bajada">Cada $100.000 de compra suma 1 pase, en una compra o en varias. Con 5 pases te llevás <strong>$50.000 en nota de crédito</strong> para pinturas, herramientas y terminaciones.</p>
+        <ul class="club__lista">
+          <li><span>01</span>Sorteo mensual de una herramienta eléctrica. Sin obligación de compra. Bases en el local.</li>
+          <li><span>02</span>Hasta 2 cupones de $50.000 por mes.</li>
+          <li><span>03</span>La tarjeta la pedís en caja, en tu próxima compra.</li>
+        </ul>
+        <div class="acciones"><a class="btn btn--negro" href="club.html">Conocé el Club</a></div>
+      </div>
+      <div class="pases aparece" aria-hidden="true">
+        <div class="pases__cabeza"><img src="assets/img/club/club-don-coco-horizontal-oscuro.svg" alt="" width="1735" height="578" loading="lazy"><span class="lab pases__rotulo">Tarjeta de pases</span></div>
+        <p class="pases__titulo">5 pases = <span>$50.000</span></p>
+        <p class="pases__sub">1 pase cada <b>$100.000</b> de compra <span class="pases__pill">Completala en el mes y entrás al sorteo</span></p>
+        <ol class="casitas">
+          <li class="casita"><span class="casita__forma"><span class="casita__n">1</span></span><span class="casita__lab">Pase 1</span></li>
+          <li class="casita"><span class="casita__forma"><span class="casita__n">2</span></span><span class="casita__lab">Pase 2</span></li>
+          <li class="casita"><span class="casita__forma"><span class="casita__n">3</span></span><span class="casita__lab">Pase 3</span></li>
+          <li class="casita"><span class="casita__forma"><span class="casita__n">4</span></span><span class="casita__lab">Pase 4</span></li>
+          <li class="casita casita--premio"><span class="casita__forma"><span class="casita__premio">Premio</span><span class="casita__n">$50.000</span></span><span class="casita__lab">Pase 5</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="seccion oscuro grano" id="contacto" aria-labelledby="titulo-contacto">
+    <div class="contenedor contacto">
+      <div class="contacto__texto">
+        <h2 class="d contacto__titulo" id="titulo-contacto">Vení a vernos</h2>
+        <dl class="datos">
+          <dt>Dirección</dt><dd>Barrio 31 de Octubre, Mza. 1B Lote 1, Salta</dd>
+          <dt>Horarios</dt><dd>Lun a vie 8:30 a 18 · Sáb 8:30 a 14</dd>
+          <dt>Teléfono</dt><dd><a href="tel:+5493874742440">387 474-2440</a></dd>
+          <dt>WhatsApp</dt><dd><a href="https://wa.me/5493874742440" data-wa-fijo>Luisa · 387 474-2440</a><br><a href="https://wa.me/5493874452416" data-wa-fijo>Dante · 387 445-2416</a></dd>
+        </dl>
+        <div class="acciones">
+          <a class="btn btn--amarillo" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco">Escribinos</a>
+          <a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&amp;query=Corral%C3%B3n%20Don%20Coco%20Salta&amp;query_place_id=ChIJsfjE4EzdG5QRibjAl9jiF-U" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="contacto__foto"><div class="marco casa"><img class="casa" src="assets/img/fotos/salon-v.webp" alt="El salón de ventas de Don Coco" width="1000" height="1100" loading="lazy"></div></div>
+    </div>
+  </section>
 </main>
 
-<div class="cinta" aria-hidden="true"></div>
-<footer class="pie">
-  <span>© 2026 Don Coco · Corralón y Ferretería · Salta</span>
-  <span><a href="https://instagram.com/corralon.doncoco" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp; <a href="https://facebook.com/doncoco.corralonyferreteria" target="_blank" rel="noopener">Facebook</a></span>
+<footer class="footer">
+  <div class="regla regla--oscura" data-regla aria-hidden="true"></div>
+  <div class="contenedor footer__fila">
+    <div class="footer__marca">
+      <img src="assets/img/logo/don-coco-logo-amarillo-blanco.svg" alt="Don Coco, corralón y ferretería" width="300" height="72" loading="lazy">
+      <p>Todo para tu obra, en un solo lugar.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Pie de página">
+      <div class="footer__col">
+        <span class="lab">Productos</span>
+        <a href="#catalogo">Catálogo por rubro</a>
+        <a href="jadever.html">Herramientas Jadever</a>
+        <a href="black-coco.html" data-hasta="2026-11-28">Black Coco: precios por marca</a>
+        <a href="precios.html" data-desde="2026-11-29">Precios por marca</a>
+        <a href="club.html">Club Don Coco</a>
+      </div>
+      <div class="footer__col">
+        <span class="lab">Contacto</span>
+        <a href="https://wa.me/5493874742440" data-wa-fijo>WhatsApp Luisa</a>
+        <a href="https://wa.me/5493874452416" data-wa-fijo>WhatsApp Dante</a>
+        <a href="tel:+5493874742440">387 474-2440</a>
+        <a href="https://instagram.com/corralon.doncoco" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/doncoco.corralonyferreteria" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </nav>
+  </div>
+  <div class="contenedor"><p class="footer__legal">© <span data-anio>2026</span> Don Coco — Corralón y Ferretería. Barrio 31 de Octubre, Mza. 1B Lote 1, Salta.</p></div>
 </footer>
 
-<script>
-  /* Vigencia por fecha + reparto de WhatsApp entre Luisa y Dante + marca de JS (antes de pintar) */
-  (function () {
-    document.documentElement.classList.add('js');
-    /* Si la librería de la entrada tarda o no llega, el texto se muestra igual */
-    setTimeout(function () { if (!window.gsap) document.documentElement.classList.remove('js'); }, 2500);
-    /* Si la obra en 3D no llega a armarse (equipo viejo o sin conexión a la librería), queda la casita dibujada */
-    setTimeout(function () { var o = document.getElementById('obra'); if (o && !o.querySelector('canvas')) o.classList.add('sin-3d'); }, 7000);
-    var d = new Date(), dos = function (n) { return (n < 10 ? '0' : '') + n; };
-    var hoy = d.getFullYear() + '-' + dos(d.getMonth() + 1) + '-' + dos(d.getDate());
-    document.querySelectorAll('[data-hasta]').forEach(function (el) { if (hoy > el.getAttribute('data-hasta')) el.remove(); });
-    var numero = Math.random() < 0.5 ? '5493874742440' : '5493874452416';
-    document.querySelectorAll('a[data-wa]').forEach(function (a) { a.href = a.href.replace('5493874742440', numero); });
-  })();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
-<script>
-  /* Entrada escalonada con la curva de la marca: cubic-bezier(0.16, 1, 0.3, 1) */
-  (function () {
-    var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var items = document.querySelectorAll('[data-aparece]');
-    if (!window.gsap || quieto) { items.forEach(function (el) { el.style.opacity = 1; el.style.transform = 'none'; }); return; }
-    if (window.CustomEase) { gsap.registerPlugin(CustomEase); CustomEase.create('obra', '0.16, 1, 0.3, 1'); }
-    gsap.to(items, { opacity: 1, y: 0, duration: 1.3, ease: window.CustomEase ? 'obra' : 'expo.out', stagger: 0.09, delay: 0.15 });
-  })();
-</script>
-<script type="module">
-  /* La obra de Don Coco: de la notebook salen bloques de código, los albañiles los llevan
-     hasta la casa y los tiran a su lugar. Cuando un bloque se asienta, se vuelve ladrillo.
-     Con la última hilada llega el techo amarillo a 47° (el de la marca) y todo vuelve a empezar.
-     El movimiento usa resortes (física elástica, nada lineal) y la maqueta sigue al mouse o al dedo. */
-  import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+<a class="wa" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco">Pedí por <span>WhatsApp</span></a>
 
-  const contenedor = document.getElementById('obra');
-  const chips = [...contenedor.querySelectorAll('.fase')];
-  const quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const chico = window.innerWidth < 700;
-
-  let renderer;
-  try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' }); }
-  catch (e) { contenedor.classList.add('sin-3d'); throw e; }
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  contenedor.prepend(renderer.domElement);
-  contenedor.classList.remove('sin-3d');
-
-  const escena = new THREE.Scene();
-  const camara = new THREE.PerspectiveCamera(24, 1, 1, 300);
-  const mundo = new THREE.Group();
-  escena.add(mundo);
-
-  // Sol alto y de frente: ilumina el frente de la casa y el faldón del techo que se ve
-  escena.add(new THREE.HemisphereLight(0xffffff, 0x8C877F, 1.1));
-  const sol = new THREE.DirectionalLight(0xffffff, 1.7);
-  sol.position.set(4, 17, 12);
-  sol.castShadow = true;
-  sol.shadow.mapSize.set(chico ? 1024 : 2048, chico ? 1024 : 2048);
-  Object.assign(sol.shadow.camera, { left: -11, right: 11, top: 11, bottom: -11, near: 1, far: 60 });
-  sol.shadow.bias = -0.0006; sol.shadow.normalBias = 0.03; sol.shadow.radius = 3;
-  escena.add(sol);
-
-  // ---------- Materiales (paleta de la marca) ----------
-  const mat = (color, extra = {}) => new THREE.MeshStandardMaterial({ color, roughness: 0.84, metalness: 0, ...extra });
-  const m = {
-    rojo: mat('#E30613', { emissive: '#E30613', emissiveIntensity: 0.14 }),
-    amarillo: mat('#FFE500', { emissive: '#FFE500', emissiveIntensity: 0.4 }),
-    negro: mat('#1C1C1C'),
-    grafito: mat('#45413C'),
-    grafitoOscuro: mat('#2B2926'),
-    hormigon: mat('#8C877F'),
-    hormigonClaro: mat('#B9B2A7'),
-    suelo: mat('#DDD7CD'),
-    blanco: mat('#F2EEE7'),
-    mezcla: mat('#E6DFD3'),
-    madera: mat('#C9A870'),
-    arena: mat('#D9C79E'),
-    acero: mat('#A39D94', { roughness: 0.55, metalness: 0.25 })
-  };
-  const V = (x, y, z) => new THREE.Vector3(x, y, z);
-  const ARRIBA = V(0, 1, 0);
-  const AMARILLO = new THREE.Color('#FFE500'), ROJO = new THREE.Color('#E30613'), BLANCO = new THREE.Color('#FFFFFF');
-  const limitar = THREE.MathUtils.clamp;
-
-  // Azar con semilla: la obra se repite siempre igual
-  let semilla = 4122011;
-  const azar = () => { semilla = (Math.imul(semilla, 1664525) + 1013904223) >>> 0; return semilla / 4294967296; };
-
-  function bloque(w, h, d, material, x, y, z, padre = mundo) {
-    const malla = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
-    malla.position.set(x, y, z);
-    malla.castShadow = true; malla.receiveShadow = true;
-    padre.add(malla);
-    return malla;
-  }
-  function barra(a, b, radio, material, padre = mundo) {
-    const malla = new THREE.Mesh(new THREE.CylinderGeometry(radio, radio, 1, 6), material);
-    const dir = new THREE.Vector3().subVectors(b, a), largo = dir.length() || 0.0001;
-    malla.position.copy(a).addScaledVector(dir, 0.5);
-    malla.quaternion.setFromUnitVectors(ARRIBA, dir.multiplyScalar(1 / largo));
-    malla.scale.set(1, largo, 1);
-    malla.castShadow = true;
-    padre.add(malla);
-    return malla;
-  }
-  function lienzo(w, h, dibujar) {
-    const c = document.createElement('canvas'); c.width = w; c.height = h;
-    dibujar(c.getContext('2d'), w, h);
-    const t = new THREE.CanvasTexture(c);
-    t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
-    return t;
-  }
-  // Une varias piezas en una sola malla, cada una con su color (menos dibujos por cuadro)
-  function unir(piezas) {
-    const pos = [], nor = [], col = [], c = new THREE.Color();
-    for (const [geo, color, x, y, z] of piezas) {
-      const g = geo.toNonIndexed(); g.translate(x, y, z); c.set(color);
-      const p = g.attributes.position.array, n = g.attributes.normal.array;
-      for (let i = 0; i < p.length; i += 3) { pos.push(p[i], p[i + 1], p[i + 2]); nor.push(n[i], n[i + 1], n[i + 2]); col.push(c.r, c.g, c.b); }
-    }
-    const out = new THREE.BufferGeometry();
-    out.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
-    out.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
-    out.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
-    return out;
-  }
-
-  class Resorte {
-    constructor(valor, rigidez, freno) { this.v = valor; this.vel = 0; this.meta = valor; this.k = rigidez; this.c = freno; }
-    paso(dt) { this.vel += (this.k * (this.meta - this.v) - this.c * this.vel) * dt; this.v += this.vel * dt; return this.v; }
-    fijar(valor) { this.v = this.meta = valor; this.vel = 0; }
-  }
-
-  // ---------- Texturas ----------
-  const MONO = 'ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", "Courier New", monospace';
-  const TINTA = { y: '#FFE500', r: '#FF5A63', w: '#F2EEE7', g: '#8C877F' };
-  // Bloques de código: un símbolo grande y unas líneas, como un pedacito del editor
-  const texCodigo = [['</>', 'y'], ['{ }', 'r'], ['( )', 'w'], ['=>', 'y'], ['[ ]', 'r'], ['#', 'w']].map(([simbolo, color], n) => lienzo(256, 128, (g) => {
-    g.fillStyle = '#17181C'; g.fillRect(0, 0, 256, 128);
-    g.strokeStyle = '#3A3C45'; g.lineWidth = 7; g.strokeRect(3.5, 3.5, 249, 121);
-    g.fillStyle = TINTA[color]; g.font = 'bold 58px ' + MONO; g.textBaseline = 'middle'; g.textAlign = 'center';
-    g.fillText(simbolo, 76, 67);
-    [['w', 92], ['y', 58], ['g', 78], ['r', 44]].forEach(([c, w], i) => { g.fillStyle = TINTA[c]; g.fillRect(146, 23 + i * 24, Math.min(w * (0.72 + ((n * 7 + i * 5) % 5) / 9), 96), 11); });
-  }));
-  // Faldón del techo mientras todavía es código
-  const texCodigoTecho = lienzo(512, 512, (g) => {
-    g.fillStyle = '#17181C'; g.fillRect(0, 0, 512, 512);
-    g.strokeStyle = '#3A3C45'; g.lineWidth = 10; g.strokeRect(5, 5, 502, 502);
-    const cs = ['y', 'w', 'r', 'g'];
-    for (let f = 0; f < 15; f++) { let x = 34 + (f % 4 === 3 ? 0 : (f % 3) * 30);
-      for (let i = 0; i < 4 && x < 440; i++) { const w = 34 + ((f * 13 + i * 29) % 90); g.fillStyle = TINTA[cs[(f + i * 3) % 4]]; g.fillRect(x, 34 + f * 31, Math.min(w, 478 - x), 13); x += w + 16; } }
-  });
-  // Ladrillo a la vista para los mojinetes: cada mosaico son 2 ladrillos por 2 hiladas (1,6 m × 0,8 m)
-  const TONOS = ['#E30613', '#D30511', '#C5040F', '#E30613', '#DB0612', '#EC1622'];
-  const texMuro = lienzo(256, 128, (g) => {
-    g.fillStyle = '#E6DFD3'; g.fillRect(0, 0, 256, 128);
-    for (let f = 0; f < 2; f++) for (let i = -1; i < 3; i++) {
-      g.fillStyle = TONOS[(i * 5 + f * 3 + 12) % TONOS.length];
-      g.fillRect(i * 128 + (f ? 0 : 64) + 3, f * 64 + 3, 122, 58);
-    }
-  });
-  texMuro.wrapS = texMuro.wrapT = THREE.RepeatWrapping; texMuro.repeat.set(1 / 1.6, 1 / 0.8); texMuro.offset.x = 0.25;
-  // Bolsas de cemento apiladas: blancas con la franja roja
-  const texBolsas = lienzo(256, 256, (g) => {
-    g.fillStyle = '#F7F4EE'; g.fillRect(0, 0, 256, 256);
-    for (let f = 0; f < 3; f++) {
-      const y = f * 85.33;
-      g.fillStyle = '#E30613'; g.fillRect(0, y + 34, 256, 15);
-      g.fillStyle = '#A9A297'; g.fillRect(0, y + 82, 256, 4);
-      for (let i = 0; i < 3; i++) g.fillRect((f % 2 ? 64 : 0) + i * 128 - 2, y, 4, 85);
-    }
-  });
-  // Cinta de obra para las vallas
-  const texCinta = lienzo(128, 32, (g) => {
-    g.fillStyle = '#FFE500'; g.fillRect(0, 0, 128, 32);
-    g.fillStyle = '#141414';
-    for (let i = -1; i < 5; i++) { g.beginPath(); g.moveTo(i * 32, 32); g.lineTo(i * 32 + 16, 32); g.lineTo(i * 32 + 46, 0); g.lineTo(i * 32 + 30, 0); g.fill(); }
-  });
-  // Cinta transportadora de la notebook: flechas que avanzan hacia el frente
-  const texBanda = lienzo(64, 64, (g) => {
-    g.fillStyle = '#1C1C1C'; g.fillRect(0, 0, 64, 64);
-    g.strokeStyle = '#FFE500'; g.lineWidth = 7; g.lineCap = 'square';
-    for (const y of [10, 42]) { g.beginPath(); g.moveTo(14, y); g.lineTo(32, y + 16); g.lineTo(50, y); g.stroke(); }
-  });
-  texBanda.wrapS = texBanda.wrapT = THREE.RepeatWrapping; texBanda.repeat.set(1, 3);
-  const texTeclas = lienzo(128, 128, (g) => {
-    g.fillStyle = '#2B2926'; g.fillRect(0, 0, 128, 128);
-    g.fillStyle = '#141414';
-    for (let f = 0; f < 6; f++) for (let i = 0; i < 4; i++) g.fillRect(8 + i * 29, 6 + f * 20, 24, 15);
-  });
-
-  // ---------- Terreno ----------
-  const BX = 0.2, BZ = -0.15, RADIO = 6.0;                                      // la maqueta va sobre una base redonda
-  { const piso = new THREE.Mesh(new THREE.CylinderGeometry(RADIO, RADIO, 0.5, 72), m.suelo); piso.position.set(BX, -0.25, BZ); piso.receiveShadow = true; mundo.add(piso);
-    const zocalo = new THREE.Mesh(new THREE.CylinderGeometry(RADIO - 0.28, RADIO - 0.28, 0.36, 72), m.hormigon); zocalo.position.set(BX, -0.68, BZ); mundo.add(zocalo); }
-
-  // ---------- La casa: cada ladrillo tiene su lugar ----------
-  const L = 0.8, H = 0.4, G = 0.4, HILADAS = 5;                                // largo, alto y espesor del ladrillo
-  const X0 = 0, X1 = 4, Z0 = -2.5, Z1 = 0.7, CX = 2, CZ = -0.9, Y0 = 0.2, YT = Y0 + HILADAS * H;
-  bloque(4.7, 0.2, 3.9, m.hormigon, CX, 0.1, CZ);                              // platea
-  const VANOS = [
-    { pared: 'frente', a: X0 + 0.4, b: X0 + 1.2, k0: 0, k1: 3 },               // puerta
-    { pared: 'frente', a: X0 + 2.4, b: X0 + 3.2, k0: 2, k1: 3 },               // ventana del frente
-    { pared: 'der', a: Z0 + 1.2, b: Z0 + 2.0, k0: 2, k1: 3 }                   // ventana del costado
-  ];
-  const geoLadrillo = {}, geoJunta = {};
-  const lugares = [], ladrillos = [];
-  for (let k = 0; k < HILADAS; k++) {
-    const y = Y0 + k * H + H / 2;
-    const tramo = (pared, eje, a, b, fijo) => {
-      for (let s = a; s < b - 0.01; s += L) {
-        let segs = [[s, Math.min(s + L, b)]];
-        for (const v of VANOS) if (v.pared === pared && k >= v.k0 && k <= v.k1)
-          segs = segs.flatMap(([p, q]) => { const out = []; if (p < v.a - 0.01) out.push([p, Math.min(q, v.a)]); if (q > v.b + 0.01) out.push([Math.max(p, v.b), q]); return out; });
-        for (const [p, q] of segs) if (q - p > 0.25) lugares.push({ eje, p, q, fijo, y, k });
-      }
-    };
-    // traba en las esquinas: una hilada pasa el frente, la siguiente pasan los costados
-    if (k % 2 === 0) { tramo('frente', 'x', X0, X1, Z1 - G / 2); tramo('fondo', 'x', X0, X1, Z0 + G / 2); tramo('izq', 'z', Z0 + G, Z1 - G, X0 + G / 2); tramo('der', 'z', Z0 + G, Z1 - G, X1 - G / 2); }
-    else { tramo('frente', 'x', X0 + G, X1 - G, Z1 - G / 2); tramo('fondo', 'x', X0 + G, X1 - G, Z0 + G / 2); tramo('izq', 'z', Z0, Z1, X0 + G / 2); tramo('der', 'z', Z0, Z1, X1 - G / 2); }
-  }
-  // Junta de mezcla solo donde hay otro ladrillo al lado; en las puntas a la vista (esquinas, puerta y ventanas) el ladrillo llega al borde
-  const ocupa = (o, x, z) => (o.eje === 'x' ? x > o.p && x < o.q && Math.abs(z - o.fijo) < G / 2 : z > o.p && z < o.q && Math.abs(x - o.fijo) < G / 2);
-  const vecino = (s, c) => lugares.some((o) => o !== s && o.k === s.k && (s.eje === 'x' ? ocupa(o, c, s.fijo) : ocupa(o, s.fijo, c)));
-  function crearLadrillo({ eje, p, q, fijo, y, k }, vp, vq) {
-    const largo = q - p, gp = vp ? 0.024 : 0, gq = vq ? 0.024 : 0, jp = vp ? 0 : 0.03, jq = vq ? 0 : 0.03;
-    const clave = largo.toFixed(2) + (vp ? 'a' : '') + (vq ? 'b' : '');
-    geoLadrillo[clave] ||= new THREE.BoxGeometry(largo - gp - gq, H - 0.048, G).translate((gp - gq) / 2, 0.024, 0);
-    geoJunta[clave] ||= new THREE.BoxGeometry(largo - jp - jq, H - 0.02, G - 0.05).translate((jp - jq) / 2, -0.01, 0);
-    const nodo = new THREE.Group();
-    const x = eje === 'x' ? (p + q) / 2 : fijo, z = eje === 'x' ? fijo : (p + q) / 2;
-    nodo.position.set(x, y, z); nodo.rotation.y = eje === 'x' ? 0 : -Math.PI / 2; nodo.visible = false;
-    const tono = new THREE.Color(TONOS[Math.floor(azar() * TONOS.length)]);
-    const mt = mat(tono, { emissive: '#E30613', emissiveIntensity: 0.14 });
-    const malla = new THREE.Mesh(geoLadrillo[clave], mt); malla.castShadow = malla.receiveShadow = true; nodo.add(malla);
-    const junta = new THREE.Mesh(geoJunta[clave], m.mezcla); junta.receiveShadow = true; nodo.add(junta);
-    mundo.add(nodo);
-    return { eje, x, y, z, largo, k, nodo, mt, tono, estado: 0, t: 9, fin: 0, esc: new Resorte(1, 300, 20), apoyos: [], puesto: null, lejos: 0 };
-  }
-  for (const s of lugares) ladrillos.push(crearLadrillo(s, vecino(s, s.p - 0.05), vecino(s, s.q + 0.05)));
-  for (const s of ladrillos) if (s.k) s.apoyos = ladrillos.filter((o) => o.k === s.k - 1 && Math.abs(o.x - s.x) < 0.75 && Math.abs(o.z - s.z) < 0.75);
-
-  // Techo a 47° con la cumbrera hacia el frente: la casita del logo
-  const ANG = 47 * Math.PI / 180, MEDIO = (X1 - X0) / 2, ALTO = MEDIO * Math.tan(ANG), VUELO = 0.42;
-  const FALDON = (MEDIO + VUELO) / Math.cos(ANG), PROF = (Z1 - Z0) + 0.7;
-  const mojinetes = new THREE.Group(); mojinetes.position.set(CX, YT, 0); mundo.add(mojinetes);
-  { const tri = new THREE.Shape(); tri.moveTo(-MEDIO, 0); tri.lineTo(MEDIO, 0); tri.lineTo(0, ALTO); tri.closePath();
-    const geo = new THREE.ExtrudeGeometry(tri, { depth: G, bevelEnabled: false });
-    for (const z of [Z1 - G, Z0]) { const moj = new THREE.Mesh(geo, mat('#FFFFFF', { map: texMuro, emissive: '#E30613', emissiveIntensity: 0.1 })); moj.position.z = z; moj.castShadow = moj.receiveShadow = true; mojinetes.add(moj); } }
-  const cumbrera = bloque(0.3, 0.13, PROF, m.amarillo, CX, YT + ALTO + 0.17, CZ);
-  const paneles = [1, -1].map((s) => {                                         // 1: el faldón que se ve; -1: el de atrás
-    const nodo = new THREE.Group();
-    nodo.position.set(CX + s * (MEDIO + VUELO) / 2, YT + ALTO - (MEDIO + VUELO) / 2 * Math.tan(ANG) + 0.1, CZ);
-    nodo.rotation.z = -s * ANG; nodo.visible = false; mundo.add(nodo);
-    const mt = mat('#FFE500', { emissive: '#FFE500', emissiveIntensity: 0.16 });
-    bloque(FALDON, 0.14, PROF, mt, 0, 0, 0, nodo);
-    const mc = new THREE.MeshStandardMaterial({ map: texCodigoTecho, emissiveMap: texCodigoTecho, emissive: '#FFFFFF', emissiveIntensity: 0.8, roughness: 0.6, transparent: true });
-    const codigo = new THREE.Mesh(new THREE.BoxGeometry(FALDON, 0.14, PROF), mc); codigo.castShadow = true; codigo.visible = false; mundo.add(codigo);
-    return { nodo, mt, codigo, mc, estado: 0, u: 0, t: 9, esc: new Resorte(1, 190, 11) };
-  });
-
-  // ---------- La notebook: de acá sale el código ----------
-  const TH = 0.85;
-  const compu = new THREE.Group(); compu.position.set(-3.3, 0, 0.9); compu.rotation.y = TH; mundo.add(compu);
-  bloque(3.0, 0.14, 2.0, m.grafito, 0, 0.07, 0, compu);
-  for (const s of [-1, 1]) { const t = texTeclas.clone(); t.needsUpdate = true; bloque(0.86, 0.012, 1.5, mat('#FFFFFF', { map: t }), s * 0.98, 0.146, -0.1, compu).castShadow = false; }
-  bloque(0.98, 0.02, 2.0, mat('#FFFFFF', { map: texBanda, emissive: '#FFE500', emissiveMap: texBanda, emissiveIntensity: 0.25 }), 0, 0.15, 0, compu).castShadow = false;
-  const tapa = new THREE.Group(); tapa.position.set(0, 0.14, -0.96); tapa.rotation.x = -0.22; compu.add(tapa);
-  bloque(3.0, 1.96, 0.09, m.grafitoOscuro, 0, 0.98, 0, tapa);
-  // Pantalla: el código de la casa se va escribiendo solo
-  const CODIGO = [
-    [['<', 'g'], ['casa', 'y'], [' id', 'w'], ['=', 'g'], ['"don-coco"', 'r'], ['>', 'g']],
-    [['  <', 'g'], ['cimientos', 'y'], [' listo', 'w'], [' />', 'g']],
-    [['  <', 'g'], ['pared', 'y'], [' ladrillo', 'w'], ['=', 'g'], ['"rojo"', 'r'], ['>', 'g']],
-    [['    <', 'g'], ['precios', 'y'], [' lista', 'w'], ['=', 'g'], ['"hoy"', 'r'], [' />', 'g']],
-    [['    <', 'g'], ['promos', 'y'], [' tarjeta', 'w'], ['=', 'g'], ['"si"', 'r'], [' />', 'g']],
-    [['    <', 'g'], ['club', 'y'], [' don-coco', 'w'], [' />', 'g']],
-    [['  </', 'g'], ['pared', 'y'], ['>', 'g']],
-    [['  <', 'g'], ['techo', 'y'], [' angulo', 'w'], ['=', 'g'], ['"47"', 'r'], [' />', 'g']],
-    [['  <', 'g'], ['whatsapp', 'y'], [' pedir', 'w'], [' />', 'g']],
-    [['</', 'g'], ['casa', 'y'], ['>', 'g']]
-  ];
-  const LETRAS = CODIGO.reduce((n, fila) => n + fila.reduce((k, [t]) => k + t.length, 0), 0);
-  const lienzoPantalla = document.createElement('canvas'); lienzoPantalla.width = 640; lienzoPantalla.height = 400;
-  const gp = lienzoPantalla.getContext('2d');
-  const texPantalla = new THREE.CanvasTexture(lienzoPantalla); texPantalla.colorSpace = THREE.SRGBColorSpace; texPantalla.anisotropy = 4;
-  let escrito = -1;
-  function dibujarPantalla(n) {
-    if (n === escrito) return; escrito = n;
-    gp.fillStyle = '#141414'; gp.fillRect(0, 0, 640, 400);
-    gp.fillStyle = '#26272C'; gp.fillRect(0, 0, 640, 48);
-    ['#E30613', '#FFE500', '#8C877F'].forEach((c, i) => { gp.fillStyle = c; gp.beginPath(); gp.arc(26 + i * 26, 24, 8, 0, 7); gp.fill(); });
-    gp.fillStyle = '#141414'; gp.fillRect(118, 10, 396, 28);
-    gp.fillStyle = '#F2EEE7'; gp.font = 'bold 20px ' + MONO; gp.textBaseline = 'middle'; gp.textAlign = 'left'; gp.fillText('cdoncoco.com', 132, 25);
-    gp.font = 'bold 23px ' + MONO; const ancho = gp.measureText('M').width;
-    let quedan = n, cx = 0, cy = 0;
-    CODIGO.forEach((fila, f) => {
-      const y = 76 + f * 32; let x = 56;
-      gp.fillStyle = '#5A5750'; gp.textAlign = 'right'; gp.fillText(String(f + 1), 40, y); gp.textAlign = 'left';
-      for (const [txt, c] of fila) {
-        if (quedan <= 0) break;
-        const parte = txt.slice(0, quedan); quedan -= parte.length;
-        gp.fillStyle = TINTA[c]; gp.fillText(parte, x, y); x += ancho * parte.length; cx = x; cy = y;
-      }
-    });
-    if (n < LETRAS || Math.floor(reloj * 2.5) % 2 === 0) { gp.fillStyle = '#FFE500'; gp.fillRect(cx + 3, cy - 13, 12, 25); }
-    texPantalla.needsUpdate = true;
-  }
-  const pantalla = new THREE.Mesh(new THREE.PlaneGeometry(2.78, 1.74), new THREE.MeshBasicMaterial({ map: texPantalla }));
-  pantalla.position.set(0, 0.98, 0.047); tapa.add(pantalla);
-  compu.updateMatrix(); tapa.updateMatrix();
-  const deCompu = (x, y, z) => V(x, y, z).applyMatrix4(compu.matrix);           // de la notebook a la maqueta
-  const SALIDA = V(0, 0.98, 0.1).applyMatrix4(tapa.matrix).applyMatrix4(compu.matrix);
-  const GIRO_PANTALLA = new THREE.Quaternion().setFromEuler(new THREE.Euler(0, TH, 0)).multiply(new THREE.Quaternion().setFromEuler(new THREE.Euler(-0.22 + Math.PI / 2, 0, 0)));
-  const RECOGE = [deCompu(0.42, 0, 1.38), deCompu(-0.42, 0, 1.38)].map((p) => [p.x, p.z]);
-  const MIRA_COMPU = deCompu(0, 0, 0.4);
-
-  // ---------- Detalles de la obra ----------
-  { const monton = new THREE.Mesh(new THREE.ConeGeometry(0.8, 0.58, 18), m.arena); monton.position.set(-2.7, 0.29, -2.9); monton.castShadow = monton.receiveShadow = true; mundo.add(monton);
-    const pala = new THREE.Group(); pala.position.set(-2.1, 0, -2.65); pala.rotation.z = -0.42; mundo.add(pala);
-    barra(V(0, 0.15, 0), V(0, 1.0, 0), 0.025, m.madera, pala); bloque(0.2, 0.26, 0.03, m.acero, 0, 0.1, 0, pala);
-    const valla = (x, z, giro) => { const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = giro; mundo.add(g);
-      const t = texCinta.clone(); t.needsUpdate = true;
-      bloque(1.25, 0.22, 0.05, mat('#FFFFFF', { map: t, emissive: '#FFE500', emissiveIntensity: 0.25 }), 0, 0.62, 0, g);
-      for (const s of [-1, 1]) { bloque(0.06, 0.74, 0.06, m.blanco, s * 0.5, 0.37, 0, g); bloque(0.08, 0.05, 0.42, m.blanco, s * 0.5, 0.025, 0, g); } };
-    valla(4.55, -3.55, 0.62);
-    for (const [x, z] of [[1.6, 4.75], [-1.9, 4.55], [5.45, -2.45], [-4.4, -2.2]]) { const cono = new THREE.Mesh(new THREE.ConeGeometry(0.13, 0.36, 12), m.rojo); cono.position.set(x, 0.2, z); cono.castShadow = true; mundo.add(cono); bloque(0.3, 0.03, 0.3, m.rojo, x, 0.015, z); }
-    // Pallet con bolsas de cemento
-    const pallet = new THREE.Group(); pallet.position.set(-0.95, 0, -3.65); pallet.rotation.y = 0.3; mundo.add(pallet);
-    bloque(0.95, 0.04, 0.95, m.madera, 0, 0.12, 0, pallet); for (const z of [-0.4, 0, 0.4]) bloque(0.95, 0.1, 0.12, m.madera, 0, 0.05, z, pallet);
-    bloque(0.86, 0.62, 0.86, mat('#FFFFFF', { map: texBolsas }), 0, 0.45, 0, pallet);
-  }
-  // Cartel con el logo oficial (se dibuja desde el SVG del encabezado): aparece en el frente cuando la casa está lista
-  const cartel = new THREE.Group(); cartel.position.set(CX, YT + 0.6, Z1 + 0.035); cartel.scale.setScalar(0.0001); cartel.visible = false; mundo.add(cartel);
-  bloque(2.2, 0.6, 0.07, m.rojo, 0, 0, 0, cartel);
-  { const svg = document.querySelector('.cabecera__logo svg');
-    if (svg) {
-      const copia = svg.cloneNode(true); copia.setAttribute('width', '1163'); copia.setAttribute('height', '278');
-      const img = new Image();
-      img.onload = () => {
-        const t = lienzo(1024, 256, (g) => g.drawImage(img, 0, 6, 1024, 244.8));
-        const cara = new THREE.Mesh(new THREE.PlaneGeometry(1.96, 0.49), new THREE.MeshBasicMaterial({ map: t, transparent: true }));
-        cara.position.set(0, 0, 0.04); cartel.add(cara);
-        if (quieto) pintar();
-      };
-      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(copia));
-    } }
-
-  // ---------- Por dónde caminan ----------
-  const MG = 0.95;                                                              // distancia a la pared desde donde tiran
-  function puestoDe(s, i) {                                                        // el punto más cercano del camino (costado izquierdo, frente o costado derecho)
-    const c = [
-      { lado: 0, x: X0 - MG, z: limitar(s.z, Z0 + 0.2, Z1 + MG) },
-      { lado: 1, x: limitar(s.x, X0 - MG, X1 + MG), z: Z1 + MG },
-      { lado: 2, x: X1 + MG, z: limitar(s.z, Z0 + 0.2, Z1 + MG) }
-    ];
-    const p = c.reduce((a, b) => Math.hypot(a.x - s.x, a.z - s.z) <= Math.hypot(b.x - s.x, b.z - s.z) ? a : b);
-    if (p.lado !== 1 && s.z < Z0 + 0.3) p.z += ((i * 5) % 4) * 0.42;            // los del fondo se reparten a lo largo del costado
-    return p;
-  }
-  function rutaIda(p, dx, dz) {
-    const fin = [p.x + dx, p.z + dz];
-    if (p.lado === 0) return p.z < 1.0 ? [[-1.1, 1.35], fin] : [fin];
-    if (p.lado === 1) return [fin];
-    return [[-0.5, Z1 + MG + 0.62], [X1 + MG, Z1 + MG + 0.58], fin];
-  }
-  function rutaVuelta(p, fin) {
-    if (p.lado === 0) return p.z < 1.0 ? [[-1.5, 1.8], fin] : [fin];
-    if (p.lado === 1) return [[(p.x + fin[0]) / 2 + 0.4, Z1 + MG + 0.95], fin];
-    return [[X1 + MG + 0.4, Z1 + MG + 0.85], [0.6, Z1 + MG + 1.15], fin];
-  }
-  const largoRuta = (desde, ruta) => ruta.reduce((a, q, i) => a + Math.hypot(q[0] - (i ? ruta[i - 1][0] : desde[0]), q[1] - (i ? ruta[i - 1][1] : desde[1])), 0);
-  ladrillos.forEach((s, i) => { s.puesto = puestoDe(s, i); s.lejos = largoRuta(RECOGE[0], rutaIda(s.puesto, 0, 0)); });
-  // Orden de obra: hilada por hilada y, dentro de cada una, se alternan los que quedan lejos con los que quedan cerca
-  const orden = [];
-  for (let k = 0; k < HILADAS; k++) {
-    const fila = ladrillos.filter((s) => s.k === k).sort((a, b) => b.lejos - a.lejos);
-    while (fila.length) { orden.push(fila.shift()); if (fila.length) orden.push(fila.pop()); }
-  }
-  let turno = 0, asentados = 0, alturaMuros = Y0;
-  const proximo = () => (turno < orden.length ? orden[turno] : null);
-
-  // ---------- Bloques de código ----------
-  const geoCodigo = new THREE.BoxGeometry(L - 0.04, H - 0.04, G - 0.04);
-  const bloques = [];
-  function tomarBloque() {
-    let b = bloques.find((o) => o.estado === 'libre');
-    if (!b) {
-      const mt = new THREE.MeshStandardMaterial({ roughness: 0.6, emissive: '#FFFFFF', emissiveIntensity: 0.85, transparent: true });
-      const malla = new THREE.Mesh(geoCodigo, mt); malla.castShadow = true; mundo.add(malla);
-      b = { malla, mt, estado: 'libre', de: V(0, 0, 0), a: V(0, 0, 0), u: 0, T: 1, arco: 1, rot0: 0, rot1: 0, vuelta: 1, zl: 0, s: 0, sx: 1, t: 0, slot: null, off: V(0, 0, 0) };
-      bloques.push(b);
-    }
-    const t = texCodigo[Math.floor(azar() * texCodigo.length)];
-    b.mt.map = t; b.mt.emissiveMap = t; b.mt.opacity = 1; b.sx = 1; b.slot = null;
-    b.malla.visible = true; b.malla.scale.setScalar(0.0001); b.malla.rotation.set(0, TH, 0);
-    return b;
-  }
-  const ZCOLA = [0.72, 0.2, -0.32];                                             // lugares sobre la cinta, del frente hacia la pantalla
-  const cola = [];
-  function surtir() { while (cola.length < ZCOLA.length) { const b = tomarBloque(); b.estado = 'cinta'; b.zl = -0.8; b.s = 0; cola.push(b); } }
-  const listoParaLevantar = () => cola.length && cola[0].zl > ZCOLA[0] - 0.22;
-
-  // Chispas amarillas cuando un bloque se asienta
-  const geoChispa = new THREE.BoxGeometry(0.075, 0.075, 0.075), matChispa = ['#FFE500', '#FFFFFF', '#E30613'].map((color) => new THREE.MeshBasicMaterial({ color }));
-  const chispas = Array.from({ length: 72 }, () => { const malla = new THREE.Mesh(geoChispa, matChispa[0]); malla.visible = false; mundo.add(malla); return { malla, v: V(0, 0, 0), vida: 0 }; });
-  let iChispa = 0;
-  function chispear(x, y, z, n, abre, fuerza, fiesta = false) {
-    for (let i = 0; i < n; i++) {
-      const c = chispas[iChispa++ % chispas.length];
-      c.malla.material = matChispa[fiesta ? i % 3 : 0];
-      c.vida = fiesta ? 0.8 + azar() * 0.5 : 0.34 + azar() * 0.22;
-      c.malla.position.set(x + (azar() - 0.5) * abre, y, z + (azar() - 0.5) * abre);
-      c.v.set((azar() - 0.5) * 3.6 * fuerza, (1.5 + azar() * 2.3) * fuerza, (azar() - 0.5) * 3.6 * fuerza);
-      c.malla.visible = true;
-    }
-  }
-
-  function lanzar(w) {
-    const b = w.bloque, s = w.slot; w.bloque = null;
-    b.estado = 'vuelo'; b.u = 0; b.slot = s;
-    b.de.copy(b.malla.position); b.a.set(s.x, s.y, s.z);
-    const d = Math.hypot(s.x - b.de.x, s.z - b.de.z);
-    b.T = 0.42 + 0.085 * d + 0.05 * Math.max(0, s.y - b.de.y);
-    b.arco = Math.max(0.55 + 0.16 * d, d > 1.7 ? alturaMuros + 1.0 - (b.de.y + s.y) / 2 : 0);
-    b.rot0 = b.malla.rotation.y; b.rot1 = s.eje === 'x' ? 0 : Math.PI / 2;
-    while (b.rot1 - b.rot0 > Math.PI / 2) b.rot1 -= Math.PI; while (b.rot1 - b.rot0 < -Math.PI / 2) b.rot1 += Math.PI;
-    b.vuelta = azar() < 0.5 ? -1 : 1;
-  }
-  function asentar(b) {
-    const s = b.slot;
-    s.estado = 2; s.t = 0; s.nodo.visible = true; s.esc.fijar(0.5); s.esc.meta = 1;
-    asentados++; alturaMuros = Math.max(alturaMuros, Y0 + (s.k + 1) * H);
-    chispear(s.x, s.y + 0.1, s.z, 5, 0.5, 1);
-    b.estado = 'disuelve'; b.t = 0;
-    b.malla.position.set(s.x, s.y, s.z); b.malla.rotation.set(0, b.rot1, 0);
-    const pct = Math.round(asentados / ladrillos.length * 100);
-    chips[1].textContent = 'Paredes ' + pct + '%';
-  }
-
-  // ---------- Albañiles ----------
-  const PIEL = '#DDA677';
-  const geoCuerpo = unir([
-    [new THREE.BoxGeometry(0.27, 0.25, 0.18), '#E30613', 0, 0.345, 0],                                  // remera roja
-    [new THREE.BoxGeometry(0.278, 0.06, 0.188), '#FFE500', 0, 0.3, 0],                                  // faja reflectiva
-    [new THREE.SphereGeometry(0.118, 14, 10), PIEL, 0, 0.575, 0],
-    [new THREE.SphereGeometry(0.142, 14, 7, 0, Math.PI * 2, 0, Math.PI / 2), '#FFE500', 0, 0.598, 0],   // casco
-    [new THREE.CylinderGeometry(0.176, 0.176, 0.028, 16), '#FFE500', 0, 0.606, 0.034],                  // visera
-    [new THREE.BoxGeometry(0.028, 0.036, 0.02), '#141414', -0.046, 0.562, 0.112],
-    [new THREE.BoxGeometry(0.028, 0.036, 0.02), '#141414', 0.046, 0.562, 0.112]
-  ]);
-  const geoBrazo = unir([[new THREE.BoxGeometry(0.078, 0.2, 0.078), '#E30613', 0, -0.1, 0], [new THREE.BoxGeometry(0.072, 0.07, 0.072), PIEL, 0, -0.225, 0]]);
-  const geoPierna = unir([[new THREE.BoxGeometry(0.1, 0.15, 0.11), '#2B2926', 0, -0.075, 0], [new THREE.BoxGeometry(0.106, 0.07, 0.15), '#141414', 0, -0.185, 0.02]]);
-  const matAlbanil = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.8 });
-  const VEL = 5.1, TALLA = 1.32, CARGA_Y = 0.95 * TALLA;
-  const CUANTOS = chico ? 8 : 9;
-  const albaniles = Array.from({ length: CUANTOS }, (_, i) => {
-    const g = new THREE.Group(); g.scale.setScalar(TALLA); mundo.add(g);
-    const cuerpo = new THREE.Group(); g.add(cuerpo);
-    const torso = new THREE.Mesh(geoCuerpo, matAlbanil); torso.castShadow = true; cuerpo.add(torso);
-    const brazos = [-1, 1].map((s) => { const b = new THREE.Mesh(geoBrazo, matAlbanil); b.position.set(s * 0.176, 0.45, 0); b.castShadow = true; cuerpo.add(b); return b; });
-    const piernas = [-1, 1].map((s) => { const p = new THREE.Mesh(geoPierna, matAlbanil); p.position.set(s * 0.072, 0.22, 0); p.castShadow = true; g.add(p); return p; });
-    const fila = i >> 1, base = RECOGE[i % 2];
-    return { i, g, cuerpo, brazos, piernas, x: base[0] + 0.25 + fila * 0.5, z: base[1] + 0.35 + fila * 0.34, vx: 0, vz: 0, rumbo: -2.2, paso: i * 1.3,
-      ritmo: 0.93 + ((i * 5) % 9) * 0.019, estado: 'a_pila', ruta: [base], bloque: null, slot: null, puesto: null, t: 0, trabado: 0, salta: i * 0.07,
-      brazo: new Resorte(0, 170, 17), salto: new Resorte(0, 260, 13), aplaste: new Resorte(1, 300, 14) };
-  });
-  const FESTEJO = albaniles.map((w, i) => [X0 - 0.5 + i * (X1 - X0 + 1.0) / (CUANTOS - 1), Z1 + MG + 0.95 + (i % 2) * 0.55]);
-
-  function girar(w, ang, dt) { let d = ang - w.rumbo; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI; w.rumbo += d * (1 - Math.exp(-14 * dt)); }
-  const mirar = (w, x, z, dt) => girar(w, Math.atan2(x - w.x, z - w.z), dt);
-  function mover(w, dt, radio = 0.09) {                                                       // devuelve true al llegar
-    const [tx, tz] = w.ruta[0], dx = tx - w.x, dz = tz - w.z, d = Math.hypot(dx, dz) || 0.0001, ultimo = w.ruta.length === 1;
-    const tope = VEL * w.ritmo * (w.bloque ? 0.94 : 1.1), vd = ultimo ? Math.min(tope, d * 7 + 0.5) : tope, k = 1 - Math.exp(-11 * dt);
-    w.vx += (dx / d * vd - w.vx) * k; w.vz += (dz / d * vd - w.vz) * k;
-    w.x += w.vx * dt; w.z += w.vz * dt;
-    const v = Math.hypot(w.vx, w.vz); w.paso += v * dt * 10.5;
-    if (v > 0.3) girar(w, Math.atan2(w.vx, w.vz), dt);
-    w.trabado = ultimo && d < 0.9 ? w.trabado + dt : 0;                           // si otro ya ocupa el lugar, alcanza con quedar al lado
-    if (d < (ultimo ? radio : 0.42) || w.trabado > 0.45) { w.trabado = 0; w.ruta.shift(); if (!w.ruta.length) return true; }
-    return false;
-  }
-  const frenar = (w, dt) => { const k = Math.exp(-14 * dt); w.vx *= k; w.vz *= k; };
-  function aFestejar(w) { w.ruta = [FESTEJO[w.i]]; w.estado = 'a_festejo'; w.brazo.meta = 0; }
-
-  function albanil(w, dt) {
-    switch (w.estado) {
-      case 'a_pila':
-        if (fase !== 'obra' || !proximo()) { aFestejar(w); break; }
-        if (mover(w, dt, 0.4)) { w.estado = 'en_pila'; w.t = 0; }
-        break;
-      case 'en_pila': {
-        frenar(w, dt); mirar(w, MIRA_COMPU.x, MIRA_COMPU.z, dt);
-        const s = fase === 'obra' ? proximo() : null;
-        if (!s) { aFestejar(w); break; }
-        if (!listoParaLevantar()) break;
-        const b = cola.shift(); turno++; s.estado = 1;
-        w.slot = s; w.bloque = b; b.estado = 'carga'; b.sx = s.largo / L;
-        b.off.set(0, 0.34, b.zl).applyMatrix4(compu.matrix).sub(_p.set(w.x, 0.45, w.z));
-        w.puesto = s.puesto; w.brazo.meta = Math.PI; w.aplaste.vel -= 2.2;
-        const corre = (azar() - 0.5) * 0.6;
-        w.ruta = rutaIda(s.puesto, s.puesto.lado === 1 ? corre : 0, s.puesto.lado === 1 ? 0 : corre);
-        w.estado = 'lleva';
-        break; }
-      case 'lleva':
-        if (mover(w, dt)) { w.estado = 'apunta'; w.t = 0; w.aplaste.meta = 0.8; }
-        break;
-      case 'apunta':
-        frenar(w, dt); mirar(w, w.slot.x, w.slot.z, dt); w.t += dt;
-        if (w.t > 0.15 && (w.t > 2.2 || w.slot.apoyos.every((a) => a.estado === 2))) {
-          lanzar(w); w.aplaste.meta = 1; w.aplaste.vel += 3.2; w.salto.vel = 2.9; w.estado = 'suelta'; w.t = 0;
-        }
-        break;
-      case 'suelta':
-        w.t += dt;
-        if (w.t > 0.2) { w.brazo.meta = 0; w.ruta = rutaVuelta(w.puesto, RECOGE[w.i % 2]); w.estado = 'a_pila'; }
-        break;
-      case 'a_festejo':
-        if (fase === 'obra' && proximo()) { w.ruta = [RECOGE[w.i % 2]]; w.estado = 'a_pila'; break; }
-        if (mover(w, dt, 0.15)) w.estado = 'festejo';
-        break;
-      case 'festejo':
-        frenar(w, dt); mirar(w, CX, CZ, dt);
-        if (fase === 'obra' && proximo()) { w.brazo.meta = 0; w.ruta = [RECOGE[w.i % 2]]; w.estado = 'a_pila'; break; }
-        if (fase === 'listo') {                                                  // ¡techo puesto! saltan con los brazos arriba
-          w.brazo.meta = Math.PI * 0.92; w.salta -= dt;
-          if (w.salta <= 0 && w.salto.v < 0.02) { w.salto.vel = 3.1; w.salta = 0.5 + azar() * 0.35; }
-        } else w.brazo.meta = 0;
-        break;
-    }
-    w.brazo.paso(dt); w.salto.paso(dt); w.aplaste.paso(dt);
-    if (w.salto.v < 0) { w.salto.v = 0; if (w.salto.vel < 0) w.salto.vel = 0; }
-  }
-
-  // ---------- Etapas de la obra (se repite) ----------
-  let fase = 'obra', tf = 0, reloj = 0, confeti = 0;
-  const r = {
-    vistaY: new Resorte(0, 30, 8), vistaX: new Resorte(0, 30, 8),
-    mojinete: new Resorte(0, 58, 6.6), cumbrera: new Resorte(0, 120, 9), cartel: new Resorte(0, 130, 9)
-  };
-  function marcar() {
-    chips[1].classList.toggle('is-activa', fase === 'obra'); chips[1].classList.toggle('is-lista', fase === 'techo' || fase === 'listo');
-    chips[2].classList.toggle('is-activa', fase === 'techo'); chips[2].classList.toggle('is-lista', fase === 'listo');
-    if (fase === 'obra' && asentados === 0) chips[1].textContent = 'Paredes 0%';
-  }
-  function lanzarPanel(p) { p.estado = 1; p.u = 0; p.codigo.visible = true; p.mc.opacity = 1; }
-  function etapas(dt) {
-    tf += dt;
-    if (fase === 'obra' && asentados === ladrillos.length) { fase = 'techo'; tf = 0; r.mojinete.meta = 1; marcar(); }
-    if (fase === 'techo') {
-      if (tf > 0.5 && paneles[0].estado === 0) lanzarPanel(paneles[0]);
-      if (tf > 0.9 && paneles[1].estado === 0) lanzarPanel(paneles[1]);
-      if (paneles[0].estado === 2 && paneles[1].estado === 2 && paneles[1].t > 0.12) { fase = 'listo'; tf = 0; confeti = 0; r.cumbrera.meta = 1; chispear(CX, YT + ALTO + 0.3, CZ, 12, 2.6, 1.3); marcar(); }
-    }
-    if (fase === 'listo' && tf > 0.45 && r.cartel.meta === 0) { r.cartel.meta = 1; chispear(CX, YT + 0.6, Z1 + 0.3, 8, 1.8, 1); }
-    if (fase === 'listo' && confeti < 5 && tf > 0.15 + confeti * 0.4) { confeti++; chispear(CX + (azar() - 0.5) * 3.4, YT + ALTO * 0.7 + azar(), CZ + 0.4 + (azar() - 0.5) * 2.6, 11, 1.2, 1.55, true); }
-    if (fase === 'listo' && tf > 6) {                                            // se desarma de arriba hacia abajo
-      fase = 'desarme'; tf = 0; r.cumbrera.meta = 0; r.mojinete.meta = 0; r.cartel.meta = 0; marcar();
-      for (const p of paneles) p.esc.meta = 0;
-      for (const s of ladrillos) s.fin = 0.3 + (HILADAS - 1 - s.k) * 0.1 + azar() * 0.12;
-    }
-    if (fase === 'desarme') {
-      for (const s of ladrillos) if (s.estado === 2 && tf > s.fin) { s.estado = 3; s.esc.meta = 0; s.esc.k = 160; s.esc.c = 22; }
-      if (tf > 1.75) {
-        for (const s of ladrillos) { s.estado = 0; s.t = 9; s.nodo.visible = false; s.esc.k = 300; s.esc.c = 20; }
-        for (const p of paneles) { p.estado = 0; p.nodo.visible = false; p.esc.fijar(1); p.t = 9; }
-        turno = 0; asentados = 0; alturaMuros = Y0; fase = 'obra'; tf = 0; marcar();
-      }
-    }
-  }
-
-  const _p = V(0, 0, 0), suave = (u) => 1 - Math.pow(1 - u, 3);
-  function simular(dt) {
-    reloj += dt;
-    etapas(dt);
-    // cinta de la notebook
-    surtir();
-    texBanda.offset.y = (reloj * 0.9) % 1;
-    cola.forEach((b, i) => { b.zl += (ZCOLA[i] - b.zl) * (1 - Math.exp(-13 * dt)); b.s += (1 - b.s) * (1 - Math.exp(-11 * dt)); });
-    const n = Math.floor(reloj * 26) % (LETRAS + 46);
-    dibujarPantalla(Math.min(n, LETRAS) + (n >= LETRAS ? (Math.floor(reloj * 2.5) % 2) * 0.5 : 0));
-    // albañiles
-    for (const w of albaniles) albanil(w, dt);
-    for (let i = 0; i < albaniles.length; i++) for (let j = i + 1; j < albaniles.length; j++) {   // que no se pisen
-      const a = albaniles[i], b = albaniles[j], dx = a.x - b.x, dz = a.z - b.z, d = Math.hypot(dx, dz);
-      if (d > 0.5 || d < 0.0001) continue;
-      const fa = a.estado === 'apunta' || a.estado === 'suelta' ? 0.2 : 1, fb = b.estado === 'apunta' || b.estado === 'suelta' ? 0.2 : 1;
-      const e = (0.5 - d) / d * (1 - Math.exp(-9 * dt)) / (fa + fb);
-      a.x += dx * e * fa; a.z += dz * e * fa; b.x -= dx * e * fb; b.z -= dz * e * fb;
-    }
-    // el bloque que lleva cada uno (sube con los brazos) y los que esperan en la cinta
-    for (const w of albaniles) if (w.bloque) {
-      const b = w.bloque, mov = Math.min(1, Math.hypot(w.vx, w.vz) / 2.2), sube = Math.abs(Math.sin(w.paso)) * 0.03 * mov;
-      const listo = Math.min(1, Math.max(w.brazo.v, 0) / (Math.PI * 0.9));
-      b.off.multiplyScalar(Math.exp(-14 * dt));
-      b.malla.position.set(w.x, (0.45 + (CARGA_Y - 0.45) * listo) * (0.5 + 0.5 * w.aplaste.v) + sube * TALLA + w.salto.v, w.z).add(b.off);
-      b.malla.rotation.set(0, w.rumbo, 0); b.malla.scale.set(b.sx, 1, 1);
-    }
-    for (const b of cola) { b.malla.position.set(0, 0.34, b.zl).applyMatrix4(compu.matrix); b.malla.rotation.set(0, TH, 0); b.malla.scale.setScalar(Math.max(b.s, 0.0001)); }
-    // bloques en el aire y recién asentados
-    for (const b of bloques) {
-      if (b.estado === 'vuelo') {
-        b.u += dt / b.T;
-        if (b.u >= 1) { asentar(b); continue; }
-        const u = b.u, e = suave(u);
-        b.malla.position.lerpVectors(b.de, b.a, u); b.malla.position.y += b.arco * 4 * u * (1 - u);
-        b.malla.rotation.set((1 - e) * Math.PI * 2 * b.vuelta, b.rot0 + (b.rot1 - b.rot0) * e, 0);
-      } else if (b.estado === 'disuelve') {
-        b.t += dt; const o = 1 - b.t / 0.2;
-        if (o <= 0) { b.estado = 'libre'; b.malla.visible = false; continue; }
-        b.mt.opacity = o; b.malla.scale.set(b.sx * (1.03 + 0.1 * (1 - o)), 1.03 + 0.1 * (1 - o), 1.03 + 0.1 * (1 - o));
-      }
-    }
-    for (const s of ladrillos) {
-      if (s.estado === 2 && s.t < 1.6) {                                         // el bloque ya es ladrillo: destello amarillo que se apaga en rojo
-        s.t += dt; const e = s.esc.paso(dt), mezcla = Math.exp(-s.t * 5.2);
-        s.nodo.scale.set(1 + (1 - e) * 0.3, e, 1 + (1 - e) * 0.3); s.nodo.position.y = s.y - (1 - e) * H / 2;
-        s.mt.color.copy(s.tono).lerp(AMARILLO, mezcla); s.mt.emissive.copy(ROJO).lerp(AMARILLO, mezcla); s.mt.emissiveIntensity = 0.14 + mezcla * 0.95;
-        if (s.t >= 1.6) { s.nodo.scale.set(1, 1, 1); s.nodo.position.y = s.y; s.mt.color.copy(s.tono); s.mt.emissive.copy(ROJO); s.mt.emissiveIntensity = 0.14; }
-      } else if (s.estado === 3) {
-        const e = Math.max(s.esc.paso(dt), 0.0001); s.nodo.scale.setScalar(e); s.nodo.visible = e > 0.03;
-      }
-    }
-    // techo
-    for (const p of paneles) {
-      if (p.estado === 1) {
-        p.u += dt / 1.1;
-        if (p.u >= 1) {
-          p.estado = 2; p.t = 0; p.nodo.visible = true; p.esc.fijar(1.13); p.esc.meta = 1;
-          chispear(p.nodo.position.x, p.nodo.position.y + 0.3, CZ, 10, 3.0, 1.2);
-        } else {
-          const u = p.u, e = suave(u);
-          p.codigo.position.lerpVectors(SALIDA, p.nodo.position, e); p.codigo.position.y += 2.5 * 4 * u * (1 - u);
-          p.codigo.quaternion.copy(GIRO_PANTALLA).slerp(p.nodo.quaternion, e);
-          p.codigo.scale.setScalar(0.1 + 0.9 * e);
-        }
-      }
-      if (p.estado === 2) {
-        p.t += dt; const e = Math.max(p.esc.paso(dt), 0.0001), mezcla = Math.exp(-p.t * 4.5);
-        p.nodo.scale.setScalar(e); p.nodo.visible = e > 0.03;
-        p.mt.emissive.copy(AMARILLO).lerp(BLANCO, mezcla * 0.8); p.mt.emissiveIntensity = 0.16 + mezcla * 0.8;
-        if (p.codigo.visible) {
-          const o = 1 - p.t / 0.26;
-          if (o <= 0) p.codigo.visible = false;
-          else { p.mc.opacity = o; p.codigo.position.copy(p.nodo.position); p.codigo.quaternion.copy(p.nodo.quaternion); p.codigo.scale.setScalar(1.02 + 0.06 * (1 - o)); }
-        }
-      }
-    }
-    for (const c of chispas) if (c.vida > 0) {
-      c.vida -= dt; c.v.y -= 11 * dt; c.malla.position.addScaledVector(c.v, dt);
-      c.malla.scale.setScalar(Math.min(1, Math.max(c.vida, 0) * 5)); if (c.vida <= 0) c.malla.visible = false;
-    }
-    r.mojinete.paso(dt); r.cumbrera.paso(dt); r.cartel.paso(dt); r.vistaY.paso(dt); r.vistaX.paso(dt);
-  }
-
-  function colocar() {
-    for (const w of albaniles) {
-      const mov = Math.min(1, Math.hypot(w.vx, w.vz) / 2.2), sw = Math.sin(w.paso), arriba = w.brazo.v, sube = Math.abs(sw) * 0.03 * mov;
-      w.g.position.set(w.x, w.salto.v, w.z); w.g.rotation.y = w.rumbo;
-      w.piernas[0].rotation.x = sw * 0.95 * mov; w.piernas[1].rotation.x = -sw * 0.95 * mov;
-      w.cuerpo.position.y = sube; w.cuerpo.rotation.x = 0.17 * mov;
-      const e = w.aplaste.v; w.cuerpo.scale.set(1 + (1 - e) * 0.45, e, 1 + (1 - e) * 0.45);
-      const hamaca = sw * 0.8 * mov * (1 - arriba / Math.PI);
-      w.brazos[0].rotation.x = -arriba - hamaca; w.brazos[1].rotation.x = -arriba + hamaca;
-    }
-    const em = Math.max(r.mojinete.v, 0.0001); mojinetes.scale.set(1, em, 1); mojinetes.visible = em > 0.01;
-    const ec = Math.max(r.cumbrera.v, 0.0001); cumbrera.scale.setScalar(ec); cumbrera.visible = ec > 0.02;
-    const ek = Math.max(r.cartel.v, 0.0001); cartel.scale.setScalar(ek); cartel.visible = ek > 0.02;
-    mundo.rotation.set(r.vistaX.v, r.vistaY.v, 0);
-  }
-
-  // ---------- Mouse / dedo ----------
-  const mira = { x: 0, y: 0 };
-  window.addEventListener('pointermove', (e) => { mira.x = (e.clientX / window.innerWidth) * 2 - 1; mira.y = (e.clientY / window.innerHeight) * 2 - 1; }, { passive: true });
-
-  // ---------- Encuadre: la maqueta entera siempre entra, lo más grande posible ----------
-  const DIR = V(0.6, 0.42, 0.78).normalize();
-  const SILUETA = [];
-  for (let a = 0; a < 6.28; a += 0.2618) SILUETA.push(V(BX + RADIO * Math.cos(a), 0, BZ + RADIO * Math.sin(a)), V(BX + (RADIO - 0.28) * Math.cos(a), -0.86, BZ + (RADIO - 0.28) * Math.sin(a)));
-  SILUETA.push(V(CX, YT + ALTO + 0.55, Z1 + 0.4), V(CX, YT + ALTO + 0.55, Z0 - 0.4), V(X1 + 0.5, YT, Z1 + 0.3));
-  SILUETA.push(deCompu(-1.5, 2.1, -1.4), deCompu(1.5, 2.1, -1.4));
-  function encuadrar() {
-    const w = contenedor.clientWidth, h = contenedor.clientHeight;
-    if (!w || !h) return;
-    renderer.setSize(w, h, false);
-    camara.aspect = w / h;
-    const centro = V(BX, 2.3, BZ), p = V(0, 0, 0), der = V(0, 0, 0), arr = V(0, 0, 0);
-    const tan = Math.tan(THREE.MathUtils.degToRad(camara.fov / 2));
-    let d = 40;
-    for (let k = 0; k < 6; k++) {
-      camara.position.copy(centro).addScaledVector(DIR, d); camara.lookAt(centro); camara.updateProjectionMatrix(); camara.updateMatrixWorld();
-      let x0 = 9, x1 = -9, y0 = 9, y1 = -9;
-      for (const e of SILUETA) { p.copy(e).project(camara); x0 = Math.min(x0, p.x); x1 = Math.max(x1, p.x); y0 = Math.min(y0, p.y); y1 = Math.max(y1, p.y); }
-      // centrar la silueta y acercar hasta que ocupe el cuadro (dejando lugar abajo para las etiquetas)
-      der.setFromMatrixColumn(camara.matrixWorld, 0); arr.setFromMatrixColumn(camara.matrixWorld, 1);
-      centro.addScaledVector(der, (x0 + x1) / 2 * d * tan * camara.aspect).addScaledVector(arr, ((y0 + y1) / 2 - 0.05) * d * tan);
-      d *= Math.max((x1 - x0) / 2 / 0.95, (y1 - y0) / 2 / 0.86);
-    }
-    camara.position.copy(centro).addScaledVector(DIR, d); camara.lookAt(centro); camara.updateProjectionMatrix();
-  }
-  function pintar() { colocar(); renderer.render(escena, camara); }
-  new ResizeObserver(() => { encuadrar(); if (quieto) pintar(); }).observe(contenedor);
-  encuadrar();
-
-  // ---------- Bucle ----------
-  marcar();
-  if (quieto) {
-    // Sin movimiento: la obra a medio levantar, con los albañiles en plena tarea
-    for (let i = 0; i < 60 * 13; i++) simular(1 / 60);
-    pintar();
-  } else {
-    let antes = performance.now(), visible = true;
-    // Si el equipo va justo, primero baja la definición y después saca las sombras
-    let calienta = 40, muestras = 0, suma = 0, nivel = 0;
-    const cuadro = (ahora) => {
-      const paso = ahora - antes;
-      const dt = Math.min(paso / 1000, 1 / 15); antes = ahora;
-      if (nivel < 2 && paso < 400 && --calienta < 0) {
-        suma += paso;
-        if (++muestras === 50) {
-          if (suma / muestras > 30) {
-            nivel++;
-            if (nivel === 1 && renderer.getPixelRatio() > 1.25) renderer.setPixelRatio(1.25);
-            else { nivel = 2; sol.castShadow = false; }
-            encuadrar(); calienta = 20;
-          }
-          muestras = 0; suma = 0;
-        }
-      }
-      r.vistaY.meta = Math.sin(ahora / 5200) * 0.07 + mira.x * 0.2;
-      r.vistaX.meta = mira.y * 0.045;
-      const pasos = Math.max(1, Math.ceil(dt * 120)), h = dt / pasos;
-      for (let s = 0; s < pasos; s++) simular(h);
-      pintar();
-    };
-    const marcha = () => { antes = performance.now(); renderer.setAnimationLoop(visible && !document.hidden ? cuadro : null); };
-    new IntersectionObserver(([e]) => { visible = e.isIntersecting; marcar(); marcha(); }).observe(contenedor);
-    document.addEventListener('visibilitychange', marcha);
-    marcha();
-  }
-</script>
+<script src="assets/js/vigencia.js" defer></script>
+<script src="assets/js/promos-bancarias.js" defer></script>
+<script src="assets/js/jadever-productos.js" defer></script>
+<script src="assets/js/black-coco-productos.js" defer></script>
+<script src="assets/js/v3.js" defer></script>
 </body>
 </html>

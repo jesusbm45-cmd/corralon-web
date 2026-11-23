@@ -1,0 +1,9 @@
+Imágenes del catálogo por rubro (sección "Catálogo por rubro" de index.html).
+
+Hoy son ilustraciones SVG con los colores de la marca. Para cambiar una por una foto real:
+1. Guardar la foto como WebP, 1200 x 750 px (proporción 16:10), máx. ~250 KB,
+   con el mismo nombre del rubro. Ej.: obra-gruesa.webp
+2. En index.html, en la tarjeta de ese rubro, cambiar src="assets/img/rubros/obra-gruesa.svg"
+   por src="assets/img/rubros/obra-gruesa.webp".
+
+Usar fotos propias (local, depósito, productos). No copiar fotos de otros corralones.
