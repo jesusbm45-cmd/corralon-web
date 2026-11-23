@@ -230,3 +230,9 @@ button.articulo__nombre:hover,button.articulo__nombre:focus-visible{text-decorat
 .articulo__pres{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
 .pres--chica{min-height:36px;min-width:48px;padding:6px 10px;font-size:14px;border-width:1.5px}
 @media (pointer:coarse){.pres--chica{min-height:44px}}
+/* Lista fija para Google y sin JavaScript (la escribe gen_seo.py; black-coco.js la reemplaza) */
+.seo-lista{display:grid;gap:28px}
+.seo-lista h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:26px;margin:0}
+.seo-lista h3{font-size:15px;font-weight:800;margin:14px 0 6px}
+.seo-lista ul{margin:0;padding-left:18px;columns:2 260px;font-size:14px;line-height:1.5}
+.seo-lista li span{color:var(--grafito)}
