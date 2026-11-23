@@ -595,6 +595,7 @@ ul,ol{padding:0;list-style:none}
 .marcas-mas a{display:grid;align-content:center;justify-items:center;gap:2px;min-height:72px;padding:10px 8px;background:var(--negro);color:var(--blanco);text-decoration:none;text-align:center;transition:background .15s}
 .marcas-mas a:hover,.marcas-mas a:focus-visible{background:var(--rojo)}
 .marcas-mas__marca{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1;letter-spacing:.01em}
+.marcas-mas__logo{height:30px;width:auto;max-width:100%;object-fit:contain}
 .marcas-mas__rubro{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--amarillo)}
 @media (max-width:620px){
   .hero .slide__visual--pago{padding:14px 16px 28px;gap:12px}
@@ -607,6 +608,7 @@ ul,ol{padding:0;list-style:none}
   .marcas-mas{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:-18px}
   .marcas-mas a{min-height:56px}
   .marcas-mas__marca{font-size:19px}
+  .marcas-mas__logo{height:20px}
   .producto__marca{height:26px;padding:6px 8px}
   .producto__chip{font-size:11px;padding:5px 7px}
   .producto__foto .producto__marca img{max-width:64px}
