@@ -102,7 +102,21 @@
     if (o.detalle) c.appendChild(crear('p', 'producto__detalle', o.detalle));
     var pr = crear('div', 'producto__precio');
     pr.appendChild(crear('p', 'lab', o.rotulo));
+    if (o.antes) {
+      var an = crear('p', 'producto__antes');
+      an.appendChild(crear('span', 'producto__antes-lab', 'Antes '));
+      an.appendChild(crear('del', null, pesos(o.antes)));
+      pr.appendChild(an);
+    }
     pr.appendChild(crear('p', 'd', pesos(o.precio)));
+    // Cuotas con Mercado Pago sobre el precio de lista (3 cuotas −9,94 %, 6 cuotas −5,20 %; no se suman al 23%)
+    if (o.lista && o.cuotas) {
+      var cu = crear('p', 'producto__cuotas');
+      cu.appendChild(crear('span', 'producto__antes-lab', 'Con Mercado Pago'));
+      cu.appendChild(crear('span', 'producto__cuota', '3 cuotas de ' + pesos(Math.ceil(o.lista * 0.9006 / 3))));
+      cu.appendChild(crear('span', 'producto__cuota', '6 cuotas de ' + pesos(Math.ceil(o.lista * 0.948 / 6))));
+      pr.appendChild(cu);
+    }
     if (o.lista) pr.appendChild(crear('p', 'producto__lista', 'Lista ' + pesos(o.lista)));
     c.appendChild(pr);
     var b = crear('a', 'btn btn--negro btn--chico', 'Consultar');
@@ -126,7 +140,8 @@
         img: 'assets/img/black-coco/' + p.foto, nombre: p.nombre, detalle: p.detalle, cat: grupoBC(p.grupo),
         marca: m.nombre, logo: LOGOS[m.id],
         chip: promo ? (vigenteBC ? '23% OFF' : '') : 'Liquidación', chipLiq: !promo,
-        rotulo: rotulo, precio: precio, lista: p.lista,
+        rotulo: rotulo, precio: precio, lista: p.lista, cuotas: true,
+        antes: promo && vigenteBC ? p.contado_normal : null,
         msj: 'Hola Don Coco, quiero consultar por ' + p.nombre + ' ' + m.nombre + ' (cód. ' + p.codigo + '). ' +
           (promo && vigenteBC ? 'Precio Black Coco: ' : promo ? 'Precio: ' : 'Precio de liquidación: ') + pesos(precio) + ' de contado o transferencia.'
       }));

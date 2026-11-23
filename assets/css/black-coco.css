@@ -52,7 +52,7 @@ h4{margin:0}
 .bc-hero__lista span:last-child{font-weight:700;font-size:14px}
 
 /* ---------- pestañas de marcas ---------- */
-.marcas{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:2px solid var(--negro);background:var(--blanco)}
+.marcas{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border:2px solid var(--negro);background:var(--blanco)}
 /* precios.html: 11 marcas en dos filas de 6 */
 body[data-bc-modo="contado"] .marcas{grid-template-columns:repeat(6,minmax(0,1fr))}
 body[data-bc-modo="contado"] .marca:nth-child(6n+1){border-left:0}
@@ -81,6 +81,11 @@ body[data-bc-modo="contado"] .marca__nombre{font-size:clamp(30px,2.6vw,40px)}
 .producto__chip--liq{background:var(--negro)}
 .producto__precio .lab{font-size:12px}
 .precio__lista{font-size:13px;font-weight:600}
+.precio__antes{font-size:14px;font-weight:600;color:var(--grafito);margin:0}
+.precio__antes del{font-weight:700;text-decoration-thickness:2px;text-decoration-color:var(--rojo)}
+.precio__antes-lab,.precio__cuotas-lab{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:12px}
+.precio__cuotas{font-size:13px;font-weight:700;color:var(--negro);margin:0;display:grid;gap:1px}
+.precio__cuota{display:block}
 .bc-vidriera .producto__nombre{font-size:16px}
 
 /* ---------- lista completa ---------- */
@@ -136,7 +141,7 @@ body[data-bc-modo="contado"] .marca__nombre{font-size:clamp(30px,2.6vw,40px)}
 
 /* ---------- responsive ---------- */
 @media (max-width:1100px){
-  .marcas{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .marcas{grid-template-columns:repeat(4,minmax(0,1fr))}
   .marca:nth-child(4){border-left:0}
   .marca:nth-child(n+4){border-top:2px solid var(--negro)}
   body[data-bc-modo="contado"] .marcas{grid-template-columns:repeat(3,minmax(0,1fr))}

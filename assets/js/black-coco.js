@@ -25,7 +25,7 @@
   if (!soloMarca && modo === 'contado' && vigente(null, '2026-11-28') && !/[?&]previa/.test(location.search))
     datos.marcas = datos.marcas.filter(function (m) { return m.tipo === 'contado'; });
   // Rubros nuevos (tipo "contado": Polacrin, Talento, Megaflex, Tinacos, Peirano, Roca y Oblak): solo en precios.html
-  if (modo === 'black') datos.marcas = datos.marcas.filter(function (m) { return m.tipo !== 'contado'; });
+  // Los rubros nuevos (tipo "contado") también van en black-coco.html, con su precio de contado (Jesús, 23/11: que se vean sin buscar)
   // Todas las marcas que se pueden mostrar hoy: de acá salen los «Va bien con» (también en la página de una sola marca)
   var todas = datos.marcas.slice();
   if (soloMarca) datos.marcas = datos.marcas.filter(function (m) { return m.id === soloMarca; });
@@ -86,10 +86,27 @@
     return 'https://wa.me/' + numeroWA() + '?text=' + encodeURIComponent(msj);
   }
 
+  // Cuotas con Mercado Pago sobre el precio de lista (anexo de tarjetas del manual v7; Jesús, 23/11/2026).
+  // El 23% de Black Coco es solo de contado o transferencia: las cuotas no se suman. Redondeo hacia arriba.
+  var CUOTAS = [[3, 0.9006], [6, 0.948]];
+  function cuota(p, c) { return Math.ceil(p.lista * c[1] / c[0]); }
+
   function precio(p, m, clase) {
     var caja = crear('div', clase);
     caja.appendChild(crear('p', 'lab', deLista(m) ? 'Contado o transf.' : 'Liquidación'));
+    // En Black Coco, arriba y tachado el precio de contado de siempre
+    if (esPromo(m) && p.contado_normal) {
+      var antes = crear('p', 'precio__antes');
+      antes.appendChild(crear('span', 'precio__antes-lab', 'Antes '));
+      var del_ = crear('del', null, pesos(p.contado_normal));
+      antes.appendChild(del_);
+      caja.appendChild(antes);
+    }
     caja.appendChild(crear('p', 'd precio', pesos(contado(p))));
+    var cuotas = crear('p', 'precio__cuotas');
+    cuotas.appendChild(crear('span', 'precio__cuotas-lab', 'Con Mercado Pago'));
+    CUOTAS.forEach(function (c) { cuotas.appendChild(crear('span', 'precio__cuota', c[0] + ' cuotas de ' + pesos(cuota(p, c)))); });
+    caja.appendChild(cuotas);
     caja.appendChild(crear('p', 'precio__lista', 'Lista ' + pesos(p.lista)));
     return caja;
   }
@@ -314,12 +331,12 @@
       (esPromo(m) ? '23% OFF de contado o transferencia' : deLista(m) ? 'Precio de contado o transferencia' : 'Liquidación de contado o transferencia, hasta agotar stock');
     if (nota) {
       nota.textContent = esPromo(m)
-        ? 'Precio grande: contado o transferencia con el 23% OFF de Black Coco, del 26 al 28/11/2026. Debajo, el precio de lista. Pueden cambiar sin aviso y dependen del stock.'
+        ? 'Precio grande: contado o transferencia con el 23% OFF de Black Coco, del 26 al 28/11/2026. Arriba, tachado, el de contado de siempre. Cuotas con Mercado Pago sobre el precio de lista (sin el 23%): 3 cuotas −9,94 % y 6 cuotas −5,20 %. Pueden cambiar sin aviso y dependen del stock.'
         : deLista(m)
-          ? 'Precio grande: contado o transferencia. Debajo, el precio de lista. Pueden cambiar sin aviso y dependen del stock.'
+          ? 'Precio grande: contado o transferencia. Cuotas con Mercado Pago sobre el precio de lista: 3 cuotas −9,94 % y 6 cuotas −5,20 %. Pueden cambiar sin aviso y dependen del stock.'
           : modo === 'black'
-            ? 'Liquidación: precio de contado o transferencia, del 26 al 28/11/2026 o hasta agotar stock. Sin cambio, salvo falla. Debajo, el precio de lista. Pueden cambiar sin aviso.'
-            : 'Liquidación: precio de contado o transferencia, hasta agotar stock. Sin cambio, salvo falla. Debajo, el precio de lista. Pueden cambiar sin aviso.';
+            ? 'Liquidación: precio de contado o transferencia, del 26 al 28/11/2026 o hasta agotar stock. Sin cambio, salvo falla. Cuotas con Mercado Pago sobre el precio de lista. Pueden cambiar sin aviso.'
+            : 'Liquidación: precio de contado o transferencia, hasta agotar stock. Sin cambio, salvo falla. Cuotas con Mercado Pago sobre el precio de lista. Pueden cambiar sin aviso.';
     }
 
     if (destacados) {

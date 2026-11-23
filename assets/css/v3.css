@@ -577,6 +577,11 @@ ul,ol{padding:0;list-style:none}
 .producto__foto{position:relative}
 .producto__chip{position:absolute;left:0;top:0;background:var(--rojo);color:var(--blanco);padding:6px 10px;font-size:13px}
 .producto__lista{font-size:13px;font-weight:600}
+.producto__antes{font-size:14px;font-weight:600;color:var(--grafito)}
+.producto__antes del{font-weight:700;text-decoration-thickness:2px;text-decoration-color:var(--rojo)}
+.producto__antes-lab{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:12px}
+.producto__cuotas{font-size:13px;font-weight:700;display:grid;gap:1px}
+.producto__cuota{display:block}
 .producto__chip--liq{background:var(--negro)}
 /* placa negra con el logo de la marca (logos oficiales en blanco, assets/img/marcas/) */
 .producto__marca{position:absolute;right:0;top:0;background:var(--negro);height:32px;padding:7px 10px;display:flex;align-items:center}
@@ -586,6 +591,11 @@ ul,ol{padding:0;list-style:none}
 .marcas-logos a{display:flex;align-items:center;justify-content:center;background:var(--negro);height:84px;padding:18px 20px;transition:background .15s}
 .marcas-logos a:hover,.marcas-logos a:focus-visible{background:var(--rojo)}
 .marcas-logos img{width:auto;height:100%;max-height:40px;max-width:100%;object-fit:contain}
+.marcas-mas{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin:-12px 0 clamp(24px,3vw,36px)}
+.marcas-mas a{display:grid;align-content:center;justify-items:center;gap:2px;min-height:72px;padding:10px 8px;background:var(--negro);color:var(--blanco);text-decoration:none;text-align:center;transition:background .15s}
+.marcas-mas a:hover,.marcas-mas a:focus-visible{background:var(--rojo)}
+.marcas-mas__marca{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1;letter-spacing:.01em}
+.marcas-mas__rubro{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.08em;color:var(--amarillo)}
 @media (max-width:620px){
   .hero .slide__visual--pago{padding:14px 16px 28px;gap:12px}
   .pago__dias{padding:10px 12px 8px}
@@ -594,6 +604,9 @@ ul,ol{padding:0;list-style:none}
   .marcas-logos{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
   .marcas-logos a{height:56px;padding:10px 8px}
   .marcas-logos img{max-height:26px}
+  .marcas-mas{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:-18px}
+  .marcas-mas a{min-height:56px}
+  .marcas-mas__marca{font-size:19px}
   .producto__marca{height:26px;padding:6px 8px}
   .producto__chip{font-size:11px;padding:5px 7px}
   .producto__foto .producto__marca img{max-width:64px}
