@@ -166,6 +166,45 @@
   }
 
 
+  // Combos de obra: arma el WhatsApp con lo que quedó tildado (va al asesor de esta visita)
+  var armarCombo = function (card) {
+    var btn = card.querySelector('[data-combo-btn]');
+    var marcados = card.querySelectorAll('[data-combo-item]:checked');
+    var t = 'Hola Don Coco, quiero cotizar el combo ' + card.getAttribute('data-combo-nombre') + ':\n';
+    Array.prototype.forEach.call(marcados, function (i) { t += '- ' + i.getAttribute('data-nombre') + ' (' + i.value + ')\n'; });
+    t += 'Es para: ';
+    btn.href = 'https://wa.me/' + asesor + '?text=' + encodeURIComponent(t);
+    btn.classList.toggle('btn--apagado', !marcados.length);
+    btn.setAttribute('aria-disabled', String(!marcados.length));
+  };
+  document.querySelectorAll('[data-combo]').forEach(function (card) {
+    armarCombo(card);
+    card.addEventListener('change', function () { armarCombo(card); });
+    card.querySelector('[data-combo-btn]').addEventListener('click', function (e) {
+      if (this.getAttribute('aria-disabled') === 'true') e.preventDefault();
+    });
+  });
+
+  // Consultá tu pedido o acopio: va al WhatsApp del vendedor elegido
+  var fp = document.querySelector('[data-pedido]');
+  if (fp) fp.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fac = fp.factura.value.trim(), nom = fp.nombre.value.trim();
+    var err = fp.querySelector('[data-pedido-error]');
+    if (!fac && !nom) { err.hidden = false; fp.factura.focus(); return; }
+    err.hidden = true;
+    var num = fp.vendedor.value || asesor;
+    var t = 'Hola Don Coco, quiero consultar ' + fp.tipo.value + '.';
+    if (fac) t += '\nFactura o remito: ' + fac;
+    if (nom) t += '\nNombre: ' + nom;
+    var url = 'https://wa.me/' + num + '?text=' + encodeURIComponent(t);
+    var a = document.createElement('a');
+    a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('data-wa-fijo', '');
+    a.textContent = 'Consultar pedido'; a.hidden = true;
+    fp.appendChild(a); a.click(); a.remove();
+  });
+
+
   // Carrusel de promociones
   var car = document.querySelector('[data-pista]');
   if (car) {

@@ -20,13 +20,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Montserrat:wght@500;600;700;800&display=swap">
-  <link rel="stylesheet" href="assets/css/v3.css?v=20261125a">
+  <link rel="stylesheet" href="assets/css/v3.css?v=20261125b">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"HardwareStore","name":"Don Coco — Corralón y Ferretería","url":"https://cdoncoco.com/",
    "telephone":"+5493874742440","address":{"@type":"PostalAddress","streetAddress":"Barrio 31 de Octubre, Mza. 1B Lote 1","addressLocality":"Salta","addressRegion":"Salta","addressCountry":"AR"},
    "openingHours":"Mo-Fr 08:30-18:00, Sa 08:30-14:00","logo":"https://cdoncoco.com/assets/img/iconos/apple-touch-icon.png","image":"https://cdoncoco.com/assets/img/og-don-coco.jpg","areaServed":{"@type":"City","name":"Salta"},"geo":{"@type":"GeoCoordinates","latitude":-24.8555159,"longitude":-65.4599909},"hasMap":"https://www.google.com/maps?cid=16507912379036645513","currenciesAccepted":"ARS","paymentAccepted":"Efectivo, transferencia, tarjeta de débito y crédito, Mercado Pago","sameAs":["https://www.google.com/maps?cid=16507912379036645513","https://instagram.com/corralon.doncoco","https://facebook.com/doncoco.corralonyferreteria"]}
   </script>
-  <script src="assets/js/medicion.js?v=20261125a" defer></script>
+  <script src="assets/js/medicion.js?v=20261125b" defer></script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -272,6 +272,81 @@
   </section>
 
   <!-- CÓMO PEDIR -->
+  <!-- COMBOS DE OBRA (25/11/2026): lo que lleva cada trabajo, sin cantidades (las calcula el albañil). Al tocar, sale un WhatsApp con la lista para que el vendedor cotice. Listas: claude/web-mejoras-powerbi.md -->
+  <section class="seccion seccion--blanco" id="combos" aria-labelledby="titulo-combos">
+    <div class="contenedor">
+      <header class="encabezado aparece">
+        <div class="encabezado__texto">
+          <p class="lab rojo">Combos de obra</p>
+          <h2 class="d titulo" id="titulo-combos">Todo lo de tu trabajo, <span class="rojo">en un solo pedido</span></h2>
+          <p class="bajada">Elegí qué vas a hacer y mandanos la lista. Las cantidades te las pasa tu albañil, o contanos las medidas y te ayudamos. Te cotizamos todo junto.</p>
+        </div>
+      </header>
+      <ul class="combos">
+        <li class="combo aparece" data-combo="losa" data-combo-nombre="Losa con viguetas">
+          <div class="combo__cabeza"><img class="combo__ilus" src="assets/img/rubros/obra-gruesa.svg" alt="" width="96" height="96" loading="lazy"><div><p class="lab combo__n">Combo 01</p><h3 class="d combo__nombre">Losa con viguetas</h3><p class="combo__bajada">Viguetas, bovedillas, malla, hierro y hormigón.</p></div></div>
+          <fieldset class="combo__lista"><legend class="lab">Qué lleva <span class="combo__ayuda">Destildá lo que ya tenés</span></legend>
+            <ul>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="VIG016" data-nombre="Viguetas pretensadas Stonover"><span>Viguetas pretensadas Stonover</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="BOV002" data-nombre="Bovedillas de telgopor 12 cm"><span>Bovedillas de telgopor 12 cm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="MAL003" data-nombre="Malla SIMA Q188 15 × 15, 6 mm"><span>Malla SIMA Q188 15 × 15, 6 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ADN004" data-nombre="Hierro ADN 10 mm"><span>Hierro ADN 10 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ADN002" data-nombre="Hierro ADN 6 mm"><span>Hierro ADN 6 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ALA005" data-nombre="Alambre negro N.º 16"><span>Alambre negro N.º 16</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CEM017" data-nombre="Cemento Loma Negra 25 kg"><span>Cemento Loma Negra 25 kg</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ARI004" data-nombre="Arena mediana"><span>Arena mediana</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ARI002" data-nombre="Ripiosa"><span>Ripiosa</span></label></li>
+            </ul>
+          </fieldset>
+          <a class="btn btn--rojo combo__btn" data-combo-btn href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20el%20combo%20Losa%20con%20viguetas%3A%0A-%20Viguetas%20pretensadas%20Stonover%20%28VIG016%29%0A-%20Bovedillas%20de%20telgopor%2012%20cm%20%28BOV002%29%0A-%20Malla%20SIMA%20Q188%2015%20%C3%97%2015%2C%206%20mm%20%28MAL003%29%0A-%20Hierro%20ADN%2010%20mm%20%28ADN004%29%0A-%20Hierro%20ADN%206%20mm%20%28ADN002%29%0A-%20Alambre%20negro%20N.%C2%BA%2016%20%28ALA005%29%0A-%20Cemento%20Loma%20Negra%2025%20kg%20%28CEM017%29%0A-%20Arena%20mediana%20%28ARI004%29%0A-%20Ripiosa%20%28ARI002%29%0AEs%20para%3A%20">Cotizar este combo</a>
+        </li>
+        <li class="combo aparece" data-combo="pared" data-combo-nombre="Pared de ladrillón">
+          <div class="combo__cabeza"><img class="combo__ilus" src="assets/img/rubros/obra-gruesa.svg" alt="" width="96" height="96" loading="lazy"><div><p class="lab combo__n">Combo 02</p><h3 class="d combo__nombre">Pared de ladrillón</h3><p class="combo__bajada">Ladrillones, mezcla para levantar y revoque hidrófugo.</p></div></div>
+          <fieldset class="combo__lista"><legend class="lab">Qué lleva <span class="combo__ayuda">Destildá lo que ya tenés</span></legend>
+            <ul>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="LDN002" data-nombre="Ladrillón 18 × 18 × 30 Cerámica del Norte"><span>Ladrillón 18 × 18 × 30 Cerámica del Norte</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="LDN001" data-nombre="Ladrillón 12 × 18 × 30 Cerámica del Norte"><span>Ladrillón 12 × 18 × 30 Cerámica del Norte</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CEM017" data-nombre="Cemento Loma Negra 25 kg"><span>Cemento Loma Negra 25 kg</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CAL004" data-nombre="Cal hidratada María Virginia 25 kg"><span>Cal hidratada María Virginia 25 kg</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CEM018" data-nombre="Plasticor 25 kg"><span>Plasticor 25 kg</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ARI003" data-nombre="Arena fina"><span>Arena fina</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="HID008" data-nombre="Hidrófugo en pasta Ceresita Weber 20 kg"><span>Hidrófugo en pasta Ceresita Weber 20 kg</span></label></li>
+            </ul>
+          </fieldset>
+          <a class="btn btn--rojo combo__btn" data-combo-btn href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20el%20combo%20Pared%20de%20ladrill%C3%B3n%3A%0A-%20Ladrill%C3%B3n%2018%20%C3%97%2018%20%C3%97%2030%20Cer%C3%A1mica%20del%20Norte%20%28LDN002%29%0A-%20Ladrill%C3%B3n%2012%20%C3%97%2018%20%C3%97%2030%20Cer%C3%A1mica%20del%20Norte%20%28LDN001%29%0A-%20Cemento%20Loma%20Negra%2025%20kg%20%28CEM017%29%0A-%20Cal%20hidratada%20Mar%C3%ADa%20Virginia%2025%20kg%20%28CAL004%29%0A-%20Plasticor%2025%20kg%20%28CEM018%29%0A-%20Arena%20fina%20%28ARI003%29%0A-%20Hidr%C3%B3fugo%20en%20pasta%20Ceresita%20Weber%2020%20kg%20%28HID008%29%0AEs%20para%3A%20">Cotizar este combo</a>
+        </li>
+        <li class="combo aparece" data-combo="techo" data-combo-nombre="Techo de chapa">
+          <div class="combo__cabeza"><img class="combo__ilus" src="assets/img/rubros/hierros-mallas.svg" alt="" width="96" height="96" loading="lazy"><div><p class="lab combo__n">Combo 03</p><h3 class="d combo__nombre">Techo de chapa</h3><p class="combo__bajada">Chapa, perfiles, aislante, tornillos y cumbrera.</p></div></div>
+          <fieldset class="combo__lista"><legend class="lab">Qué lleva <span class="combo__ayuda">Destildá lo que ya tenés</span></legend>
+            <ul>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CHA077*" data-nombre="Chapa acanalada cincalum N.º 25"><span>Chapa acanalada cincalum N.º 25</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="PER013" data-nombre="Perfil C 100 × 50, 1,6 mm"><span>Perfil C 100 × 50, 1,6 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="APP001" data-nombre="Espuma aislante con aluminio 10 mm"><span>Espuma aislante con aluminio 10 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="ALV002" data-nombre="Lana de vidrio con aluminio Isotech 50 mm"><span>Lana de vidrio con aluminio Isotech 50 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="FTM012" data-nombre="Tornillos autoperforantes 14 × 2 1/2 con arandela"><span>Tornillos autoperforantes 14 × 2 1/2 con arandela</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CUM001" data-nombre="Cumbrera cincalum"><span>Cumbrera cincalum</span></label></li>
+            </ul>
+          </fieldset>
+          <a class="btn btn--rojo combo__btn" data-combo-btn href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20el%20combo%20Techo%20de%20chapa%3A%0A-%20Chapa%20acanalada%20cincalum%20N.%C2%BA%2025%20%28CHA077%2A%29%0A-%20Perfil%20C%20100%20%C3%97%2050%2C%201%2C6%20mm%20%28PER013%29%0A-%20Espuma%20aislante%20con%20aluminio%2010%20mm%20%28APP001%29%0A-%20Lana%20de%20vidrio%20con%20aluminio%20Isotech%2050%20mm%20%28ALV002%29%0A-%20Tornillos%20autoperforantes%2014%20%C3%97%202%201%2F2%20con%20arandela%20%28FTM012%29%0A-%20Cumbrera%20cincalum%20%28CUM001%29%0AEs%20para%3A%20">Cotizar este combo</a>
+        </li>
+        <li class="combo aparece" data-combo="durlock" data-combo-nombre="Durlock">
+          <div class="combo__cabeza"><img class="combo__ilus" src="assets/img/rubros/construccion-seco.svg" alt="" width="96" height="96" loading="lazy"><div><p class="lab combo__n">Combo 04</p><h3 class="d combo__nombre">Durlock</h3><p class="combo__bajada">Tabiques y cielorrasos de placa de yeso.</p></div></div>
+          <fieldset class="combo__lista"><legend class="lab">Qué lleva <span class="combo__ayuda">Destildá lo que ya tenés</span></legend>
+            <ul>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="PLY007" data-nombre="Placa de yeso Knauf 9,5 mm"><span>Placa de yeso Knauf 9,5 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="DRY001" data-nombre="Montantes 34 mm"><span>Montantes 34 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="DRY003" data-nombre="Soleras 35 mm"><span>Soleras 35 mm</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="FTD004" data-nombre="Tornillos T1 mecha"><span>Tornillos T1 mecha</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CCP002" data-nombre="Cinta de papel para placa"><span>Cinta de papel para placa</span></label></li>
+              <li><label class="combo__item"><input type="checkbox" checked data-combo-item value="CMT003" data-nombre="Masilla para placa Talento 32 kg"><span>Masilla para placa Talento 32 kg</span></label></li>
+            </ul>
+          </fieldset>
+          <a class="btn btn--rojo combo__btn" data-combo-btn href="https://wa.me/5493874742440?text=Hola%20Don%20Coco%2C%20quiero%20cotizar%20el%20combo%20Durlock%3A%0A-%20Placa%20de%20yeso%20Knauf%209%2C5%20mm%20%28PLY007%29%0A-%20Montantes%2034%20mm%20%28DRY001%29%0A-%20Soleras%2035%20mm%20%28DRY003%29%0A-%20Tornillos%20T1%20mecha%20%28FTD004%29%0A-%20Cinta%20de%20papel%20para%20placa%20%28CCP002%29%0A-%20Masilla%20para%20placa%20Talento%2032%20kg%20%28CMT003%29%0AEs%20para%3A%20">Cotizar este combo</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <section class="seccion oscuro seccion--rojo grano" id="como-pedir" aria-labelledby="titulo-pedir">
     <div class="contenedor">
       <header class="encabezado aparece">
@@ -312,6 +387,45 @@
     </div>
   </section>
 
+  <!-- CONSULTÁ TU PEDIDO O ACOPIO (25/11/2026): va al WhatsApp del vendedor que atendió al cliente. Cuando ETSOL habilite el acceso de solo lectura, se puede hacer automático. -->
+  <section class="seccion oscuro grano" id="pedido" aria-labelledby="titulo-pedido">
+    <div class="contenedor pedido">
+      <div class="pedido__texto aparece">
+        <p class="lab amarillo">Ya compraste</p>
+        <h2 class="d titulo" id="titulo-pedido">Consultá tu pedido <span class="amarillo">o tu acopio</span></h2>
+        <p class="bajada">Si tenés material para retirar o un envío pendiente, poné el número de la factura y elegí quién te atendió. Te contesta tu vendedor, que conoce tu compra.</p>
+      </div>
+      <form class="pedido__form aparece" data-pedido novalidate>
+        <div class="campo">
+          <label class="lab" for="pedido-factura">N.º de factura o remito</label>
+          <input class="campo__input" id="pedido-factura" name="factura" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej.: 0001-00012345">
+          <p class="campo__ayuda">Si no lo tenés a mano, dejalo vacío y poné tu nombre.</p>
+        </div>
+        <div class="campo">
+          <label class="lab" for="pedido-nombre">Tu nombre o el de la obra</label>
+          <input class="campo__input" id="pedido-nombre" name="nombre" type="text" autocomplete="name">
+        </div>
+        <fieldset class="campo">
+          <legend class="lab">Qué querés consultar</legend>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="tipo" value="mi material en acopio (lo que me queda por retirar)" checked><span>Mi acopio</span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="mi envío pendiente"><span>Mi envío</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="campo">
+          <legend class="lab">Quién te atendió</legend>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="vendedor" value="5493874742440" checked><span>Luisa</span></label>
+            <label class="opcion"><input type="radio" name="vendedor" value="5493874452416"><span>Dante</span></label>
+            <label class="opcion"><input type="radio" name="vendedor" value=""><span>No me acuerdo</span></label>
+          </div>
+        </fieldset>
+        <p class="campo__error" data-pedido-error role="alert" hidden>Poné el número de factura o tu nombre, así tu vendedor te encuentra.</p>
+        <button class="btn btn--amarillo" type="submit">Consultar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
   <!-- CLUB -->
   <section class="seccion seccion--blanco" id="club" aria-labelledby="titulo-club">
     <div class="contenedor club">
@@ -337,6 +451,27 @@
           <li class="casita"><span class="casita__forma"><span class="casita__n">4</span></span><span class="casita__lab">Pase 4</span></li>
           <li class="casita casita--premio"><span class="casita__forma"><span class="casita__premio">Premio</span><span class="casita__n">$50.000</span></span><span class="casita__lab">Pase 5</span></li>
         </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES DE GOOGLE (25/11/2026): puntaje del perfil «Corralón Don Coco» (cid 16507912379036645513). Actualizar el número a mano una vez por mes. -->
+  <section class="seccion seccion--crema" id="opiniones" aria-labelledby="titulo-opiniones">
+    <div class="contenedor opiniones aparece">
+      <div class="opiniones__nota">
+        <p class="d opiniones__numero">4,2</p>
+        <div>
+          <span class="estrellas" role="img" aria-label="4,2 de 5 estrellas"><svg viewBox="0 0 120 24" aria-hidden="true"><defs><clipPath id="estrellas-llenas"><rect width="100.8" height="24"/></clipPath></defs><g class="estrellas__fondo"><g transform="translate(0 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(24 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(48 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(72 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(96 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g></g><g class="estrellas__llenas" clip-path="url(#estrellas-llenas)"><g transform="translate(0 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(24 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(48 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(72 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g><g transform="translate(96 0)"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></g></g></svg></span>
+          <p class="lab opiniones__cuantas">Más de 570 opiniones en Google</p>
+        </div>
+      </div>
+      <div class="opiniones__texto">
+        <h2 class="d titulo" id="titulo-opiniones">Lo que dicen los que <span class="rojo">ya compraron</span></h2>
+        <p class="bajada">Leé las opiniones de nuestros clientes en Google. Y si ya compraste, contanos cómo te fue: nos ayuda a mejorar.</p>
+        <div class="acciones">
+          <a class="btn btn--negro" href="https://www.google.com/maps?cid=16507912379036645513" target="_blank" rel="noopener">Ver opiniones</a>
+          <a class="btn btn--linea" href="https://search.google.com/local/writereview?placeid=ChIJsfjE4EzdG5QRibjAl9jiF-U" target="_blank" rel="noopener">Dejar mi opinión</a>
+        </div>
       </div>
     </div>
   </section>
@@ -402,10 +537,10 @@
 
 <a class="wa" href="https://wa.me/5493874742440?text=Hola%20Don%20Coco">Pedí por <span>WhatsApp</span></a>
 
-<script src="assets/js/vigencia.js?v=20261125a" defer></script>
-<script src="assets/js/promos-bancarias.js?v=20261125a" defer></script>
-<script src="assets/js/jadever-productos.js?v=20261125a" defer></script>
-<script src="assets/js/black-coco-productos.js?v=20261125a" defer></script>
-<script src="assets/js/v3.js?v=20261125a" defer></script>
+<script src="assets/js/vigencia.js?v=20261125b" defer></script>
+<script src="assets/js/promos-bancarias.js?v=20261125b" defer></script>
+<script src="assets/js/jadever-productos.js?v=20261125b" defer></script>
+<script src="assets/js/black-coco-productos.js?v=20261125b" defer></script>
+<script src="assets/js/v3.js?v=20261125b" defer></script>
 </body>
 </html>
