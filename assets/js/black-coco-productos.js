@@ -2,8 +2,9 @@
    Don Coco — Black Coco (jueves 26 al sábado 28/11/2026): precios por marca
    ÚNICA fuente de los artículos de black-coco.html (la arma black-coco.js).
 
-   Precios: Lista consumidor final de PalJet, consultada el 22/11/2026 (Inventario › Lista de precios - Consulta).
-   El 20/11 subieron Jadever (+1,59 %), Lusqtoff (+1,4 a 1,5 %) y TOTAL (+1,59 %); Mozart y FV sin cambios.
+   Precios: Lista consumidor final de PalJet, consultada el 25/11/2026 (Inventario › Lista de precios - Consulta).
+   El 25/11 subieron Jadever y TOTAL (+2,19 %); Lusqtoff con 2 cambios sueltos; Mozart y FV sin cambios.
+   Stock: Inventario › Stock › Existencias de artículos (Disponible sumando depósitos), 25/11/2026.
    "lista" = precio de lista (precio final con IVA) · "contado" = contado o transferencia.
    - Jadever, Lusqtoff y Mozart: todos los artículos de la marca con precio, contado con el 23% de Black Coco.
      No entran los que en PalJet ya figuran como LIQUIDACION (para no sumar dos descuentos).
@@ -123,16 +124,16 @@ window.DONCOCO_BLACKCOCO = {
    "tipo": "23",
    "chip": "23% OFF",
    "rotulo": "Contado o transf. · 23% OFF",
-   "pres": "Lista consumidor final de PalJet al 22/11/2026",
+   "pres": "Lista consumidor final de PalJet al 25/11/2026",
    "productos": [
     {
      "codigo": "FCJ002",
      "nombre": "Cepillo copa trenzado acerado 75 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 8429.28,
-     "contado": 6490.55,
-     "contado_normal": 6966.8,
+     "lista": 8614.25,
+     "contado": 6632.97,
+     "contado_normal": 7119.68,
      "foto": "FCJ002.webp"
     },
     {
@@ -140,9 +141,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cepillo copa ondulado bronceado 100 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 9864.05,
-     "contado": 7595.32,
-     "contado_normal": 8152.64,
+     "lista": 10080.5,
+     "contado": 7761.99,
+     "contado_normal": 8331.54,
      "foto": "FCP009.webp"
     },
     {
@@ -150,9 +151,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cepillo copa ondulado bronceado 75 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 7151.44,
-     "contado": 5506.61,
-     "contado_normal": 5910.66,
+     "lista": 7308.37,
+     "contado": 5627.44,
+     "contado_normal": 6040.36,
      "foto": "FCP010.webp"
     },
     {
@@ -160,9 +161,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cepillo copa trenzado acerado 100 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 11545.42,
-     "contado": 8889.98,
-     "contado_normal": 9542.29,
+     "lista": 11798.77,
+     "contado": 9085.05,
+     "contado_normal": 9751.69,
      "foto": "FCJ001.webp"
     },
     {
@@ -170,9 +171,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit de cepillos copa de alambre para taladro 5 piezas",
      "detalle": "",
      "grupo": "cons",
-     "lista": 13534.58,
-     "contado": 10421.62,
-     "contado_normal": 11186.33,
+     "lista": 13831.57,
+     "contado": 10650.31,
+     "contado_normal": 11431.79,
      "foto": "FPJ001.webp"
     },
     {
@@ -180,9 +181,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Espátula para panel yeso 200 mm",
      "detalle": "",
      "grupo": "man",
-     "lista": 8363.43,
-     "contado": 6439.84,
-     "contado_normal": 6912.37,
+     "lista": 8546.95,
+     "contado": 6581.15,
+     "contado_normal": 7064.05,
      "foto": "FEH002.webp"
     },
     {
@@ -190,9 +191,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Candado aro largo de 50 mm",
      "detalle": "",
      "grupo": "cand",
-     "lista": 19861.21,
-     "contado": 15293.13,
-     "contado_normal": 16415.29,
+     "lista": 20297.04,
+     "contado": 15628.72,
+     "contado_normal": 16775.5,
      "foto": "HCO002.webp"
     },
     {
@@ -200,9 +201,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Candado aro largo de 40 mm",
      "detalle": "",
      "grupo": "cand",
-     "lista": 13219.79,
-     "contado": 10179.24,
-     "contado_normal": 10926.16,
+     "lista": 13509.88,
+     "contado": 10402.61,
+     "contado_normal": 11165.92,
      "foto": "HCO001.webp"
     },
     {
@@ -210,9 +211,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Candado latón bronceado 50 mm",
      "detalle": "",
      "grupo": "cand",
-     "lista": 18642.22,
-     "contado": 14354.51,
-     "contado_normal": 15407.79,
+     "lista": 19051.29,
+     "contado": 14669.5,
+     "contado_normal": 15745.89,
      "foto": "HCO007.webp"
     },
     {
@@ -220,9 +221,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Candado latón bronceado 60 mm",
      "detalle": "",
      "grupo": "cand",
-     "lista": 26124.32,
-     "contado": 20115.73,
-     "contado_normal": 21591.75,
+     "lista": 26697.59,
+     "contado": 20557.14,
+     "contado_normal": 22065.55,
      "foto": "HCO008.webp"
     },
     {
@@ -230,9 +231,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Candado de hierro para exterior funda goma 45 mm",
      "detalle": "",
      "grupo": "cand",
-     "lista": 11629.49,
-     "contado": 8954.71,
-     "contado_normal": 9611.78,
+     "lista": 11884.69,
+     "contado": 9151.21,
+     "contado_normal": 9822.69,
      "foto": "CNJ001.webp"
     },
     {
@@ -240,9 +241,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Candado de hierro para exterior funda goma 70 mm",
      "detalle": "",
      "grupo": "cand",
-     "lista": 19524.94,
-     "contado": 15034.2,
-     "contado_normal": 16137.36,
+     "lista": 19953.38,
+     "contado": 15364.11,
+     "contado_normal": 16491.47,
      "foto": "CNJ002.webp"
     },
     {
@@ -250,9 +251,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Linterna recargable batería Li-ion 1500 mAh 4 h",
      "detalle": "",
      "grupo": "hog",
-     "lista": 63068.98,
-     "contado": 48563.12,
-     "contado_normal": 52126.51,
+     "lista": 64452.94,
+     "contado": 49628.76,
+     "contado_normal": 53270.35,
      "foto": "FLJ001.webp"
     },
     {
@@ -260,9 +261,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pack silicona barra gruesa x 7 unidades",
      "detalle": "",
      "grupo": "cons",
-     "lista": 6538.67,
-     "contado": 5034.78,
-     "contado_normal": 5404.21,
+     "lista": 6682.15,
+     "contado": 5145.26,
+     "contado_normal": 5522.8,
      "foto": "ADH081.webp"
     },
     {
@@ -270,20 +271,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Motosierra 16\"",
      "detalle": "1,8 kW · Motor 2T",
      "grupo": "jar",
-     "lista": 316194.49,
-     "contado": 243469.76,
+     "lista": 323132.93,
+     "contado": 248812.36,
      "destacado": 8,
      "foto": "HXM001.webp",
-     "contado_normal": 261334.75
+     "contado_normal": 267069.37
     },
     {
      "codigo": "HXM002",
      "nombre": "Motosierra Oregon cilindrada 1,8 kW · 18\" motor 2T",
      "detalle": "",
      "grupo": "jar",
-     "lista": 421050.34,
-     "contado": 324208.76,
-     "contado_normal": 347998.1,
+     "lista": 430289.69,
+     "contado": 331323.06,
+     "contado_normal": 355634.43,
      "foto": "HXM002.webp"
     },
     {
@@ -291,29 +292,19 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Amoladora angular 1800 W 180 mm",
      "detalle": "",
      "grupo": "elec",
-     "lista": 289772.96,
-     "contado": 223125.18,
-     "contado_normal": 239497.35,
+     "lista": 296131.61,
+     "contado": 228021.34,
+     "contado_normal": 244752.78,
      "foto": "HAJ001.webp"
-    },
-    {
-     "codigo": "HEG001",
-     "nombre": "Amoladora angular 850 W 125 mm",
-     "detalle": "",
-     "grupo": "elec",
-     "lista": 111792.59,
-     "contado": 86080.29,
-     "contado_normal": 92396.57,
-     "foto": "HEG001.webp"
     },
     {
      "codigo": "HEG002",
      "nombre": "Amoladora angular 710 W 115 mm",
      "detalle": "",
      "grupo": "elec",
-     "lista": 108685.41,
-     "contado": 83687.76,
-     "contado_normal": 89828.49,
+     "lista": 111070.36,
+     "contado": 85524.17,
+     "contado_normal": 91799.65,
      "foto": "HEG002.webp"
     },
     {
@@ -321,20 +312,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Aspiradora 1200 W",
      "detalle": "25 litros",
      "grupo": "elec",
-     "lista": 288145.2,
-     "contado": 221871.81,
+     "lista": 294468.14,
+     "contado": 226740.47,
      "destacado": 10,
      "foto": "HSJ001.webp",
-     "contado_normal": 238152.01
+     "contado_normal": 243377.92
     },
     {
      "codigo": "HSJ002",
      "nombre": "Aspiradora 1600 W 1,8 L",
      "detalle": "",
      "grupo": "elec",
-     "lista": 299669.61,
-     "contado": 230745.6,
-     "contado_normal": 247676.93,
+     "lista": 306245.43,
+     "contado": 235808.98,
+     "contado_normal": 253111.85,
      "foto": "HSJ002.webp"
     },
     {
@@ -342,20 +333,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Bordeadora 350 W",
      "detalle": "250 mm · Eje telescópico",
      "grupo": "jar",
-     "lista": 109744.58,
-     "contado": 84503.33,
+     "lista": 112152.77,
+     "contado": 86357.63,
      "destacado": 9,
      "foto": "IOJ001.webp",
-     "contado_normal": 90703.9
+     "contado_normal": 92694.26
     },
     {
      "codigo": "HCJ001",
      "nombre": "Lijadora de banda 920 W",
      "detalle": "",
      "grupo": "elec",
-     "lista": 229563.38,
-     "contado": 176763.81,
-     "contado_normal": 189734.14,
+     "lista": 234600.82,
+     "contado": 180642.64,
+     "contado_normal": 193897.58,
      "foto": "HCJ001.webp"
     },
     {
@@ -363,9 +354,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pistola pintar 550 W · 0,1-0,2 bar · 700 ml/min · 800 ml",
      "detalle": "",
      "grupo": "elec",
-     "lista": 114774.9,
-     "contado": 88376.67,
-     "contado_normal": 94861.45,
+     "lista": 117293.47,
+     "contado": 90315.97,
+     "contado_normal": 96943.05,
      "foto": "HPJ001.webp"
     },
     {
@@ -373,9 +364,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pistola pintar 450 W · 0,1-0,2 bar · 700 ml/min · 800 ml",
      "detalle": "",
      "grupo": "elec",
-     "lista": 91439.49,
-     "contado": 70408.4,
-     "contado_normal": 75574.74,
+     "lista": 93446,
+     "contado": 71953.42,
+     "contado_normal": 77233.12,
      "foto": "HPJ002.webp"
     },
     {
@@ -383,9 +374,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Lijadora de palma 240 W · 110 x 100 mm",
      "detalle": "",
      "grupo": "elec",
-     "lista": 152882.29,
-     "contado": 117719.36,
-     "contado_normal": 126357.21,
+     "lista": 156237.08,
+     "contado": 120302.55,
+     "contado_normal": 129129.94,
      "foto": "HLJ001.webp"
     },
     {
@@ -393,40 +384,30 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Lijadora orbital 320 W · 180 x 90 mm",
      "detalle": "",
      "grupo": "elec",
-     "lista": 132425.59,
-     "contado": 101967.71,
-     "contado_normal": 109449.75,
+     "lista": 135331.48,
+     "contado": 104205.24,
+     "contado_normal": 111851.47,
      "foto": "HLJ002.webp"
-    },
-    {
-     "codigo": "HDJ001",
-     "nombre": "Demoledor 1300 W 15 J antivibraciones · mandril hexagonal",
-     "detalle": "",
-     "grupo": "elec",
-     "lista": 279551.18,
-     "contado": 215254.41,
-     "contado_normal": 231049.05,
-     "foto": "HDJ001.webp"
     },
     {
      "codigo": "HMJ001",
      "nombre": "Mezclador 1200 W",
      "detalle": "",
      "grupo": "elec",
-     "lista": 329391.37,
-     "contado": 253631.35,
+     "lista": 336619.39,
+     "contado": 259196.93,
      "destacado": 5,
      "foto": "HMJ001.webp",
-     "contado_normal": 272241.97
+     "contado_normal": 278215.93
     },
     {
      "codigo": "HIJ001",
      "nombre": "Pistola de calor 2000 W 50-600°C",
      "detalle": "",
      "grupo": "elec",
-     "lista": 149548.74,
-     "contado": 115152.53,
-     "contado_normal": 123602.03,
+     "lista": 152830.37,
+     "contado": 117679.39,
+     "contado_normal": 126314.3,
      "foto": "HIJ001.webp"
     },
     {
@@ -434,9 +415,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pistola de calor 1800 W 480-560°C",
      "detalle": "",
      "grupo": "elec",
-     "lista": 65280.43,
-     "contado": 50265.93,
-     "contado_normal": 53954.28,
+     "lista": 66712.92,
+     "contado": 51368.95,
+     "contado_normal": 55138.23,
      "foto": "HIJ002.webp"
     },
     {
@@ -444,9 +425,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pistola encoladora silicona barra gruesa 45 W",
      "detalle": "",
      "grupo": "elec",
-     "lista": 39967.62,
-     "contado": 30775.07,
-     "contado_normal": 33033.24,
+     "lista": 40844.66,
+     "contado": 31450.39,
+     "contado_normal": 33758.11,
      "foto": "HKJ001.webp"
     },
     {
@@ -454,20 +435,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rotomartillo SDS Plus 800 W",
      "detalle": "2,5 J · Mandril intercambiable",
      "grupo": "elec",
-     "lista": 198715.18,
-     "contado": 153010.69,
+     "lista": 203075.7,
+     "contado": 156368.29,
      "destacado": 3,
      "foto": "HRJ002.webp",
-     "contado_normal": 164238.1
+     "contado_normal": 167842.07
     },
     {
      "codigo": "HRJ003",
      "nombre": "Rotomartillo 1050 W 4,5 J SDS Plus",
      "detalle": "",
      "grupo": "elec",
-     "lista": 215493.37,
-     "contado": 165929.89,
-     "contado_normal": 178105.27,
+     "lista": 220222.06,
+     "contado": 169570.99,
+     "contado_normal": 182013.53,
      "foto": "HRJ003.webp"
     },
     {
@@ -475,20 +456,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rotomartillo SDS Plus 1500 W",
      "detalle": "5,5 J",
      "grupo": "elec",
-     "lista": 260165.9,
-     "contado": 200327.74,
+     "lista": 265874.87,
+     "contado": 204723.65,
      "destacado": 2,
      "foto": "HRJ004.webp",
-     "contado_normal": 215027.11
+     "contado_normal": 219745.58
     },
     {
      "codigo": "HRJ005",
      "nombre": "Rotomartillo 1600 W 10 J SDS Plus",
      "detalle": "",
      "grupo": "elec",
-     "lista": 409778.08,
-     "contado": 315529.12,
-     "contado_normal": 338681.58,
+     "lista": 418770.08,
+     "contado": 322452.96,
+     "contado_normal": 346113.47,
      "foto": "HRJ005.webp"
     },
     {
@@ -496,9 +477,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rotomartillo 800 W 2,5 J SDS Plus",
      "detalle": "",
      "grupo": "elec",
-     "lista": 171700.53,
-     "contado": 132209.41,
-     "contado_normal": 141910.49,
+     "lista": 175468.26,
+     "contado": 135110.56,
+     "contado_normal": 145024.52,
      "foto": "HRJ001.webp"
     },
     {
@@ -506,9 +487,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra ingletadora 1200 W 6000 rpm 255 x 25,4 mm",
      "detalle": "",
      "grupo": "elec",
-     "lista": 438696.07,
-     "contado": 337795.97,
-     "contado_normal": 362582.3,
+     "lista": 448322.63,
+     "contado": 345208.42,
+     "contado_normal": 370538.65,
      "foto": "HNJ001.webp"
     },
     {
@@ -516,9 +497,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra ingletadora 1400 W 5000 rpm 210 x 25,4 mm",
      "detalle": "",
      "grupo": "elec",
-     "lista": 311460.13,
-     "contado": 239824.3,
-     "contado_normal": 257421.8,
+     "lista": 318294.68,
+     "contado": 245086.9,
+     "contado_normal": 263070.55,
      "foto": "HNJ002.webp"
     },
     {
@@ -526,20 +507,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Soldadora inverter MMA 20-160 A",
      "detalle": "Electrodos de 1,6 a 4 mm",
      "grupo": "sold",
-     "lista": 365247.63,
-     "contado": 281240.67,
+     "lista": 373262.46,
+     "contado": 287412.1,
      "destacado": 4,
      "foto": "HOJ002.webp",
-     "contado_normal": 301877.16
+     "contado_normal": 308501.43
     },
     {
      "codigo": "HJE001",
      "nombre": "Soldador eléctrico recto 60 W",
      "detalle": "",
      "grupo": "sold",
-     "lista": 18069.71,
-     "contado": 13913.68,
-     "contado_normal": 14934.61,
+     "lista": 18466.22,
+     "contado": 14218.99,
+     "contado_normal": 15262.33,
      "foto": "HJE001.webp"
     },
     {
@@ -547,9 +528,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Soplador 600 W",
      "detalle": "",
      "grupo": "jar",
-     "lista": 72749.93,
-     "contado": 56017.44,
-     "contado_normal": 60127.82,
+     "lista": 74346.32,
+     "contado": 57246.67,
+     "contado_normal": 61447.24,
      "foto": "ESJ001.webp"
     },
     {
@@ -557,9 +538,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Taladro percutor 13 mm 850 W",
      "detalle": "",
      "grupo": "elec",
-     "lista": 109310.13,
-     "contado": 84168.8,
-     "contado_normal": 90344.82,
+     "lista": 111708.79,
+     "contado": 86015.77,
+     "contado_normal": 92327.31,
      "foto": "TAL001.webp"
     },
     {
@@ -567,9 +548,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Amoladora brushless 20 V (850 W) 115 mm con batería 4 Ah, cargador y maletín",
      "detalle": "",
      "grupo": "inal",
-     "lista": 254272.55,
-     "contado": 195789.87,
-     "contado_normal": 210156.27,
+     "lista": 259852.2,
+     "contado": 200086.2,
+     "contado_normal": 214767.84,
      "foto": "IAJ001.webp"
     },
     {
@@ -577,9 +558,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Atornillador durlero brushless 20 V",
      "detalle": "",
      "grupo": "inal",
-     "lista": 220627.59,
-     "contado": 169883.24,
-     "contado_normal": 182348.7,
+     "lista": 225468.95,
+     "contado": 173611.09,
+     "contado_normal": 186350.09,
      "foto": "ITJ001.webp"
     },
     {
@@ -587,9 +568,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Batería Li-ion 20 V 4,0 Ah",
      "detalle": "",
      "grupo": "bat",
-     "lista": 107572.81,
-     "contado": 82831.06,
-     "contado_normal": 88908.93,
+     "lista": 109933.34,
+     "contado": 84648.67,
+     "contado_normal": 90859.91,
      "foto": "IJT001.webp"
     },
     {
@@ -597,9 +578,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Bordeadora 20 V · 300 mm con cargador y batería 2 Ah",
      "detalle": "",
      "grupo": "inal",
-     "lista": 247214.29,
-     "contado": 190355,
-     "contado_normal": 204322.61,
+     "lista": 252639.06,
+     "contado": 194532.07,
+     "contado_normal": 208806.18,
      "foto": "IBJ001.webp"
     },
     {
@@ -607,9 +588,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cargador de batería P20S 20 V 4,0 Ah",
      "detalle": "",
      "grupo": "bat",
-     "lista": 56080.78,
-     "contado": 43182.2,
-     "contado_normal": 46350.76,
+     "lista": 57311.39,
+     "contado": 44129.77,
+     "contado_normal": 47367.86,
      "foto": "ICT007.webp"
     },
     {
@@ -617,9 +598,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Clavadora 20 V",
      "detalle": "",
      "grupo": "inal",
-     "lista": 389220.21,
-     "contado": 299699.56,
-     "contado_normal": 321690.5,
+     "lista": 397761.09,
+     "contado": 306276.04,
+     "contado_normal": 328749.54,
      "foto": "ICJ001.webp"
     },
     {
@@ -627,9 +608,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cortacerco inalámbrico 20 V · 480 mm con batería y cargador",
      "detalle": "",
      "grupo": "inal",
-     "lista": 225202.01,
-     "contado": 173405.54,
-     "contado_normal": 186129.46,
+     "lista": 230143.74,
+     "contado": 177210.68,
+     "contado_normal": 190213.8,
      "foto": "IXJ001.webp"
     },
     {
@@ -637,9 +618,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Caja de herramientas 119 piezas + taladro atornillador 20 V",
      "detalle": "",
      "grupo": "inal",
-     "lista": 362615.99,
-     "contado": 279214.31,
-     "contado_normal": 299702.12,
+     "lista": 370573.08,
+     "contado": 285341.27,
+     "contado_normal": 306278.65,
      "foto": "IKJ001.webp"
     },
     {
@@ -647,9 +628,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Lava tapizados 12 V · 90 W",
      "detalle": "",
      "grupo": "inal",
-     "lista": 292050.89,
-     "contado": 224879.19,
-     "contado_normal": 241380.06,
+     "lista": 298459.53,
+     "contado": 229813.84,
+     "contado_normal": 246676.8,
      "foto": "ILJ001.webp"
     },
     {
@@ -657,9 +638,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Lijadora roto orbital brushless 20 V 125 mm",
      "detalle": "",
      "grupo": "inal",
-     "lista": 188453.83,
-     "contado": 145109.45,
-     "contado_normal": 155757.09,
+     "lista": 192589.18,
+     "contado": 148293.67,
+     "contado_normal": 159174.96,
      "foto": "IRJ001.webp"
     },
     {
@@ -667,9 +648,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Lijadora orbital de palma 20 V",
      "detalle": "",
      "grupo": "inal",
-     "lista": 123703.47,
-     "contado": 95251.68,
-     "contado_normal": 102240.92,
+     "lista": 126417.97,
+     "contado": 97341.84,
+     "contado_normal": 104484.45,
      "foto": "IRJ002.webp"
     },
     {
@@ -677,9 +658,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Lijadora orbital 20 V · 110 x 100 mm",
      "detalle": "",
      "grupo": "inal",
-     "lista": 117871.21,
-     "contado": 90760.83,
-     "contado_normal": 97420.56,
+     "lista": 120457.73,
+     "contado": 92752.45,
+     "contado_normal": 99558.31,
      "foto": "IRJ003.webp"
     },
     {
@@ -687,9 +668,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Medidor de distancia láser · 100 m",
      "detalle": "",
      "grupo": "man",
-     "lista": 93351.2,
-     "contado": 71880.42,
-     "contado_normal": 77154.77,
+     "lista": 95399.66,
+     "contado": 73457.74,
+     "contado_normal": 78847.82,
      "foto": "IMJ001.webp"
     },
     {
@@ -697,9 +678,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Compresor de aire para auto 20 V · 150 PSI/10,5 bar",
      "detalle": "",
      "grupo": "inal",
-     "lista": 86310.45,
-     "contado": 66459.05,
-     "contado_normal": 71335.59,
+     "lista": 88204.41,
+     "contado": 67917.4,
+     "contado_normal": 72900.95,
      "foto": "NCJ001.webp"
     },
     {
@@ -707,9 +688,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Multiherramienta 20 V 5000-20000 rpm",
      "detalle": "",
      "grupo": "inal",
-     "lista": 137522.25,
-     "contado": 105892.14,
-     "contado_normal": 113662.14,
+     "lista": 140539.98,
+     "contado": 108215.79,
+     "contado_normal": 116156.3,
      "foto": "NMJ001.webp"
     },
     {
@@ -717,20 +698,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Nivel láser verde 30 m",
      "detalle": "Pilas AA",
      "grupo": "man",
-     "lista": 131202.56,
-     "contado": 101025.97,
+     "lista": 134081.61,
+     "contado": 103242.84,
      "destacado": 7,
      "foto": "NNJ001.webp",
-     "contado_normal": 108438.92
+     "contado_normal": 110818.45
     },
     {
      "codigo": "NRJ001",
      "nombre": "Rotomartillo brushless 20 V 2 J SDS Plus con batería 3 Ah y cargador",
      "detalle": "",
      "grupo": "inal",
-     "lista": 290459.41,
-     "contado": 223653.74,
-     "contado_normal": 240064.7,
+     "lista": 296833.12,
+     "contado": 228561.5,
+     "contado_normal": 245332.58,
      "foto": "NRJ001.webp"
     },
     {
@@ -738,20 +719,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rotomartillo inalámbrico SDS Plus",
      "detalle": "20 V · Brushless · 4,5 J",
      "grupo": "inal",
-     "lista": 283325.88,
-     "contado": 218160.92,
+     "lista": 289543.06,
+     "contado": 222948.15,
      "destacado": 1,
      "foto": "NRJ002.webp",
-     "contado_normal": 234168.84
+     "contado_normal": 239307.34
     },
     {
      "codigo": "SAH001",
      "nombre": "Soplador aspirador 20 V",
      "detalle": "",
      "grupo": "inal",
-     "lista": 62381.97,
-     "contado": 48034.12,
-     "contado_normal": 51558.7,
+     "lista": 63750.86,
+     "contado": 49088.16,
+     "contado_normal": 52690.08,
      "foto": "SAH001.webp"
     },
     {
@@ -759,11 +740,11 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Taladro percutor inalámbrico 20 V",
      "detalle": "Brushless · 52 Nm · 2 baterías + cargador",
      "grupo": "inal",
-     "lista": 254903.07,
-     "contado": 196275.36,
+     "lista": 260496.55,
+     "contado": 200582.34,
      "destacado": 0,
      "foto": "NTJ001.webp",
-     "contado_normal": 210677.39,
+     "contado_normal": 215300.4,
      "vidriera": 2
     },
     {
@@ -771,9 +752,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Arco de sierra para troncos 53 cm",
      "detalle": "",
      "grupo": "jar",
-     "lista": 18136.12,
-     "contado": 13964.82,
-     "contado_normal": 14989.51,
+     "lista": 18534.1,
+     "contado": 14271.25,
+     "contado_normal": 15318.43,
      "foto": "HAS001.webp"
     },
     {
@@ -781,9 +762,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra de mano 6",
      "detalle": "",
      "grupo": "man",
-     "lista": 9166.84,
-     "contado": 7058.47,
-     "contado_normal": 7576.4,
+     "lista": 9368,
+     "contado": 7213.36,
+     "contado_normal": 7742.65,
      "foto": "HAS003.webp"
     },
     {
@@ -791,9 +772,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra de podar 11",
      "detalle": "",
      "grupo": "jar",
-     "lista": 17148.32,
-     "contado": 13204.2,
-     "contado_normal": 14173.08,
+     "lista": 17524.61,
+     "contado": 13493.95,
+     "contado_normal": 14484.09,
      "foto": "HAS005.webp"
     },
     {
@@ -801,9 +782,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Azada de mano jardinería 245 mm",
      "detalle": "",
      "grupo": "jar",
-     "lista": 7724.65,
-     "contado": 5947.98,
-     "contado_normal": 6384.42,
+     "lista": 7894.15,
+     "contado": 6078.5,
+     "contado_normal": 6524.52,
      "foto": "HZD003.webp"
     },
     {
@@ -811,9 +792,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Bolsa para herramientas 16\" · 41 x 23 x 33 cm",
      "detalle": "",
      "grupo": "caj",
-     "lista": 62893.84,
-     "contado": 48428.26,
-     "contado_normal": 51981.76,
+     "lista": 64273.95,
+     "contado": 49490.94,
+     "contado_normal": 53122.42,
      "foto": "MOT007.webp"
     },
     {
@@ -821,9 +802,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Bolso para herramientas 19\"",
      "detalle": "",
      "grupo": "caj",
-     "lista": 46903.29,
-     "contado": 36115.53,
-     "contado_normal": 38765.57,
+     "lista": 47932.51,
+     "contado": 36908.03,
+     "contado_normal": 39616.22,
      "foto": "MOT008.webp"
     },
     {
@@ -831,9 +812,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Caja de herramienta metálica 404 x 205 x 160 mm",
      "detalle": "",
      "grupo": "caj",
-     "lista": 86748.31,
-     "contado": 66796.2,
-     "contado_normal": 71697.48,
+     "lista": 88651.88,
+     "contado": 68261.95,
+     "contado_normal": 73270.78,
      "foto": "HCH004.webp"
     },
     {
@@ -841,9 +822,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Caja herramienta plástico reforzado hebilla metálica 15,5\"",
      "detalle": "",
      "grupo": "caj",
-     "lista": 59793.81,
-     "contado": 46041.23,
-     "contado_normal": 49419.58,
+     "lista": 61105.9,
+     "contado": 47051.54,
+     "contado_normal": 50504.02,
      "foto": "HCH005.webp"
     },
     {
@@ -851,20 +832,20 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Caja de herramientas 18,5\"",
      "detalle": "Plástico reforzado · Hebilla metálica",
      "grupo": "caj",
-     "lista": 85627.39,
-     "contado": 65933.09,
+     "lista": 87506.37,
+     "contado": 67379.9,
      "destacado": 11,
      "foto": "HCH006.webp",
-     "contado_normal": 70771.04
+     "contado_normal": 72324.01
     },
     {
      "codigo": "HCH007",
      "nombre": "Caja herramienta plástico hebilla metálica 16\"",
      "detalle": "",
      "grupo": "caj",
-     "lista": 43855.8,
-     "contado": 33768.96,
-     "contado_normal": 36246.82,
+     "lista": 44818.15,
+     "contado": 34509.98,
+     "contado_normal": 37042.2,
      "foto": "HCH007.webp"
     },
     {
@@ -872,9 +853,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cortavidrios de alta resistencia",
      "detalle": "",
      "grupo": "man",
-     "lista": 9403.92,
-     "contado": 7241.02,
-     "contado_normal": 7772.34,
+     "lista": 9610.27,
+     "contado": 7399.91,
+     "contado_normal": 7942.89,
      "foto": "HRO001.webp"
     },
     {
@@ -882,31 +863,19 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cortadora de cerámicos 60 cm",
      "detalle": "",
      "grupo": "man",
-     "lista": 85036.79,
-     "contado": 65478.33,
-     "contado_normal": 70282.91,
+     "lista": 86902.8,
+     "contado": 66915.16,
+     "contado_normal": 71825.16,
      "foto": "HCB002.webp"
-    },
-    {
-     "codigo": "HCB003",
-     "nombre": "Cortadora de cerámicos 120 cm",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 259786.19,
-     "contado": 200035.36,
-     "destacado": 6,
-     "foto": "HCB003.webp",
-     "contado_normal": 214713.28,
-     "vidriera": 7
     },
     {
      "codigo": "HRH003",
      "nombre": "Cortafierro 19 x 305 mm con recubrimiento",
      "detalle": "",
      "grupo": "man",
-     "lista": 12819.53,
-     "contado": 9871.04,
-     "contado_normal": 10595.34,
+     "lista": 13100.84,
+     "contado": 10087.64,
+     "contado_normal": 10827.84,
      "foto": "HRH003.webp"
     },
     {
@@ -914,9 +883,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cortaperno 12",
      "detalle": "",
      "grupo": "man",
-     "lista": 21968.81,
-     "contado": 16915.99,
-     "contado_normal": 18157.22,
+     "lista": 22450.89,
+     "contado": 17287.18,
+     "contado_normal": 18555.66,
      "foto": "HTM003.webp"
     },
     {
@@ -924,9 +893,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit de destornilladores · 4 piezas estándar",
      "detalle": "",
      "grupo": "man",
-     "lista": 13051.65,
-     "contado": 10049.77,
-     "contado_normal": 10787.19,
+     "lista": 13338.05,
+     "contado": 10270.3,
+     "contado_normal": 11023.9,
      "foto": "MDJ001.webp"
     },
     {
@@ -934,9 +903,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit de destornilladores · 6 piezas estándar",
      "detalle": "",
      "grupo": "man",
-     "lista": 19482.9,
-     "contado": 15001.84,
-     "contado_normal": 16102.62,
+     "lista": 19910.43,
+     "contado": 15331.03,
+     "contado_normal": 16455.97,
      "foto": "MDJ002.webp"
     },
     {
@@ -944,9 +913,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit de destornilladores · 4 piezas acero Cr-V",
      "detalle": "",
      "grupo": "man",
-     "lista": 10000.66,
-     "contado": 7700.51,
-     "contado_normal": 8265.55,
+     "lista": 10220.11,
+     "contado": 7869.49,
+     "contado_normal": 8446.92,
      "foto": "MDJ003.webp"
     },
     {
@@ -954,9 +923,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit de destornilladores · 6 piezas acero Cr-V",
      "detalle": "",
      "grupo": "man",
-     "lista": 13661.15,
-     "contado": 10519.09,
-     "contado_normal": 11290.94,
+     "lista": 13960.93,
+     "contado": 10749.91,
+     "contado_normal": 11538.71,
      "foto": "MDJ004.webp"
     },
     {
@@ -964,19 +933,29 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Destornillador de 12 piezas",
      "detalle": "",
      "grupo": "man",
-     "lista": 6813.06,
-     "contado": 5246.06,
-     "contado_normal": 5631,
+     "lista": 6962.56,
+     "contado": 5361.17,
+     "contado_normal": 5754.56,
      "foto": "MDJ005.webp"
+    },
+    {
+     "codigo": "FDA005",
+     "nombre": "Disco diamantado turbo 115 mm",
+     "detalle": "",
+     "grupo": "cons",
+     "lista": 6548.51,
+     "contado": 5042.35,
+     "contado_normal": 5412.34,
+     "foto": "FDA005.webp"
     },
     {
      "codigo": "FDA006",
      "nombre": "Disco diamantado turbo 180 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 17168.68,
-     "contado": 13219.88,
-     "contado_normal": 14189.91,
+     "lista": 17545.42,
+     "contado": 13509.98,
+     "contado_normal": 14501.29,
      "foto": "FDA006.webp"
     },
     {
@@ -984,29 +963,19 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Disco corte sensitiva 355 x 3 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 16768.89,
-     "contado": 12912.04,
-     "contado_normal": 13859.49,
+     "lista": 17136.86,
+     "contado": 13195.38,
+     "contado_normal": 14163.61,
      "foto": "FSP001.webp"
-    },
-    {
-     "codigo": "GCC001",
-     "nombre": "Engrapadora metálica 4-14 mm",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 19819.18,
-     "contado": 15260.77,
-     "contado_normal": 16380.55,
-     "foto": "GCC001.webp"
     },
     {
      "codigo": "JPZ001",
      "nombre": "Pulverizador jardín 1.5 l",
      "detalle": "",
      "grupo": "jar",
-     "lista": 14778.89,
-     "contado": 11379.74,
-     "contado_normal": 12214.75,
+     "lista": 15103.19,
+     "contado": 11629.46,
+     "contado_normal": 12482.79,
      "foto": "JPZ001.webp"
     },
     {
@@ -1014,9 +983,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Capa para lluvia 125x200 cm 100% PVC",
      "detalle": "",
      "grupo": "sold",
-     "lista": 22543.84,
-     "contado": 17358.76,
-     "contado_normal": 18632.49,
+     "lista": 23038.53,
+     "contado": 17739.67,
+     "contado_normal": 19041.35,
      "foto": "SCL001.webp"
     },
     {
@@ -1024,9 +993,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra copa bimetálica 1 1/2 (38 mm)",
      "detalle": "",
      "grupo": "man",
-     "lista": 15244.44,
-     "contado": 11738.22,
-     "contado_normal": 12599.53,
+     "lista": 15578.96,
+     "contado": 11995.8,
+     "contado_normal": 12876.01,
      "foto": "FST001.webp"
     },
     {
@@ -1034,9 +1003,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra copa bimetálica 2 (50 mm)",
      "detalle": "",
      "grupo": "man",
-     "lista": 19763.97,
-     "contado": 15218.26,
-     "contado_normal": 16334.92,
+     "lista": 20197.66,
+     "contado": 15552.2,
+     "contado_normal": 16693.37,
      "foto": "FST003.webp"
     },
     {
@@ -1044,9 +1013,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cortaperno 14",
      "detalle": "",
      "grupo": "man",
-     "lista": 26263.24,
-     "contado": 20222.69,
-     "contado_normal": 21706.57,
+     "lista": 26839.55,
+     "contado": 20666.45,
+     "contado_normal": 22182.89,
      "foto": "HTM001.webp"
     },
     {
@@ -1054,9 +1023,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Serrucho carpintero 20",
      "detalle": "",
      "grupo": "man",
-     "lista": 12861.73,
-     "contado": 9903.53,
-     "contado_normal": 10630.22,
+     "lista": 13143.96,
+     "contado": 10120.85,
+     "contado_normal": 10863.48,
      "foto": "HSH001.webp"
     },
     {
@@ -1064,9 +1033,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Serrucho carpintero 18",
      "detalle": "",
      "grupo": "man",
-     "lista": 16033.19,
-     "contado": 12345.56,
-     "contado_normal": 13251.43,
+     "lista": 16385.02,
+     "contado": 12616.47,
+     "contado_normal": 13542.22,
      "foto": "HSH002.webp"
     },
     {
@@ -1074,9 +1043,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Set 3 limas para madera 200 mm",
      "detalle": "",
      "grupo": "man",
-     "lista": 23904.91,
-     "contado": 18406.78,
-     "contado_normal": 19757.41,
+     "lista": 24429.47,
+     "contado": 18810.69,
+     "contado_normal": 20190.96,
      "foto": "HLM001.webp"
     },
     {
@@ -1084,9 +1053,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pistola para cartucho silicona estándar",
      "detalle": "",
      "grupo": "man",
-     "lista": 8207.23,
-     "contado": 6319.57,
-     "contado_normal": 6783.27,
+     "lista": 8387.32,
+     "contado": 6458.24,
+     "contado_normal": 6932.12,
      "foto": "HPT003.webp"
     },
     {
@@ -1094,9 +1063,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave ajustable 8",
      "detalle": "",
      "grupo": "man",
-     "lista": 11419.04,
-     "contado": 8792.66,
-     "contado_normal": 9437.84,
+     "lista": 11669.62,
+     "contado": 8985.6,
+     "contado_normal": 9644.94,
      "foto": "HLV001.webp"
     },
     {
@@ -1104,9 +1073,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave ajustable 10",
      "detalle": "",
      "grupo": "man",
-     "lista": 16279.05,
-     "contado": 12534.87,
-     "contado_normal": 13454.63,
+     "lista": 16636.27,
+     "contado": 12809.93,
+     "contado_normal": 13749.88,
      "foto": "HLV002.webp"
     },
     {
@@ -1114,59 +1083,19 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Punta hexagonal 19 x 300 con recubrimiento",
      "detalle": "",
      "grupo": "man",
-     "lista": 18868.74,
-     "contado": 14528.93,
-     "contado_normal": 15595.01,
+     "lista": 19282.78,
+     "contado": 14847.74,
+     "contado_normal": 15937.22,
      "foto": "HPS002.webp"
-    },
-    {
-     "codigo": "HMG001",
-     "nombre": "Maza 3 kg cabo fibra",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 59986.46,
-     "contado": 46189.58,
-     "contado_normal": 49578.81,
-     "foto": "HMG001.webp"
-    },
-    {
-     "codigo": "HLD007",
-     "nombre": "Llana de yeso 230x100 mm",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 8022.29,
-     "contado": 6177.17,
-     "contado_normal": 6630.43,
-     "foto": "HLD007.webp"
-    },
-    {
-     "codigo": "HSH004",
-     "nombre": "Serrucho costilla 12",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 12696.6,
-     "contado": 9776.38,
-     "contado_normal": 10493.74,
-     "foto": "HSH004.webp"
-    },
-    {
-     "codigo": "FST002",
-     "nombre": "Sierra copa bimetálica 1 (25 mm)",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 10689.05,
-     "contado": 8230.56,
-     "contado_normal": 8834.5,
-     "foto": "FST002.webp"
     },
     {
      "codigo": "MOT001",
      "nombre": "Mochila para herramientas 34x17x45 cm industrial",
      "detalle": "",
      "grupo": "caj",
-     "lista": 65538.5,
-     "contado": 50464.64,
-     "contado_normal": 54167.57,
+     "lista": 66976.65,
+     "contado": 51572.02,
+     "contado_normal": 55356.2,
      "foto": "MOT001.webp"
     },
     {
@@ -1174,9 +1103,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cartuchera porta herramientas 3 bolsillos",
      "detalle": "",
      "grupo": "caj",
-     "lista": 12563.59,
-     "contado": 9673.96,
-     "contado_normal": 10383.81,
+     "lista": 12839.28,
+     "contado": 9886.24,
+     "contado_normal": 10611.66,
      "foto": "MOT002.webp"
     },
     {
@@ -1184,9 +1113,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cartuchera porta taladro",
      "detalle": "",
      "grupo": "caj",
-     "lista": 26460.6,
-     "contado": 20374.66,
-     "contado_normal": 21869.68,
+     "lista": 27041.24,
+     "contado": 20821.75,
+     "contado_normal": 22349.58,
      "foto": "MOT003.webp"
     },
     {
@@ -1194,9 +1123,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Delantal porta herramientas 52x55 cm",
      "detalle": "",
      "grupo": "caj",
-     "lista": 18305.94,
-     "contado": 14095.58,
-     "contado_normal": 15129.86,
+     "lista": 18707.64,
+     "contado": 14404.88,
+     "contado_normal": 15461.86,
      "foto": "MOT004.webp"
     },
     {
@@ -1204,9 +1133,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Soldadora inverter MMA 10-160 A",
      "detalle": "Electrodos de 1,6 a 3,2 mm · Antiadherente",
      "grupo": "sold",
-     "lista": 287552.93,
-     "contado": 221415.76,
-     "contado_normal": 237662.5,
+     "lista": 293862.87,
+     "contado": 226274.41,
+     "contado_normal": 242877.66,
      "foto": "HOJ001.webp"
     },
     {
@@ -1214,9 +1143,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Soldadora inverter MMA 20-200 A",
      "detalle": "Electrodos de 1,6 a 4 mm · Antiadherente",
      "grupo": "sold",
-     "lista": 439699.41,
-     "contado": 338568.55,
-     "contado_normal": 363411.56,
+     "lista": 449347.99,
+     "contado": 345997.95,
+     "contado_normal": 371386.11,
      "foto": "HOJ003.webp"
     },
     {
@@ -1224,9 +1153,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Atornillador de impacto brushless 20 V",
      "detalle": "210 Nm · Con 2 baterías de 2 Ah, cargador y maletín",
      "grupo": "inal",
-     "lista": 259456.78,
-     "contado": 199781.72,
-     "contado_normal": 214441.03,
+     "lista": 265150.19,
+     "contado": 204165.65,
+     "contado_normal": 219146.64,
      "foto": "ITJ002.webp"
     },
     {
@@ -1234,9 +1163,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave Stillson",
      "detalle": "Para tubo de 8 a 27 mm",
      "grupo": "man",
-     "lista": 10963.95,
-     "contado": 8442.24,
-     "contado_normal": 9061.7,
+     "lista": 11204.54,
+     "contado": 8627.49,
+     "contado_normal": 9260.55,
      "foto": "MTJ001.webp"
     },
     {
@@ -1244,9 +1173,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave Stillson",
      "detalle": "Para tubo de 18 a 60 mm",
      "grupo": "man",
-     "lista": 31157.93,
-     "contado": 23991.61,
-     "contado_normal": 25752.03,
+     "lista": 31841.65,
+     "contado": 24518.07,
+     "contado_normal": 26317.12,
      "foto": "MTJ002.webp"
     },
     {
@@ -1254,9 +1183,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit pinzas y alicates 4 piezas de 6",
      "detalle": "",
      "grupo": "man",
-     "lista": 30115.25,
-     "contado": 23188.74,
-     "contado_normal": 24890.25,
+     "lista": 30776.08,
+     "contado": 23697.59,
+     "contado_normal": 25436.43,
      "foto": "MPJ001.webp"
     },
     {
@@ -1264,9 +1193,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit de pinzas mango ranurado 3 piezas 6",
      "detalle": "",
      "grupo": "man",
-     "lista": 27088.78,
-     "contado": 20858.36,
-     "contado_normal": 22388.88,
+     "lista": 27683.2,
+     "contado": 21316.07,
+     "contado_normal": 22880.17,
      "foto": "MPJ002.webp"
     },
     {
@@ -1274,39 +1203,79 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pinza de fuerza curva CR-V 10",
      "detalle": "",
      "grupo": "man",
-     "lista": 21372.11,
-     "contado": 16456.53,
-     "contado_normal": 17664.05,
+     "lista": 21841.09,
+     "contado": 16817.64,
+     "contado_normal": 18051.66,
      "foto": "MPJ003.webp"
+    },
+    {
+     "codigo": "GCC001",
+     "nombre": "Engrapadora metálica 4-14 mm",
+     "detalle": "",
+     "grupo": "man",
+     "lista": 20254.08,
+     "contado": 15595.64,
+     "contado_normal": 16740,
+     "foto": "GCC001.webp"
+    },
+    {
+     "codigo": "HMG001",
+     "nombre": "Maza 3 kg cabo fibra",
+     "detalle": "",
+     "grupo": "man",
+     "lista": 61302.78,
+     "contado": 47203.14,
+     "contado_normal": 50666.75,
+     "foto": "HMG001.webp"
+    },
+    {
+     "codigo": "HLD007",
+     "nombre": "Llana de yeso 230x100 mm",
+     "detalle": "",
+     "grupo": "man",
+     "lista": 8198.33,
+     "contado": 6312.72,
+     "contado_normal": 6775.92,
+     "foto": "HLD007.webp"
+    },
+    {
+     "codigo": "HSH004",
+     "nombre": "Serrucho costilla 12",
+     "detalle": "",
+     "grupo": "man",
+     "lista": 12975.21,
+     "contado": 9990.91,
+     "contado_normal": 10724.01,
+     "foto": "HSH004.webp"
+    },
+    {
+     "codigo": "FST002",
+     "nombre": "Sierra copa bimetálica 1 (25 mm)",
+     "detalle": "",
+     "grupo": "man",
+     "lista": 10923.6,
+     "contado": 8411.17,
+     "contado_normal": 9028.36,
+     "foto": "FST002.webp"
     },
     {
      "codigo": "HMG002",
      "nombre": "Maza 5 kg cabo fibra",
      "detalle": "",
      "grupo": "man",
-     "lista": 68883.73,
-     "contado": 53040.47,
-     "contado_normal": 56932.4,
+     "lista": 70395.28,
+     "contado": 54204.37,
+     "contado_normal": 58181.7,
      "foto": "HMG002.webp"
-    },
-    {
-     "codigo": "HTJ002",
-     "nombre": "Tijera de podar 8.5\" (220 mm) hoja de acero",
-     "detalle": "",
-     "grupo": "jar",
-     "lista": 20996.14,
-     "contado": 16167.03,
-     "contado_normal": 17353.31,
-     "foto": "HTJ002.webp"
     },
     {
      "codigo": "HTW002",
      "nombre": "Tijera corta cerco extensible 550-750 mm",
      "detalle": "",
      "grupo": "jar",
-     "lista": 48965.3,
-     "contado": 37703.28,
-     "contado_normal": 40469.82,
+     "lista": 50039.78,
+     "contado": 38530.63,
+     "contado_normal": 41357.87,
      "foto": "HTW002.webp"
     },
     {
@@ -1314,9 +1283,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pala pocera cabo metal corto",
      "detalle": "",
      "grupo": "jar",
-     "lista": 23223.96,
-     "contado": 17882.45,
-     "contado_normal": 19194.6,
+     "lista": 23733.57,
+     "contado": 18274.85,
+     "contado_normal": 19615.8,
      "foto": "HPL009.webp"
     },
     {
@@ -1324,9 +1293,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pala cuadrada cabo metal corto",
      "detalle": "",
      "grupo": "jar",
-     "lista": 24134.7,
-     "contado": 18583.72,
-     "contado_normal": 19947.33,
+     "lista": 24664.3,
+     "contado": 18991.51,
+     "contado_normal": 20385.05,
      "foto": "HPL010.webp"
     },
     {
@@ -1334,9 +1303,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pala corazón cabo metal corto",
      "detalle": "",
      "grupo": "jar",
-     "lista": 24922.84,
-     "contado": 19190.59,
-     "contado_normal": 20598.73,
+     "lista": 25469.74,
+     "contado": 19611.7,
+     "contado_normal": 21050.74,
      "foto": "HPL011.webp"
     },
     {
@@ -1344,9 +1313,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Escalera extensible de aluminio",
      "detalle": "3 tramos · Altura máxima 5,08 m",
      "grupo": "hog",
-     "lista": 579661.21,
-     "contado": 446339.13,
-     "contado_normal": 479089.99,
+     "lista": 592381.04,
+     "contado": 456133.4,
+     "contado_normal": 489602.93,
      "foto": "ERJ001.webp"
     },
     {
@@ -1354,9 +1323,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Escalera multipropósito andamio",
      "detalle": "Altura máxima 3,37 m",
      "grupo": "hog",
-     "lista": 389903.61,
-     "contado": 300225.78,
-     "contado_normal": 322255.34,
+     "lista": 398459.49,
+     "contado": 306813.81,
+     "contado_normal": 329326.77,
      "foto": "ERJ002.webp"
     },
     {
@@ -1364,9 +1333,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Escalera multipropósito andamio",
      "detalle": "Altura máxima 4,45 m",
      "grupo": "hog",
-     "lista": 482823.26,
-     "contado": 371773.91,
-     "contado_normal": 399053.42,
+     "lista": 493418.13,
+     "contado": 379931.96,
+     "contado_normal": 407810.08,
      "foto": "ERJ003.webp"
     },
     {
@@ -1374,9 +1343,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Tijera corta cerco metálica 550 mm",
      "detalle": "",
      "grupo": "jar",
-     "lista": 29998.95,
-     "contado": 23099.19,
-     "contado_normal": 24794.13,
+     "lista": 30657.23,
+     "contado": 23606.07,
+     "contado_normal": 25338.2,
      "foto": "HTW003.webp"
     },
     {
@@ -1384,9 +1353,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave Stillson",
      "detalle": "Para tubo de 10 a 33 mm",
      "grupo": "man",
-     "lista": 13013.12,
-     "contado": 10020.1,
-     "contado_normal": 10755.35,
+     "lista": 13298.68,
+     "contado": 10239.98,
+     "contado_normal": 10991.36,
      "foto": "MTJ003.webp"
     },
     {
@@ -1394,9 +1363,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave Stillson",
      "detalle": "Para tubo de 12 a 42 mm",
      "grupo": "man",
-     "lista": 18915.44,
-     "contado": 14564.89,
-     "contado_normal": 15633.61,
+     "lista": 19330.51,
+     "contado": 14884.49,
+     "contado_normal": 15976.67,
      "foto": "MTJ004.webp"
     },
     {
@@ -1404,9 +1373,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave Stillson",
      "detalle": "Para tubo de 14 a 48 mm",
      "grupo": "man",
-     "lista": 23556.73,
-     "contado": 18138.68,
-     "contado_normal": 19469.64,
+     "lista": 24073.65,
+     "contado": 18536.71,
+     "contado_normal": 19896.87,
      "foto": "MTJ005.webp"
     },
     {
@@ -1414,9 +1383,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rastrillo 14 dientes con cabo 1.25 m",
      "detalle": "",
      "grupo": "jar",
-     "lista": 29178.82,
-     "contado": 22467.69,
-     "contado_normal": 24116.29,
+     "lista": 29819.11,
+     "contado": 22960.71,
+     "contado_normal": 24645.49,
      "foto": "HRE004.webp"
     },
     {
@@ -1424,9 +1393,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rastrillo 14 dientes con rienda con cabo 1.38 m",
      "detalle": "",
      "grupo": "jar",
-     "lista": 25395.73,
-     "contado": 19554.71,
-     "contado_normal": 20989.57,
+     "lista": 25953,
+     "contado": 19983.81,
+     "contado_normal": 21450.16,
      "foto": "HRE005.webp"
     },
     {
@@ -1434,9 +1403,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rastrillo de mano jardinería 240 mm",
      "detalle": "",
      "grupo": "jar",
-     "lista": 8007.54,
-     "contado": 6165.8,
-     "contado_normal": 6618.23,
+     "lista": 8183.25,
+     "contado": 6301.1,
+     "contado_normal": 6763.46,
      "foto": "HRE006.webp"
     },
     {
@@ -1444,9 +1413,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rastrillo de mano jardinería 380 mm",
      "detalle": "",
      "grupo": "jar",
-     "lista": 7902.45,
-     "contado": 6084.89,
-     "contado_normal": 6531.38,
+     "lista": 8075.86,
+     "contado": 6218.41,
+     "contado_normal": 6674.7,
      "foto": "HRE007.webp"
     },
     {
@@ -1454,9 +1423,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llana de goma fina 280x140 mm",
      "detalle": "",
      "grupo": "man",
-     "lista": 9529.96,
-     "contado": 7338.07,
-     "contado_normal": 7876.51,
+     "lista": 9739.08,
+     "contado": 7499.1,
+     "contado_normal": 8049.35,
      "foto": "HLD008.webp"
     },
     {
@@ -1464,9 +1433,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Prensa de esquina 90° de aluminio",
      "detalle": "Sujeción máx. 75 mm",
      "grupo": "man",
-     "lista": 9976.68,
-     "contado": 7682.04,
-     "contado_normal": 8245.73,
+     "lista": 10195.6,
+     "contado": 7850.62,
+     "contado_normal": 8426.67,
      "foto": "PHA011.webp"
     },
     {
@@ -1474,9 +1443,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra copa bimetálica 3/4 (19 mm)",
      "detalle": "",
      "grupo": "man",
-     "lista": 8465.15,
-     "contado": 6518.17,
-     "contado_normal": 6996.45,
+     "lista": 8650.91,
+     "contado": 6661.2,
+     "contado_normal": 7149.97,
      "foto": "FST004.webp"
     },
     {
@@ -1484,9 +1453,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Escuadra acero inoxidable 300 mm mango aluminio",
      "detalle": "",
      "grupo": "man",
-     "lista": 14090.2,
-     "contado": 10849.45,
-     "contado_normal": 11645.55,
+     "lista": 14399.39,
+     "contado": 11087.53,
+     "contado_normal": 11901.1,
      "foto": "ECJ001.webp"
     },
     {
@@ -1494,9 +1463,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cinta de advertencia antideslizante",
      "detalle": "5 m",
      "grupo": "hog",
-     "lista": 8827.21,
-     "contado": 6796.95,
-     "contado_normal": 7295.69,
+     "lista": 9020.91,
+     "contado": 6946.1,
+     "contado_normal": 7455.78,
      "foto": "SEÑ005.webp"
     },
     {
@@ -1504,9 +1473,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Pistola aplicadora de silicona industrial",
      "detalle": "Manga de aluminio",
      "grupo": "man",
-     "lista": 23434.03,
-     "contado": 18044.2,
-     "contado_normal": 19368.23,
+     "lista": 23948.26,
+     "contado": 18440.16,
+     "contado_normal": 19793.23,
      "foto": "HPT007.webp"
     },
     {
@@ -1514,9 +1483,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Soldadora inverter MMA 10-130 A",
      "detalle": "Electrodos de 1,6 a 3,2 mm · Antiadherente",
      "grupo": "sold",
-     "lista": 250229.46,
-     "contado": 192676.68,
-     "contado_normal": 206814.64,
+     "lista": 255720.38,
+     "contado": 196904.7,
+     "contado_normal": 211352.9,
      "foto": "HOJ004.webp"
     },
     {
@@ -1524,9 +1493,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Caja de ingletes plástico 30x14x8 cm",
      "detalle": "",
      "grupo": "man",
-     "lista": 12787.28,
-     "contado": 9846.2,
-     "contado_normal": 10568.68,
+     "lista": 13067.87,
+     "contado": 10062.26,
+     "contado_normal": 10800.6,
      "foto": "HSH006.webp"
     },
     {
@@ -1534,9 +1503,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Machete de acero al carbono 20\"",
      "detalle": "",
      "grupo": "man",
-     "lista": 11700.02,
-     "contado": 9009.01,
-     "contado_normal": 9670.06,
+     "lista": 11956.76,
+     "contado": 9206.7,
+     "contado_normal": 9882.26,
      "foto": "HMH005.webp"
     },
     {
@@ -1544,9 +1513,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Machete de acero al carbono 22\"",
      "detalle": "",
      "grupo": "man",
-     "lista": 12226.85,
-     "contado": 9414.67,
-     "contado_normal": 10105.49,
+     "lista": 12495.15,
+     "contado": 9621.26,
+     "contado_normal": 10327.24,
      "foto": "HMH006.webp"
     },
     {
@@ -1554,9 +1523,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Tijera corta caño PVC 3-35 mm",
      "detalle": "",
      "grupo": "man",
-     "lista": 12426.6,
-     "contado": 9568.48,
-     "contado_normal": 10270.59,
+     "lista": 12699.29,
+     "contado": 9778.45,
+     "contado_normal": 10495.96,
      "foto": "HTK002.webp"
     },
     {
@@ -1564,9 +1533,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Maza 1 kg cabo fibra",
      "detalle": "",
      "grupo": "man",
-     "lista": 17626.71,
-     "contado": 13572.57,
-     "contado_normal": 14568.48,
+     "lista": 18013.5,
+     "contado": 13870.4,
+     "contado_normal": 14888.16,
      "foto": "HMG003.webp"
     },
     {
@@ -1574,9 +1543,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Maza 2 kg cabo fibra",
      "detalle": "",
      "grupo": "man",
-     "lista": 27994.27,
-     "contado": 21555.59,
-     "contado_normal": 23137.26,
+     "lista": 28608.56,
+     "contado": 22028.59,
+     "contado_normal": 23644.98,
      "foto": "HMG004.webp"
     },
     {
@@ -1584,9 +1553,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Regadora plástica 5 l",
      "detalle": "",
      "grupo": "jar",
-     "lista": 34881.16,
-     "contado": 26858.49,
-     "contado_normal": 28829.27,
+     "lista": 35646.57,
+     "contado": 27447.86,
+     "contado_normal": 29461.89,
      "foto": "JRJ001.webp"
     },
     {
@@ -1594,9 +1563,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Regadora plástica 9 l",
      "detalle": "",
      "grupo": "jar",
-     "lista": 48766.61,
-     "contado": 37550.29,
-     "contado_normal": 40305.6,
+     "lista": 49836.72,
+     "contado": 38374.28,
+     "contado_normal": 41190.05,
      "foto": "JRJ002.webp"
     }
    ]
@@ -1608,7 +1577,7 @@ window.DONCOCO_BLACKCOCO = {
    "tipo": "23",
    "chip": "23% OFF",
    "rotulo": "Contado o transf. · 23% OFF",
-   "pres": "Lista consumidor final de PalJet al 22/11/2026",
+   "pres": "Lista consumidor final de PalJet al 25/11/2026",
    "productos": [
     {
      "codigo": "CCE001",
@@ -1651,16 +1620,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "FCC010.webp"
     },
     {
-     "codigo": "FLL000",
-     "nombre": "Linterna LED de aluminio cilíndrica recargable 1000 lm",
-     "detalle": "",
-     "grupo": "hog",
-     "lista": 34657.43,
-     "contado": 26686.22,
-     "contado_normal": 28644.36,
-     "foto": "FLL000.webp"
-    },
-    {
      "codigo": "FLL001",
      "nombre": "Linterna LED recargable anti impacto multiposición",
      "detalle": "",
@@ -1669,36 +1628,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 37064.19,
      "contado_normal": 39783.84,
      "foto": "FLL001.webp"
-    },
-    {
-     "codigo": "FML001",
-     "nombre": "Manguera universal hidrolavadora",
-     "detalle": "",
-     "grupo": "agua",
-     "lista": 24462.37,
-     "contado": 18836.02,
-     "contado_normal": 20218.15,
-     "foto": "FML001.webp"
-    },
-    {
-     "codigo": "XCQ001",
-     "nombre": "Cortadora de césped naftera 5,5 HP 20\"",
-     "detalle": "",
-     "grupo": "jar",
-     "lista": 734087.58,
-     "contado": 565247.44,
-     "contado_normal": 606723.39,
-     "foto": "XCQ001.webp"
-    },
-    {
-     "codigo": "XCQ002",
-     "nombre": "Cortadora de césped naftera 5,5 HP 20\" con bolsa",
-     "detalle": "",
-     "grupo": "jar",
-     "lista": 978783.44,
-     "contado": 753663.25,
-     "contado_normal": 808964.52,
-     "foto": "XCQ002.webp"
     },
     {
      "codigo": "HBU002",
@@ -1710,16 +1639,6 @@ window.DONCOCO_BLACKCOCO = {
      "destacado": 8,
      "foto": "HBU002.webp",
      "contado_normal": 264261.74
-    },
-    {
-     "codigo": "BLQ001",
-     "nombre": "Nivel láser 15 m",
-     "detalle": "",
-     "grupo": "man",
-     "lista": 134037.59,
-     "contado": 103208.95,
-     "contado_normal": 110782.07,
-     "foto": "BLQ001.webp"
     },
     {
      "codigo": "CPR001",
@@ -1913,16 +1832,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "SBQ002.webp"
     },
     {
-     "codigo": "SBZ001",
-     "nombre": "Bomba presurizadora 100 W · 8,5 m",
-     "detalle": "",
-     "grupo": "agua",
-     "lista": 90860.22,
-     "contado": 69962.37,
-     "contado_normal": 75095.97,
-     "foto": "SBZ001.webp"
-    },
-    {
      "codigo": "SBZ002",
      "nombre": "Bomba presurizadora 260 W",
      "detalle": "Hasta 13 m",
@@ -1958,9 +1867,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Disco diamantado segmentado 180 mm",
      "detalle": "",
      "grupo": "cons",
-     "lista": 13989.05,
-     "contado": 10771.56,
-     "contado_normal": 11561.95,
+     "lista": 16040.43,
+     "contado": 12351.13,
+     "contado_normal": 13257.42,
      "foto": "FDA004.webp"
     },
     {
@@ -2088,28 +1997,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "HLQ001.webp"
     },
     {
-     "codigo": "PCQ001",
-     "nombre": "Pistola de calor 2000 W",
-     "detalle": "",
-     "grupo": "elec",
-     "lista": 156605.35,
-     "contado": 120586.12,
-     "contado_normal": 129434.32,
-     "foto": "PCQ001.webp"
-    },
-    {
-     "codigo": "RTQ001",
-     "nombre": "Rotomartillo 850 W",
-     "detalle": "3,2 J",
-     "grupo": "elec",
-     "lista": 208564.46,
-     "contado": 160594.64,
-     "destacado": 0,
-     "foto": "RTQ001.webp",
-     "contado_normal": 172378.53,
-     "vidriera": 5
-    },
-    {
      "codigo": "SCQ001",
      "nombre": "Sierra caladora 450 W",
      "detalle": "",
@@ -2131,26 +2018,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado_normal": 140220.52
     },
     {
-     "codigo": "SCQ003",
-     "nombre": "Caladora de banco 125 W",
-     "detalle": "",
-     "grupo": "elec",
-     "lista": 417128.92,
-     "contado": 321189.27,
-     "contado_normal": 344757.05,
-     "foto": "SCQ003.webp"
-    },
-    {
-     "codigo": "SIL001",
-     "nombre": "Combo soldador inverter Iron-100 con máscara y 2 escuadras (80 A)",
-     "detalle": "",
-     "grupo": "sold",
-     "lista": 208564.46,
-     "contado": 160594.64,
-     "contado_normal": 172378.53,
-     "foto": "SIL001.webp"
-    },
-    {
      "codigo": "SIL002",
      "nombre": "Soldadora inverter Iron-140",
      "detalle": "120 A · Con máscara y 2 escuadras",
@@ -2170,26 +2037,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 252363,
      "contado_normal": 270880.54,
      "foto": "SIL003.webp"
-    },
-    {
-     "codigo": "SIL004",
-     "nombre": "Combo soldador inverter Iron-250 con máscara y 2 escuadras (180 A)",
-     "detalle": "",
-     "grupo": "sold",
-     "lista": 357539.08,
-     "contado": 275305.09,
-     "contado_normal": 295506.05,
-     "foto": "SIL004.webp"
-    },
-    {
-     "codigo": "SAQ001",
-     "nombre": "Sopladora aspiradora 600 W",
-     "detalle": "",
-     "grupo": "jar",
-     "lista": 117454.01,
-     "contado": 90439.59,
-     "contado_normal": 97075.74,
-     "foto": "SAQ001.webp"
     },
     {
      "codigo": "TAQ001",
@@ -2223,16 +2070,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "TAQ003.webp"
     },
     {
-     "codigo": "TAQ004",
-     "nombre": "Taladro percutor 13 mm · 710 W",
-     "detalle": "",
-     "grupo": "elec",
-     "lista": 81565.29,
-     "contado": 62805.27,
-     "contado_normal": 67413.71,
-     "foto": "TAQ004.webp"
-    },
-    {
      "codigo": "CTQ001",
      "nombre": "Termofusora 220 V-50 Hz · 800 W",
      "detalle": "",
@@ -2243,37 +2080,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "CTQ001.webp"
     },
     {
-     "codigo": "CTQ002",
-     "nombre": "Termofusora 1500 W",
-     "detalle": "220 V",
-     "grupo": "elec",
-     "lista": 104251.46,
-     "contado": 80273.62,
-     "destacado": 6,
-     "foto": "CTQ002.webp",
-     "contado_normal": 86163.83
-    },
-    {
-     "codigo": "HPQ002",
-     "nombre": "Pistola de pintar por gravedad STD",
-     "detalle": "",
-     "grupo": "elec",
-     "lista": 44679.2,
-     "contado": 34402.98,
-     "contado_normal": 36927.36,
-     "foto": "HPQ002.webp"
-    },
-    {
-     "codigo": "HEL002",
-     "nombre": "Escalera aluminio 5 escalones",
-     "detalle": "",
-     "grupo": "hog",
-     "lista": 163082.44,
-     "contado": 125573.48,
-     "contado_normal": 134787.64,
-     "foto": "HEL002.webp"
-    },
-    {
      "codigo": "CAS003",
      "nombre": "Anafe eléctrico 2 hornallas",
      "detalle": "",
@@ -2282,16 +2088,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 64580.65,
      "contado_normal": 69319.36,
      "foto": "CAS003.webp"
-    },
-    {
-     "codigo": "HEL003",
-     "nombre": "Escalera aluminio 6 escalones",
-     "detalle": "",
-     "grupo": "hog",
-     "lista": 189175.63,
-     "contado": 145665.23,
-     "contado_normal": 156353.66,
-     "foto": "HEL003.webp"
     },
     {
      "codigo": "FCQ001",
@@ -2314,24 +2110,34 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "FCC007.webp"
     },
     {
-     "codigo": "HEQ002",
-     "nombre": "Amoladora angular 1010 W 115 mm",
+     "codigo": "HPQ002",
+     "nombre": "Pistola de pintar por gravedad STD",
      "detalle": "",
      "grupo": "elec",
-     "lista": 179443.63,
-     "contado": 138171.6,
-     "contado_normal": 148310.16,
-     "foto": "HEQ002.webp"
+     "lista": 44679.2,
+     "contado": 34402.98,
+     "contado_normal": 36927.36,
+     "foto": "HPQ002.webp"
     },
     {
-     "codigo": "HEQ003",
-     "nombre": "Amoladora angular 2200 W 180 mm",
+     "codigo": "HEL002",
+     "nombre": "Escalera aluminio 5 escalones",
      "detalle": "",
-     "grupo": "elec",
-     "lista": 375200.32,
-     "contado": 288904.25,
-     "contado_normal": 310103.06,
-     "foto": "HEQ003.webp"
+     "grupo": "hog",
+     "lista": 163082.44,
+     "contado": 125573.48,
+     "contado_normal": 134787.64,
+     "foto": "HEL002.webp"
+    },
+    {
+     "codigo": "HEL003",
+     "nombre": "Escalera aluminio 6 escalones",
+     "detalle": "",
+     "grupo": "hog",
+     "lista": 189175.63,
+     "contado": 145665.23,
+     "contado_normal": 156353.66,
+     "foto": "HEL003.webp"
     },
     {
      "codigo": "HEL001",
@@ -2352,7 +2158,7 @@ window.DONCOCO_BLACKCOCO = {
    "tipo": "23",
    "chip": "23% OFF",
    "rotulo": "Contado o transf. · 23% OFF",
-   "pres": "Lista consumidor final de PalJet al 22/11/2026",
+   "pres": "Lista consumidor final de PalJet al 25/11/2026",
    "productos": [
     {
      "codigo": "GMZ001",
@@ -2486,16 +2292,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "GMZ013.webp"
     },
     {
-     "codigo": "GMZ014",
-     "nombre": "Grifería lavatorio bimando negro Boston",
-     "detalle": "",
-     "grupo": "lav",
-     "lista": 177786.22,
-     "contado": 136895.39,
-     "contado_normal": 146940.31,
-     "foto": "GMZ014.webp"
-    },
-    {
      "codigo": "GMZ017",
      "nombre": "Grifería lavatorio pico J cromado Boston",
      "detalle": "",
@@ -2534,16 +2330,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 48685.61,
      "contado_normal": 52257.99,
      "foto": "GMZ020.webp"
-    },
-    {
-     "codigo": "GMZ023",
-     "nombre": "Grifería mezclador pared cierre cerámico pico J grueso Texas",
-     "detalle": "",
-     "grupo": "coc",
-     "lista": 76376.88,
-     "contado": 58810.19,
-     "contado_normal": 63125.49,
-     "foto": "GMZ023.webp"
     },
     {
      "codigo": "GMZ026",
@@ -2658,16 +2444,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "GMZ036.webp"
     },
     {
-     "codigo": "GMZ037",
-     "nombre": "Grifería monocomando cocina mesada pico flexible negro Miami",
-     "detalle": "",
-     "grupo": "coc",
-     "lista": 123379.68,
-     "contado": 95002.35,
-     "contado_normal": 101973.31,
-     "foto": "GMZ037.webp"
-    },
-    {
      "codigo": "GMZ038",
      "nombre": "Grifería monocomando cocina mesada pico L 46 cm Madrid",
      "detalle": "",
@@ -2676,16 +2452,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 55087.04,
      "contado_normal": 59129.14,
      "foto": "GMZ038.webp"
-    },
-    {
-     "codigo": "GMZ039",
-     "nombre": "Grifería monocomando cocina pared cromada Denver",
-     "detalle": "",
-     "grupo": "coc",
-     "lista": 121500.43,
-     "contado": 93555.33,
-     "contado_normal": 100420.1,
-     "foto": "GMZ039.webp"
     },
     {
      "codigo": "GMZ040",
@@ -2810,17 +2576,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 146148.64,
      "contado_normal": 156872.53,
      "foto": "GMZ052.webp"
-    },
-    {
-     "codigo": "GMZ053",
-     "nombre": "Monocomando de lavatorio alto Manhattan",
-     "detalle": "Negro",
-     "grupo": "lav",
-     "lista": 109042.03,
-     "contado": 83962.36,
-     "destacado": 8,
-     "foto": "GMZ053.webp",
-     "contado_normal": 90123.23
     },
     {
      "codigo": "GMZ054",
@@ -2951,17 +2706,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 125992.2,
      "contado_normal": 135237.08,
      "foto": "GMZ067.webp"
-    },
-    {
-     "codigo": "GMZ068",
-     "nombre": "Monocomando de cocina Tokio",
-     "detalle": "Pico L giratorio · Cromado",
-     "grupo": "coc",
-     "lista": 147957.84,
-     "contado": 113927.54,
-     "destacado": 4,
-     "foto": "GMZ068.webp",
-     "contado_normal": 122287.15
     },
     {
      "codigo": "GMZ069",
@@ -3156,16 +2900,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "SDZ014.webp"
     },
     {
-     "codigo": "SDZ015",
-     "nombre": "Ducha con brazo redonda 10 cm-roseta y anticalcáreo plástico",
-     "detalle": "",
-     "grupo": "duc",
-     "lista": 24565.55,
-     "contado": 18915.48,
-     "contado_normal": 20303.43,
-     "foto": "SDZ015.webp"
-    },
-    {
      "codigo": "SDZ016",
      "nombre": "Ducha con brazo redonda 11,5 cm cromada campana plástico",
      "detalle": "",
@@ -3174,16 +2908,6 @@ window.DONCOCO_BLACKCOCO = {
      "contado": 18901.7,
      "contado_normal": 20288.65,
      "foto": "SDZ016.webp"
-    },
-    {
-     "codigo": "SDZ017",
-     "nombre": "Ducha con brazo redonda 6 cm plástico",
-     "detalle": "",
-     "grupo": "duc",
-     "lista": 14837.96,
-     "contado": 11425.23,
-     "contado_normal": 12263.58,
-     "foto": "SDZ017.webp"
     },
     {
      "codigo": "SDZ018",
@@ -3339,16 +3063,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "SCZ006.webp"
     },
     {
-     "codigo": "SCZ007",
-     "nombre": "Set baño London 5 piezas negro",
-     "detalle": "",
-     "grupo": "acb",
-     "lista": 117332.9,
-     "contado": 90346.33,
-     "contado_normal": 96975.64,
-     "foto": "SCZ007.webp"
-    },
-    {
      "codigo": "SDZ011",
      "nombre": "Ducha con brazo cuadrada 10x10 cm",
      "detalle": "Gris · Antisarro",
@@ -3489,26 +3203,6 @@ window.DONCOCO_BLACKCOCO = {
      "foto": "SRJ020.webp"
     },
     {
-     "codigo": "SRJ021",
-     "nombre": "Reja lineal acero inox. 10 x 10",
-     "detalle": "",
-     "grupo": "acb",
-     "lista": 25992.62,
-     "contado": 20014.32,
-     "contado_normal": 21482.9,
-     "foto": "SRJ021.webp"
-    },
-    {
-     "codigo": "SRJ022",
-     "nombre": "Reja lineal acero inox. 15 x 15",
-     "detalle": "",
-     "grupo": "acb",
-     "lista": 37103.85,
-     "contado": 28569.96,
-     "contado_normal": 30666.33,
-     "foto": "SRJ022.webp"
-    },
-    {
      "codigo": "SNL026",
      "nombre": "Canilla para lavarropas 1/2",
      "detalle": "Esférica · Pico adaptable",
@@ -3527,49 +3221,49 @@ window.DONCOCO_BLACKCOCO = {
    "tipo": "liq",
    "chip": "Liquidación",
    "rotulo": "Liquidación · contado o transf.",
-   "pres": "Lista consumidor final de PalJet al 22/11/2026",
+   "pres": "Lista consumidor final de PalJet al 25/11/2026",
    "productos": [
     {
      "codigo": "IHT002",
      "nombre": "Hidrolavadora inalámbrica 20 V",
      "detalle": "24,8 bar · Con batería y cargador",
      "grupo": "inal",
-     "lista": 176905.13,
-     "contado": 146212.09,
+     "lista": 180787.07,
+     "contado": 149420.51,
      "destacado": 8,
      "foto": "IHT002.webp",
-     "contado_normal": 146212.09
+     "contado_normal": 149420.51
     },
     {
      "codigo": "ERT002",
      "nombre": "Lijadora orbital de palma 240 W",
      "detalle": "Industrial",
      "grupo": "elec",
-     "lista": 103916.08,
-     "contado": 85886.64,
+     "lista": 106196.37,
+     "contado": 87771.3,
      "destacado": 9,
      "foto": "ERT002.webp",
-     "contado_normal": 85886.64
+     "contado_normal": 87771.3
     },
     {
      "codigo": "ELT001",
      "nombre": "Pulidora 1400 W",
      "detalle": "Industrial",
      "grupo": "elec",
-     "lista": 256085.19,
-     "contado": 211654.41,
+     "lista": 261704.61,
+     "contado": 216298.86,
      "destacado": 7,
      "foto": "ELT001.webp",
-     "contado_normal": 211654.41
+     "contado_normal": 216298.86
     },
     {
      "codigo": "HNT001",
      "nombre": "Minitorno 130 W",
      "detalle": "",
      "grupo": "elec",
-     "lista": 81650.08,
-     "contado": 67483.79,
-     "contado_normal": 67483.79,
+     "lista": 83441.77,
+     "contado": 68964.63,
+     "contado_normal": 68964.63,
      "foto": "HNT001.webp"
     },
     {
@@ -3577,9 +3271,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Kit minitorno 8 V + 67 accesorios",
      "detalle": "",
      "grupo": "elec",
-     "lista": 82890.89,
-     "contado": 68509.32,
-     "contado_normal": 68509.32,
+     "lista": 84709.81,
+     "contado": 70012.66,
+     "contado_normal": 70012.66,
      "foto": "HNT002.webp"
     },
     {
@@ -3587,43 +3281,32 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Router 1600 W",
      "detalle": "Industrial",
      "grupo": "elec",
-     "lista": 246182.54,
-     "contado": 203469.87,
+     "lista": 251584.67,
+     "contado": 207934.73,
      "destacado": 6,
      "foto": "HUT002.webp",
-     "contado_normal": 203469.87
+     "contado_normal": 207934.73
     },
     {
      "codigo": "ETO001",
      "nombre": "Sierra sensitiva 2200 W",
      "detalle": "",
      "grupo": "elec",
-     "lista": 244042.88,
-     "contado": 201701.44,
-     "contado_normal": 201701.44,
+     "lista": 249398.06,
+     "contado": 206127.49,
+     "contado_normal": 206127.49,
      "foto": "ETO001.webp"
-    },
-    {
-     "codigo": "EC002",
-     "nombre": "Sierra caladora 570 W",
-     "detalle": "Industrial",
-     "grupo": "elec",
-     "lista": 102848.79,
-     "contado": 85004.52,
-     "destacado": 5,
-     "foto": "EC002.webp",
-     "contado_normal": 85004.52
     },
     {
      "codigo": "ETT001",
      "nombre": "Taladro percutor 1010 W",
      "detalle": "13 mm · Industrial",
      "grupo": "elec",
-     "lista": 123716.74,
-     "contado": 102251.88,
+     "lista": 126431.52,
+     "contado": 104495.65,
      "destacado": 4,
      "foto": "ETT001.webp",
-     "contado_normal": 102251.88,
+     "contado_normal": 104495.65,
      "vidriera": 3
     },
     {
@@ -3631,31 +3314,31 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Amoladora inalámbrica brushless 20 V",
      "detalle": "115 mm · Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 131136.05,
-     "contado": 108383.94,
+     "lista": 134013.64,
+     "contado": 110762.28,
      "destacado": 1,
      "foto": "HAT001.webp",
-     "contado_normal": 108383.94
+     "contado_normal": 110762.28
     },
     {
      "codigo": "IBT002",
      "nombre": "Batería 20 V 4 Ah",
      "detalle": "Industrial",
      "grupo": "bat",
-     "lista": 97731.09,
-     "contado": 80774.75,
+     "lista": 99875.66,
+     "contado": 82547.23,
      "destacado": 10,
      "foto": "IBT002.webp",
-     "contado_normal": 80774.75
+     "contado_normal": 82547.23
     },
     {
      "codigo": "IBT003",
      "nombre": "Batería 20 V 2,0 Ah",
      "detalle": "",
      "grupo": "bat",
-     "lista": 56907.05,
-     "contado": 47033.68,
-     "contado_normal": 47033.68,
+     "lista": 58155.8,
+     "contado": 48065.77,
+     "contado_normal": 48065.77,
      "foto": "IBT003.webp"
     },
     {
@@ -3663,29 +3346,19 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "2 baterías y cargador 4,0 Ah",
      "detalle": "",
      "grupo": "bat",
-     "lista": 253609.16,
-     "contado": 209607.97,
-     "contado_normal": 209607.97,
+     "lista": 259174.25,
+     "contado": 214207.52,
+     "contado_normal": 214207.52,
      "foto": "IBT005.webp"
-    },
-    {
-     "codigo": "IBT006",
-     "nombre": "2 baterías y cargador 2,0 Ah",
-     "detalle": "",
-     "grupo": "bat",
-     "lista": 123715.04,
-     "contado": 102250.48,
-     "contado_normal": 102250.48,
-     "foto": "IBT006.webp"
     },
     {
      "codigo": "IRT001",
      "nombre": "Bordeadora 20 V",
      "detalle": "Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 119384.93,
-     "contado": 98671.65,
-     "contado_normal": 98671.65,
+     "lista": 122004.67,
+     "contado": 100836.86,
+     "contado_normal": 100836.86,
      "foto": "IRT001.webp"
     },
     {
@@ -3693,42 +3366,30 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Cargador de batería 20 V 4 Ah",
      "detalle": "Industrial",
      "grupo": "bat",
-     "lista": 68041.72,
-     "contado": 56236.48,
+     "lista": 69534.8,
+     "contado": 57470.51,
      "destacado": 11,
      "foto": "ICT001.webp",
-     "contado_normal": 56236.48
+     "contado_normal": 57470.51
     },
     {
      "codigo": "ICT002",
      "nombre": "Cargador de batería 20 V 2,0 Ah",
      "detalle": "",
      "grupo": "bat",
-     "lista": 37113.39,
-     "contado": 30674.21,
-     "contado_normal": 30674.21,
+     "lista": 37927.79,
+     "contado": 31347.31,
+     "contado_normal": 31347.31,
      "foto": "ICT002.webp"
-    },
-    {
-     "codigo": "HVT001",
-     "nombre": "Llave de impacto inalámbrica 20 V",
-     "detalle": "400 Nm · Brushless · 2 baterías + cargador",
-     "grupo": "inal",
-     "lista": 220205.94,
-     "contado": 182000.21,
-     "destacado": 0,
-     "foto": "HVT001.webp",
-     "contado_normal": 182000.21,
-     "vidriera": 0
     },
     {
      "codigo": "HAT002",
      "nombre": "Pulidora 20 V brushless 254 mm",
      "detalle": "Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 259799.96,
-     "contado": 214724.67,
-     "contado_normal": 214724.67,
+     "lista": 265500.9,
+     "contado": 219436.5,
+     "contado_normal": 219436.5,
      "foto": "HAT002.webp"
     },
     {
@@ -3736,9 +3397,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Rotomartillo SDS Plus 20 V 16 mm",
      "detalle": "Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 124274.18,
-     "contado": 102712.61,
-     "contado_normal": 102712.61,
+     "lista": 127001.2,
+     "contado": 104966.49,
+     "contado_normal": 104966.49,
      "foto": "ILT001.webp"
     },
     {
@@ -3746,9 +3407,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra caladora 20 V brushless",
      "detalle": "Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 194225.85,
-     "contado": 160527.66,
-     "contado_normal": 160527.66,
+     "lista": 198487.86,
+     "contado": 164050.21,
+     "contado_normal": 164050.21,
      "foto": "IST001.webp"
     },
     {
@@ -3756,31 +3417,31 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Sierra circular inalámbrica brushless 20 V",
      "detalle": "165 mm · Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 220215.28,
-     "contado": 182007.93,
+     "lista": 225047.59,
+     "contado": 186001.84,
      "destacado": 2,
      "foto": "IST002.webp",
-     "contado_normal": 182007.93
+     "contado_normal": 186001.84
     },
     {
      "codigo": "IIT001",
      "nombre": "Sierra podadora inalámbrica 20 V",
      "detalle": "5\" · Con batería · Cargador aparte",
      "grupo": "inal",
-     "lista": 98970.79,
-     "contado": 81799.36,
+     "lista": 101142.56,
+     "contado": 83594.33,
      "destacado": 3,
      "foto": "IIT001.webp",
-     "contado_normal": 81799.36
+     "contado_normal": 83594.33
     },
     {
      "codigo": "MOT005",
      "nombre": "Bolso de tela para herramientas 16\"",
      "detalle": "",
      "grupo": "caj",
-     "lista": 23009.5,
-     "contado": 19017.35,
-     "contado_normal": 19017.35,
+     "lista": 23514.41,
+     "contado": 19434.66,
+     "contado_normal": 19434.66,
      "foto": "MOT005.webp"
     },
     {
@@ -3788,9 +3449,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Bolso de tela para herramientas 13\"",
      "detalle": "",
      "grupo": "caj",
-     "lista": 14225.66,
-     "contado": 11757.51,
-     "contado_normal": 11757.51,
+     "lista": 14537.82,
+     "contado": 12015.51,
+     "contado_normal": 12015.51,
      "foto": "MOT006.webp"
     },
     {
@@ -3808,9 +3469,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Estuche de herramientas de 9 piezas",
      "detalle": "",
      "grupo": "caj",
-     "lista": 65566.23,
-     "contado": 54190.49,
-     "contado_normal": 54190.49,
+     "lista": 67004.99,
+     "contado": 55379.62,
+     "contado_normal": 55379.62,
      "foto": "HKT001.webp"
     },
     {
@@ -3818,9 +3479,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Caja de herramientas de 24 piezas",
      "detalle": "",
      "grupo": "caj",
-     "lista": 155882.25,
-     "contado": 128836.68,
-     "contado_normal": 128836.68,
+     "lista": 159302.87,
+     "contado": 131663.82,
+     "contado_normal": 131663.82,
      "foto": "HKT006.webp"
     },
     {
@@ -3828,9 +3489,9 @@ window.DONCOCO_BLACKCOCO = {
      "nombre": "Llave de impacto brushless 20 V",
      "detalle": "500 Nm · Con cargador y 2 baterías de 4 Ah",
      "grupo": "inal",
-     "lista": 407035.77,
-     "contado": 336415.07,
-     "contado_normal": 336415.07,
+     "lista": 415967.59,
+     "contado": 343797.22,
+     "contado_normal": 343797.22,
      "foto": "HVT002.webp"
     }
    ]
@@ -3842,7 +3503,7 @@ window.DONCOCO_BLACKCOCO = {
    "tipo": "liq",
    "chip": "Liquidación",
    "rotulo": "Liquidación · contado o transf.",
-   "pres": "Lista consumidor final de PalJet al 22/11/2026",
+   "pres": "Lista consumidor final de PalJet al 25/11/2026",
    "productos": [
     {
      "codigo": "GFV002",
