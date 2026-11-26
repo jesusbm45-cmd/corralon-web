@@ -166,25 +166,6 @@
   }
 
 
-  // Combos de obra: arma el WhatsApp con lo que quedó tildado (va al asesor de esta visita)
-  var armarCombo = function (card) {
-    var btn = card.querySelector('[data-combo-btn]');
-    var marcados = card.querySelectorAll('[data-combo-item]:checked');
-    var t = 'Hola Don Coco, quiero cotizar el combo ' + card.getAttribute('data-combo-nombre') + ':\n';
-    Array.prototype.forEach.call(marcados, function (i) { t += '- ' + i.getAttribute('data-nombre') + ' (' + i.value + ')\n'; });
-    t += 'Es para: ';
-    btn.href = 'https://wa.me/' + asesor + '?text=' + encodeURIComponent(t);
-    btn.classList.toggle('btn--apagado', !marcados.length);
-    btn.setAttribute('aria-disabled', String(!marcados.length));
-  };
-  document.querySelectorAll('[data-combo]').forEach(function (card) {
-    armarCombo(card);
-    card.addEventListener('change', function () { armarCombo(card); });
-    card.querySelector('[data-combo-btn]').addEventListener('click', function (e) {
-      if (this.getAttribute('aria-disabled') === 'true') e.preventDefault();
-    });
-  });
-
   // Consultá tu pedido o acopio: va al WhatsApp del vendedor elegido
   var fp = document.querySelector('[data-pedido]');
   if (fp) fp.addEventListener('submit', function (e) {
