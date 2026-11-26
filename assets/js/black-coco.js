@@ -191,6 +191,41 @@
       pie.appendChild(pres);
     }
 
+    // Características: salen de assets/js/fichas.js (sitio oficial de la marca o su tienda oficial)
+    var ficha = (window.DONCOCO_FICHAS || {})[p.codigo];
+    if (ficha && ((ficha.c && ficha.c.length) || (ficha.i && ficha.i.length))) {
+      var fs = crear('section', 'ficha');
+      fs.setAttribute('aria-label', 'Características');
+      var lista_ = function (titulo, items) {
+        if (!items || !items.length) return;
+        fs.appendChild(crear('p', 'lab ficha__titulo', titulo));
+        var ul = crear('ul', 'ficha__lista');
+        items.forEach(function (t) {
+          var li = crear('li', 'ficha__item');
+          var k = t.indexOf(': ');
+          if (k > 0 && k < 40) { li.appendChild(crear('span', 'ficha__clave', t.slice(0, k))); li.appendChild(document.createTextNode(t.slice(k + 2))); }
+          else li.textContent = t;
+          ul.appendChild(li);
+        });
+        fs.appendChild(ul);
+      };
+      lista_('Características', ficha.c);
+      lista_('Incluye', ficha.i);
+      var fuente = crear('p', 'ficha__fuente');
+      fuente.appendChild(document.createTextNode('Fuente: '));
+      var a = crear('a', '', ficha.fn);
+      a.href = ficha.f; a.target = '_blank'; a.rel = 'noopener';
+      fuente.appendChild(a);
+      if (ficha.pdf) {
+        fuente.appendChild(document.createTextNode(' · '));
+        var pdf = crear('a', '', 'Ficha técnica (PDF)');
+        pdf.href = ficha.pdf; pdf.target = '_blank'; pdf.rel = 'noopener';
+        fuente.appendChild(pdf);
+      }
+      fs.appendChild(fuente);
+      pie.appendChild(fs);
+    }
+
     // Va bien con: artículos de otras subcategorías que se usan junto con este
     var sug = sugerencias(p, 6);
     if (sug.length) {

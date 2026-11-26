@@ -236,3 +236,13 @@ button.articulo__nombre:hover,button.articulo__nombre:focus-visible{text-decorat
 .seo-lista h3{font-size:15px;font-weight:800;margin:14px 0 6px}
 .seo-lista ul{margin:0;padding-left:18px;columns:2 260px;font-size:14px;line-height:1.5}
 .seo-lista li span{color:var(--grafito)}
+
+/* Características del artículo en el detalle (assets/js/fichas.js) */
+.ficha{margin-top:18px;padding-top:16px;border-top:2px solid var(--negro);display:grid;gap:8px}
+.ficha__titulo{font-size:13px;margin:6px 0 0;color:var(--rojo)}
+.ficha__lista{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.ficha__item{font-size:14.5px;line-height:1.45;padding:7px 0;border-bottom:1px solid rgba(20,20,20,.12)}
+.ficha__clave{font-weight:800;margin-right:6px}
+.ficha__clave::after{content:":"}
+.ficha__fuente{font-size:12.5px;margin:4px 0 0;color:var(--negro);opacity:.8}
+.ficha__fuente a{color:inherit;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:6px 0}
