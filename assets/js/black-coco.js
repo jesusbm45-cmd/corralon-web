@@ -243,18 +243,7 @@
       };
       lista_('Características', ficha.c);
       lista_('Incluye', ficha.i);
-      var fuente = crear('p', 'ficha__fuente');
-      fuente.appendChild(document.createTextNode('Fuente: '));
-      var a = crear('a', '', ficha.fn);
-      a.href = ficha.f; a.target = '_blank'; a.rel = 'noopener';
-      fuente.appendChild(a);
-      if (ficha.pdf) {
-        fuente.appendChild(document.createTextNode(' · '));
-        var pdf = crear('a', '', 'Ficha técnica (PDF)');
-        pdf.href = ficha.pdf; pdf.target = '_blank'; pdf.rel = 'noopener';
-        fuente.appendChild(pdf);
-      }
-      fs.appendChild(fuente);
+      // Sin link a la fuente: las tiendas de las marcas venden más barato (Jesús, 25/11)
       pie.appendChild(fs);
     }
 
