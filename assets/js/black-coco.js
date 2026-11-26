@@ -124,6 +124,30 @@
     return img;
   }
 
+  // Datos clave de la ficha para mostrar de entrada (potencia, tensión, velocidad...): salen de fichas.js
+  var PRIORIDAD = /^(potencia|tensi|voltaje|velocidad|mandril|torque|par |presi|caudal|capacidad|perfora|di[aá]metro|energ|bater|corriente|motor|longitud|largo|tama|peso)/i;
+  function claves(p, n) {
+    var f = (window.DONCOCO_FICHAS || {})[p.codigo];
+    if (!f || !f.c) return [];
+    var kv = f.c.filter(function (t) { var k = t.indexOf(': '); return k > 0 && k < 32 && t.length <= 52; });
+    var orden = kv.filter(function (t) { return PRIORIDAD.test(t); }).concat(kv.filter(function (t) { return !PRIORIDAD.test(t); }));
+    if (orden.length < n) orden = orden.concat(f.c.filter(function (t) { return t.indexOf(': ') < 0 && t.length <= 40; }));
+    return orden.slice(0, n);
+  }
+  function listaClaves(p, n, clase) {
+    var ks = claves(p, n);
+    if (!ks.length) return null;
+    var ul = crear('ul', clase);
+    ks.forEach(function (t) {
+      var li = crear('li', '');
+      var k = t.indexOf(': ');
+      if (k > 0) { li.appendChild(crear('span', 'specs__k', t.slice(0, k))); li.appendChild(document.createTextNode(t.slice(k + 2))); }
+      else li.textContent = t;
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+
   function tarjeta(p, m) {
     var art = crear('article', 'producto');
     var foto = crear('div', 'producto__foto');
@@ -139,6 +163,14 @@
     cuerpo.appendChild(crear('p', 'lab producto__cat', p._sub && p._sub.nombre && p._sub.nombre !== 'Otros' ? p._sub.nombre : nombreGrupo(p.grupo)));
     cuerpo.appendChild(crear('h4', 'producto__nombre', p.nombre));
     if (p.detalle) cuerpo.appendChild(crear('p', 'producto__detalle', p.detalle));
+    var sp = listaClaves(p, 3, 'specs producto__specs');
+    if (sp) {
+      cuerpo.appendChild(sp);
+      var vc = crear('button', 'specs__ver', 'Ver características');
+      vc.type = 'button';
+      vc.addEventListener('click', function () { abrirFoto(p, m); });
+      cuerpo.appendChild(vc);
+    }
     cuerpo.appendChild(precio(p, m, 'producto__precio'));
     cuerpo.appendChild(boton(p, m, 'btn--negro'));
     art.appendChild(cuerpo);
@@ -337,6 +369,8 @@
         });
         texto.appendChild(pres);
       } else if (q.detalle) texto.appendChild(crear('p', 'articulo__detalle', q.detalle));
+      var sq = listaClaves(q, 2, 'specs articulo__specs');
+      if (sq) texto.appendChild(sq);
       texto.appendChild(crear('p', 'lab articulo__codigo', 'Cód. ' + q.codigo));
       li.appendChild(texto);
       li.appendChild(precio(q, m, 'articulo__precio'));

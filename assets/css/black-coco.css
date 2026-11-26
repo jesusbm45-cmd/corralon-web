@@ -246,3 +246,13 @@ button.articulo__nombre:hover,button.articulo__nombre:focus-visible{text-decorat
 .ficha__clave::after{content:":"}
 .ficha__fuente{font-size:12.5px;margin:4px 0 0;color:var(--negro);opacity:.8}
 .ficha__fuente a{color:inherit;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:6px 0}
+
+/* Datos clave de la ficha a la vista (tarjetas destacadas y filas de la lista) */
+.specs{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:3px;font-size:13.5px;line-height:1.35}
+.specs li{position:relative;padding-left:12px}
+.specs li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--rojo)}
+.specs__k{font-weight:800;margin-right:4px}
+.specs__k::after{content:":"}
+.specs__ver{justify-self:start;align-self:start;margin:6px 0 4px;padding:8px 0;min-height:44px;background:none;border:0;color:var(--negro);font:800 14px/1 var(--display,'Barlow Condensed',sans-serif);letter-spacing:.08em;text-transform:uppercase;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.specs__ver:hover{color:var(--rojo)}
+.articulo__specs{font-size:13px;margin-top:6px}
