@@ -263,7 +263,12 @@
     if (sug.length) {
       var caja = crear('section', 'vbc');
       caja.setAttribute('aria-label', 'Va bien con');
-      caja.appendChild(crear('p', 'd vbc__titulo', 'Va bien con'));
+      var cab = crear('div', 'vbc__cabeza');
+      var tx = crear('div', '');
+      tx.appendChild(crear('p', 'd vbc__titulo', 'Va bien con'));
+      tx.appendChild(crear('p', 'vbc__bajada', 'Lo que se suele llevar junto. Tocá uno para ver su detalle.'));
+      cab.appendChild(tx);
+      caja.appendChild(cab);
       var grilla = crear('ul', 'vbc__lista');
       sug.forEach(function (s) {
         var li = crear('li', 'vbc__item');
@@ -271,9 +276,13 @@
         b.type = 'button';
         b.setAttribute('aria-label', s.nombre + (s.detalle ? ', ' + s.detalle : '') + ' ' + s._m.nombre + ', ' + pesos(contado(s)));
         b.appendChild(imagen(IMG + s.foto, '', 160));
+        b.appendChild(crear('span', 'vbc__marca', s._m.nombre));
         b.appendChild(crear('span', 'lab vbc__sub', s._sub.nombre !== 'Otros' ? s._sub.nombre : nombreGrupo(s.grupo)));
         b.appendChild(crear('span', 'vbc__nombre', s.nombre));
-        b.appendChild(crear('span', 'd vbc__precio', pesos(contado(s))));
+        var pieV = crear('span', 'vbc__pie');
+        pieV.appendChild(crear('span', 'd vbc__precio', pesos(contado(s))));
+        pieV.appendChild(crear('span', 'vbc__ver', 'Ver →'));
+        b.appendChild(pieV);
         b.addEventListener('click', function () { abrirFoto(s, s._m); });
         li.appendChild(b);
         grilla.appendChild(li);
